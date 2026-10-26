@@ -81,10 +81,15 @@ python bm01_p11_sampling_window_scan.py
 ## 8. Independent solver: EPA SWMM 5.2 (Section 8, Figure 4)
 
 ```bash
-python bm01_ext_swmm.py --mode pool --ncell 240 --routing 2 --out raw/bm01_ext_swmm_pool_n240.json
-python bm01_ext_swmm.py --mode gate --ncell 240 --routing 2 --out raw/bm01_ext_swmm_gate_n240.json
+python bm01_ext_swmm.py --mode pool --ncell 240 --routing 2 --horizon 43200 --out raw/bm01_ext_swmm_pool_n240.json
+python bm01_ext_swmm.py --mode gate --ncell 240 --routing 2 --horizon 43200 --out raw/bm01_ext_swmm_gate_n240.json
 python bm01_ext_compare.py         # table of all 16 runs → raw/bm01_ext_compare.json
 ```
+
+The archived Figure 4 runs use `--horizon 43200` (12 h) on top of the default 7200 s spin-up, i.e. a
+50460 s simulation. Dropping `--horizon` silently falls back to the 14400 s default and truncates the tail
+of the run: the peaks are unchanged (they occur early) but `a_final` and the late limit cycle are not,
+so always pass the flag when comparing against the archive.
 
 Expected SWMM peaks over ncell = 20/40/60/120/240 (all archived in `raw/`):
 
