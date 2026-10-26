@@ -1,0 +1,2 @@
+# Data archive: never convert line endings, so checksums_sha256.txt stays valid after clone
+* -text
