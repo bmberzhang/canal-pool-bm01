@@ -1,0 +1,394 @@
+{
+  "purpose": "W5 判据1：空间平均算子静态核验",
+  "max_abs_resid": 4.908818006438276e-06,
+  "ncell_sample": 400,
+  "judgement1": "PASS",
+  "cross_L_spread": 0.0,
+  "rows": [
+    {
+      "L_m": 2000.0,
+      "x": 0.02,
+      "lambda_m": 100000.0,
+      "discrete_mean": 0.062749,
+      "exact": 0.062749,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.05,
+      "lambda_m": 40000.0,
+      "discrete_mean": 0.155792,
+      "exact": 0.155792,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.08,
+      "lambda_m": 25000.0,
+      "discrete_mean": 0.24608,
+      "exact": 0.24608,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.12,
+      "lambda_m": 16666.67,
+      "discrete_mean": 0.359467,
+      "exact": 0.359467,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.2,
+      "lambda_m": 10000.0,
+      "discrete_mean": 0.549867,
+      "exact": 0.549867,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.3,
+      "lambda_m": 6666.67,
+      "discrete_mean": 0.694456,
+      "exact": 0.694455,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.5,
+      "lambda_m": 4000.0,
+      "discrete_mean": 0.636621,
+      "exact": 0.63662,
+      "abs_resid": 2e-06
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.7,
+      "lambda_m": 2857.14,
+      "discrete_mean": 0.297625,
+      "exact": 0.297624,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 2000.0,
+      "x": 0.9,
+      "lambda_m": 2222.22,
+      "discrete_mean": 0.033773,
+      "exact": 0.033773,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "x": 1.1,
+      "lambda_m": 1818.18,
+      "discrete_mean": 0.027633,
+      "exact": 0.027633,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "x": 1.3,
+      "lambda_m": 1538.46,
+      "discrete_mean": 0.160262,
+      "exact": 0.160259,
+      "abs_resid": 3e-06
+    },
+    {
+      "L_m": 2000.0,
+      "x": 1.5,
+      "lambda_m": 1333.33,
+      "discrete_mean": 0.212211,
+      "exact": 0.212207,
+      "abs_resid": 5e-06
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.02,
+      "lambda_m": 300000.0,
+      "discrete_mean": 0.062749,
+      "exact": 0.062749,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.05,
+      "lambda_m": 120000.0,
+      "discrete_mean": 0.155792,
+      "exact": 0.155792,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.08,
+      "lambda_m": 75000.0,
+      "discrete_mean": 0.24608,
+      "exact": 0.24608,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.12,
+      "lambda_m": 50000.0,
+      "discrete_mean": 0.359467,
+      "exact": 0.359467,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.2,
+      "lambda_m": 30000.0,
+      "discrete_mean": 0.549867,
+      "exact": 0.549867,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.3,
+      "lambda_m": 20000.0,
+      "discrete_mean": 0.694456,
+      "exact": 0.694455,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.5,
+      "lambda_m": 12000.0,
+      "discrete_mean": 0.636621,
+      "exact": 0.63662,
+      "abs_resid": 2e-06
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.7,
+      "lambda_m": 8571.43,
+      "discrete_mean": 0.297625,
+      "exact": 0.297624,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 6000.0,
+      "x": 0.9,
+      "lambda_m": 6666.67,
+      "discrete_mean": 0.033773,
+      "exact": 0.033773,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "x": 1.1,
+      "lambda_m": 5454.55,
+      "discrete_mean": 0.027633,
+      "exact": 0.027633,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "x": 1.3,
+      "lambda_m": 4615.38,
+      "discrete_mean": 0.160262,
+      "exact": 0.160259,
+      "abs_resid": 3e-06
+    },
+    {
+      "L_m": 6000.0,
+      "x": 1.5,
+      "lambda_m": 4000.0,
+      "discrete_mean": 0.212211,
+      "exact": 0.212207,
+      "abs_resid": 5e-06
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.02,
+      "lambda_m": 600000.0,
+      "discrete_mean": 0.062749,
+      "exact": 0.062749,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.05,
+      "lambda_m": 240000.0,
+      "discrete_mean": 0.155792,
+      "exact": 0.155792,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.08,
+      "lambda_m": 150000.0,
+      "discrete_mean": 0.24608,
+      "exact": 0.24608,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.12,
+      "lambda_m": 100000.0,
+      "discrete_mean": 0.359467,
+      "exact": 0.359467,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.2,
+      "lambda_m": 60000.0,
+      "discrete_mean": 0.549867,
+      "exact": 0.549867,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.3,
+      "lambda_m": 40000.0,
+      "discrete_mean": 0.694456,
+      "exact": 0.694455,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.5,
+      "lambda_m": 24000.0,
+      "discrete_mean": 0.636621,
+      "exact": 0.63662,
+      "abs_resid": 2e-06
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.7,
+      "lambda_m": 17142.86,
+      "discrete_mean": 0.297625,
+      "exact": 0.297624,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 12000.0,
+      "x": 0.9,
+      "lambda_m": 13333.33,
+      "discrete_mean": 0.033773,
+      "exact": 0.033773,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "x": 1.1,
+      "lambda_m": 10909.09,
+      "discrete_mean": 0.027633,
+      "exact": 0.027633,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "x": 1.3,
+      "lambda_m": 9230.77,
+      "discrete_mean": 0.160262,
+      "exact": 0.160259,
+      "abs_resid": 3e-06
+    },
+    {
+      "L_m": 12000.0,
+      "x": 1.5,
+      "lambda_m": 8000.0,
+      "discrete_mean": 0.212211,
+      "exact": 0.212207,
+      "abs_resid": 5e-06
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.02,
+      "lambda_m": 900000.0,
+      "discrete_mean": 0.062749,
+      "exact": 0.062749,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.05,
+      "lambda_m": 360000.0,
+      "discrete_mean": 0.155792,
+      "exact": 0.155792,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.08,
+      "lambda_m": 225000.0,
+      "discrete_mean": 0.24608,
+      "exact": 0.24608,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.12,
+      "lambda_m": 150000.0,
+      "discrete_mean": 0.359467,
+      "exact": 0.359467,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.2,
+      "lambda_m": 90000.0,
+      "discrete_mean": 0.549867,
+      "exact": 0.549867,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.3,
+      "lambda_m": 60000.0,
+      "discrete_mean": 0.694456,
+      "exact": 0.694455,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.5,
+      "lambda_m": 36000.0,
+      "discrete_mean": 0.636621,
+      "exact": 0.63662,
+      "abs_resid": 2e-06
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.7,
+      "lambda_m": 25714.29,
+      "discrete_mean": 0.297625,
+      "exact": 0.297624,
+      "abs_resid": 1e-06
+    },
+    {
+      "L_m": 18000.0,
+      "x": 0.9,
+      "lambda_m": 20000.0,
+      "discrete_mean": 0.033773,
+      "exact": 0.033773,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "x": 1.1,
+      "lambda_m": 16363.64,
+      "discrete_mean": 0.027633,
+      "exact": 0.027633,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "x": 1.3,
+      "lambda_m": 13846.15,
+      "discrete_mean": 0.160262,
+      "exact": 0.160259,
+      "abs_resid": 3e-06
+    },
+    {
+      "L_m": 18000.0,
+      "x": 1.5,
+      "lambda_m": 12000.0,
+      "discrete_mean": 0.212211,
+      "exact": 0.212207,
+      "abs_resid": 5e-06
+    }
+  ],
+  "wall_s": 0.0
+}

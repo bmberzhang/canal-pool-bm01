@@ -1,0 +1,131 @@
+{
+  "purpose": "P0-1_gate_saturation_check",
+  "duration": "12h",
+  "grid": 480,
+  "results": {
+    "m=0.0": {
+      "0m": {
+        "label": "gate(0m)",
+        "a_min": 0.0,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0139,
+        "sat_hi_frac": 0.1048,
+        "sat_total_frac": 0.1187,
+        "peak_mean_mm": 1057.61,
+        "wall_s": 37.9
+      },
+      "100m": {
+        "label": "gate_avg(100m)",
+        "a_min": 0.1322,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0298,
+        "sat_total_frac": 0.0298,
+        "peak_mean_mm": 579.52,
+        "wall_s": 41.3
+      },
+      "500m": {
+        "label": "gate_avg(500m)",
+        "a_min": 0.1938,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0305,
+        "sat_total_frac": 0.0305,
+        "peak_mean_mm": 434.03,
+        "wall_s": 42.0
+      },
+      "1500m": {
+        "label": "gate_avg(1500m)",
+        "a_min": 0.0,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0534,
+        "sat_hi_frac": 0.1763,
+        "sat_total_frac": 0.2297,
+        "peak_mean_mm": 1373.97,
+        "wall_s": 38.7
+      },
+      "3000m": {
+        "label": "gate_avg(3000m)",
+        "a_min": 0.0,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0069,
+        "sat_hi_frac": 0.0645,
+        "sat_total_frac": 0.0715,
+        "peak_mean_mm": 798.18,
+        "wall_s": 37.5
+      },
+      "6000m": {
+        "label": "mean(6000m)",
+        "a_min": 0.5,
+        "a_max": 0.696,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0,
+        "sat_total_frac": 0.0,
+        "peak_mean_mm": 74.81,
+        "wall_s": 36.7
+      }
+    },
+    "m=1.5": {
+      "0m": {
+        "label": "gate(0m)",
+        "a_min": 0.3683,
+        "a_max": 0.8682,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0,
+        "sat_total_frac": 0.0,
+        "peak_mean_mm": 119.62,
+        "wall_s": 41.8
+      },
+      "100m": {
+        "label": "gate_avg(100m)",
+        "a_min": 0.1757,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0069,
+        "sat_total_frac": 0.0069,
+        "peak_mean_mm": 307.73,
+        "wall_s": 38.5
+      },
+      "500m": {
+        "label": "gate_avg(500m)",
+        "a_min": 0.1291,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0097,
+        "sat_total_frac": 0.0097,
+        "peak_mean_mm": 328.01,
+        "wall_s": 37.7
+      },
+      "1500m": {
+        "label": "gate_avg(1500m)",
+        "a_min": 0.0,
+        "a_max": 1.0,
+        "sat_lo_frac": 0.0125,
+        "sat_hi_frac": 0.1062,
+        "sat_total_frac": 0.1187,
+        "peak_mean_mm": 637.76,
+        "wall_s": 41.3
+      },
+      "3000m": {
+        "label": "gate_avg(3000m)",
+        "a_min": 0.5,
+        "a_max": 0.7115,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0,
+        "sat_total_frac": 0.0,
+        "peak_mean_mm": 83.66,
+        "wall_s": 42.0
+      },
+      "6000m": {
+        "label": "mean(6000m)",
+        "a_min": 0.5,
+        "a_max": 0.6717,
+        "sat_lo_frac": 0.0,
+        "sat_hi_frac": 0.0,
+        "sat_total_frac": 0.0,
+        "peak_mean_mm": 57.17,
+        "wall_s": 41.9
+      }
+    }
+  }
+}

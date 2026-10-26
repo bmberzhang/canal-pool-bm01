@@ -1,0 +1,71 @@
+{
+  "purpose": "E-VER 求解器校验",
+  "config": {
+    "pool_len_m": 6000.0,
+    "pool_width_m": 50.0,
+    "h_target": 7.0,
+    "q0": 180.0,
+    "kg": 360.0,
+    "a0": 0.5,
+    "manning_n": 0.014
+  },
+  "T1_uniform_flow": {
+    "peak_mean_mm": 0.0,
+    "early_peak_mm": 0.0,
+    "final_mean_mm": 0.0,
+    "mass_balance_rel_err": 0.0
+  },
+  "T2_grid_convergence": {
+    "240": {
+      "peak_mean_mm": 75.05,
+      "mass_balance_rel_err": 7.41e-13,
+      "wall_s": 8.2
+    },
+    "480": {
+      "peak_mean_mm": 74.8124,
+      "mass_balance_rel_err": 5.71e-13,
+      "wall_s": 37.7
+    },
+    "960": {
+      "peak_mean_mm": 74.8182,
+      "mass_balance_rel_err": 6.43e-13,
+      "wall_s": 152.8
+    },
+    "rel_diff_pct_vs_480": {
+      "240": 0.3176,
+      "960": 0.0078
+    }
+  },
+  "T3_time_step": {
+    "cfl0.40": {
+      "dt_s": 0.5,
+      "peak_mean_mm": 74.8124
+    },
+    "cfl0.20": {
+      "dt_s": 0.25,
+      "peak_mean_mm": 74.7838
+    },
+    "rel_diff_pct": 0.0382
+  },
+  "T5_backwater_curve": {
+    "step_dq": 15.0,
+    "duration_h": 24.0,
+    "ncell": 480,
+    "h_down_theory_m": 8.21528,
+    "h_down_solver_m": 8.17586,
+    "h_up_theory_m": 8.20636,
+    "h_up_solver_m": 8.16714,
+    "profile_RMSE_mm": 39.3288,
+    "profile_max_abs_err_mm": 39.4146,
+    "mean_solver_m": 8.17148,
+    "mean_theory_m": 8.21081,
+    "wall_s": 55.4
+  },
+  "verdict": {
+    "T1": "通过（均匀流 12h 漂移 <0.01 mm）",
+    "T2": "通过（网格收敛，见 rel_diff）",
+    "T3": "通过（时间步不敏感）",
+    "T5": "需复核"
+  },
+  "wall_total_s": 404.8
+}

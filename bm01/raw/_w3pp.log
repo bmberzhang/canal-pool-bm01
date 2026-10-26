@@ -1,0 +1,24 @@
+=== 第 1 段：L=6000 起爆扫描（ΔQ ≤ 80）===
+[W3''] ΔQ=55.0 | point=   664.4 A3 | avg100=   617.9 A3 | mean=    97.9 A1 | ALL_A3=False
+[W3''] ΔQ=60.0 | point=   382.1 A3 | avg100=   475.6 A3 | mean=   110.6 A1 | ALL_A3=False
+[W3''] ΔQ=65.0 | point=   336.2 A3 | avg100=   504.1 A3 | mean=   123.9 A1 | ALL_A3=False
+[W3''] ΔQ=70.0 | point=   272.5 A3 | avg100=   339.7 A3 | mean=   137.7 A1 | ALL_A3=False
+[W3''] ΔQ=75.0 | point=   340.9 A3 | avg100=   306.9 A3 | mean=   152.2 A3 | ALL_A3=True
+[W3''] ΔQ=80.0 | point=   325.0 A3 | avg100=   312.2 A3 | mean=   167.3 A3 | ALL_A3=True
+
+>>> L=6000 起爆区间 = [70.0, 75.0]（起爆 ΔQ 列表 [75.0, 80.0]）
+
+=== 第 2 段：周期对照（ΔQ=72.5）===
+[W3''] period=   60s ΔQ=72.5 | mean=    89.7 A1 | point=   217.5 A3 | ALL_A3=False
+[W3''] period=  150s ΔQ=72.5 | mean=   110.8 A1 | point=   242.9 A3 | ALL_A3=False
+[W3''] period=  300s ΔQ=72.5 | mean=   144.9 A1 | point=   276.1 A3 | ALL_A3=False
+
+=== 第 3 段：起爆点附近 ΔQ 扰动 ===
+[W3''] ΔQ= 68.0 | mean=   132.1 A1 | ALL_A3=False
+[W3''] ΔQ= 69.0 | mean=   134.9 A1 | ALL_A3=False
+[W3''] ΔQ= 70.0 | mean=   137.7 A1 | ALL_A3=False
+[W3''] ΔQ= 75.0 | mean=   152.2 A3 | ALL_A3=True
+[W3''] ΔQ= 76.0 | mean=   155.2 A3 | ALL_A3=True
+
+W3'' **未通过**：既未在 L=6000 找到起爆点，周期对照也未显示救回效果 ⇒ 判据降格为经验性设计提示，不得写入摘要；且须复核 W0-c 的可复现性。
+档位: 未通过（tier-3） ｜已写入 raw\bm01_w3pp_6000.json（334s）

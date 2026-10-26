@@ -1,0 +1,86 @@
+{
+  "case_id": "M3",
+  "purpose": "band_sensitivity_of_sampling_reversal",
+  "question": "A1/A3 是否因 150mm 阈值人为制造？翻转在 100/125/150/175/200mm 下是否稳健？",
+  "method": "零重跑。峰值 peak_mean_mm 是 band 无关物理量，判定码为 peak≤band?A1:A3 的后处理。读 bm01_tune_valley.json（L=6000/ΔQ=45/ncell=240，mean 与 gate_avg 各 72 格）已记录峰值重算。",
+  "evidence_grade": "synthetic-1d-sve",
+  "bands_mm": [
+    100,
+    125,
+    150,
+    175,
+    200
+  ],
+  "reference_band_mm": 150,
+  "arms": [
+    {
+      "arm": "mean",
+      "n_cells": 72,
+      "min_peak_mm": 74.35,
+      "max_peak_mm": 315.13,
+      "A1_count_by_band": {
+        "100": 48,
+        "125": 57,
+        "150": 62,
+        "175": 66,
+        "200": 68
+      },
+      "A1_ratio_by_band": {
+        "100": 0.667,
+        "125": 0.792,
+        "150": 0.861,
+        "175": 0.917,
+        "200": 0.944
+      },
+      "min_peak_first_A1_at_band_mm": 100
+    },
+    {
+      "arm": "gate_avg",
+      "n_cells": 72,
+      "min_peak_mm": 154.23,
+      "max_peak_mm": 383.67,
+      "A1_count_by_band": {
+        "100": 0,
+        "125": 0,
+        "150": 0,
+        "175": 41,
+        "200": 49
+      },
+      "A1_ratio_by_band": {
+        "100": 0.0,
+        "125": 0.0,
+        "150": 0.0,
+        "175": 0.569,
+        "200": 0.681
+      },
+      "min_peak_first_A1_at_band_mm": 175
+    }
+  ],
+  "A1_ratio_gap_mean_minus_gateavg_by_band": {
+    "100": 0.667,
+    "125": 0.792,
+    "150": 0.861,
+    "175": 0.347,
+    "200": 0.264
+  },
+  "quantiles_mm": {
+    "mean": {
+      "Q1": 74.35,
+      "median": 83.96,
+      "Q3": 115.92
+    },
+    "gate_avg": {
+      "Q1": 157.52,
+      "median": 170.06,
+      "Q3": 223.81
+    }
+  },
+  "paired_peak_diff_gate_minus_mean_mm": {
+    "n_pairs": 72,
+    "min": 10.44,
+    "median": 76.17,
+    "max": 309.32,
+    "all_positive": true
+  },
+  "note_band_source": "仅取 E-TUNE-D（bm01_tune_valley.json）mean 与 gate_avg 各 72 格；E-TUNE 30 格粗扫未参与本阈值敏感性。"
+}

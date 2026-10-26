@@ -1,0 +1,394 @@
+{
+  "purpose": "W5 第二步：数值验证全池平均= sinc 恒等式 + 跨 L 半功率点",
+  "n_grid": 20001,
+  "Ls": [
+    2000.0,
+    6000.0,
+    12000.0,
+    18000.0
+  ],
+  "xs": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "max_abs_resid": 0.840101,
+  "halfpower_L_over_lambda": {
+    "2000": 0.6,
+    "6000": 0.6,
+    "12000": 0.6,
+    "18000": 0.6
+  },
+  "kc_L_values": {
+    "2000": 3.7699,
+    "6000": 3.7699,
+    "12000": 3.7699,
+    "18000": 3.7699
+  },
+  "kc_L_mean": 3.7699,
+  "kc_L_spread_pct": 0.0,
+  "theory_kc_L": 3.791,
+  "rows": [
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.05,
+      "lambda_m": 40000.0,
+      "numeric": 0.155792,
+      "sinc": 0.995893,
+      "abs_resid": 0.840101
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.1,
+      "lambda_m": 20000.0,
+      "numeric": 0.303959,
+      "sinc": 0.983632,
+      "abs_resid": 0.679673
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.2,
+      "lambda_m": 10000.0,
+      "numeric": 0.549867,
+      "sinc": 0.935489,
+      "abs_resid": 0.385622
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.3,
+      "lambda_m": 6666.67,
+      "numeric": 0.694455,
+      "sinc": 0.858394,
+      "abs_resid": 0.163939
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.4,
+      "lambda_m": 5000.0,
+      "numeric": 0.719785,
+      "sinc": 0.756827,
+      "abs_resid": 0.037042
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.5,
+      "lambda_m": 4000.0,
+      "numeric": 0.63662,
+      "sinc": 0.63662,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.6,
+      "lambda_m": 3333.33,
+      "numeric": 0.479857,
+      "sinc": 0.504551,
+      "abs_resid": 0.024694
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.7,
+      "lambda_m": 2857.14,
+      "numeric": 0.297624,
+      "sinc": 0.367883,
+      "abs_resid": 0.070259
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.8,
+      "lambda_m": 2500.0,
+      "numeric": 0.137467,
+      "sinc": 0.233872,
+      "abs_resid": 0.096406
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.9,
+      "lambda_m": 2222.22,
+      "numeric": 0.033773,
+      "sinc": 0.109292,
+      "abs_resid": 0.075519
+    },
+    {
+      "L_m": 2000.0,
+      "L_over_lambda": 0.95,
+      "lambda_m": 2105.26,
+      "numeric": 0.0082,
+      "sinc": 0.052415,
+      "abs_resid": 0.044216
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.05,
+      "lambda_m": 120000.0,
+      "numeric": 0.155792,
+      "sinc": 0.995893,
+      "abs_resid": 0.840101
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.1,
+      "lambda_m": 60000.0,
+      "numeric": 0.303959,
+      "sinc": 0.983632,
+      "abs_resid": 0.679673
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.2,
+      "lambda_m": 30000.0,
+      "numeric": 0.549867,
+      "sinc": 0.935489,
+      "abs_resid": 0.385622
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.3,
+      "lambda_m": 20000.0,
+      "numeric": 0.694455,
+      "sinc": 0.858394,
+      "abs_resid": 0.163939
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.4,
+      "lambda_m": 15000.0,
+      "numeric": 0.719785,
+      "sinc": 0.756827,
+      "abs_resid": 0.037042
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.5,
+      "lambda_m": 12000.0,
+      "numeric": 0.63662,
+      "sinc": 0.63662,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.6,
+      "lambda_m": 10000.0,
+      "numeric": 0.479857,
+      "sinc": 0.504551,
+      "abs_resid": 0.024694
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.7,
+      "lambda_m": 8571.43,
+      "numeric": 0.297624,
+      "sinc": 0.367883,
+      "abs_resid": 0.070259
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.8,
+      "lambda_m": 7500.0,
+      "numeric": 0.137467,
+      "sinc": 0.233872,
+      "abs_resid": 0.096406
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.9,
+      "lambda_m": 6666.67,
+      "numeric": 0.033773,
+      "sinc": 0.109292,
+      "abs_resid": 0.075519
+    },
+    {
+      "L_m": 6000.0,
+      "L_over_lambda": 0.95,
+      "lambda_m": 6315.79,
+      "numeric": 0.0082,
+      "sinc": 0.052415,
+      "abs_resid": 0.044216
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.05,
+      "lambda_m": 240000.0,
+      "numeric": 0.155792,
+      "sinc": 0.995893,
+      "abs_resid": 0.840101
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.1,
+      "lambda_m": 120000.0,
+      "numeric": 0.303959,
+      "sinc": 0.983632,
+      "abs_resid": 0.679673
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.2,
+      "lambda_m": 60000.0,
+      "numeric": 0.549867,
+      "sinc": 0.935489,
+      "abs_resid": 0.385622
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.3,
+      "lambda_m": 40000.0,
+      "numeric": 0.694455,
+      "sinc": 0.858394,
+      "abs_resid": 0.163939
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.4,
+      "lambda_m": 30000.0,
+      "numeric": 0.719785,
+      "sinc": 0.756827,
+      "abs_resid": 0.037042
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.5,
+      "lambda_m": 24000.0,
+      "numeric": 0.63662,
+      "sinc": 0.63662,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.6,
+      "lambda_m": 20000.0,
+      "numeric": 0.479857,
+      "sinc": 0.504551,
+      "abs_resid": 0.024694
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.7,
+      "lambda_m": 17142.86,
+      "numeric": 0.297624,
+      "sinc": 0.367883,
+      "abs_resid": 0.070259
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.8,
+      "lambda_m": 15000.0,
+      "numeric": 0.137467,
+      "sinc": 0.233872,
+      "abs_resid": 0.096406
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.9,
+      "lambda_m": 13333.33,
+      "numeric": 0.033773,
+      "sinc": 0.109292,
+      "abs_resid": 0.075519
+    },
+    {
+      "L_m": 12000.0,
+      "L_over_lambda": 0.95,
+      "lambda_m": 12631.58,
+      "numeric": 0.0082,
+      "sinc": 0.052415,
+      "abs_resid": 0.044216
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.05,
+      "lambda_m": 360000.0,
+      "numeric": 0.155792,
+      "sinc": 0.995893,
+      "abs_resid": 0.840101
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.1,
+      "lambda_m": 180000.0,
+      "numeric": 0.303959,
+      "sinc": 0.983632,
+      "abs_resid": 0.679673
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.2,
+      "lambda_m": 90000.0,
+      "numeric": 0.549867,
+      "sinc": 0.935489,
+      "abs_resid": 0.385622
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.3,
+      "lambda_m": 60000.0,
+      "numeric": 0.694455,
+      "sinc": 0.858394,
+      "abs_resid": 0.163939
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.4,
+      "lambda_m": 45000.0,
+      "numeric": 0.719785,
+      "sinc": 0.756827,
+      "abs_resid": 0.037042
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.5,
+      "lambda_m": 36000.0,
+      "numeric": 0.63662,
+      "sinc": 0.63662,
+      "abs_resid": 0.0
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.6,
+      "lambda_m": 30000.0,
+      "numeric": 0.479857,
+      "sinc": 0.504551,
+      "abs_resid": 0.024694
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.7,
+      "lambda_m": 25714.29,
+      "numeric": 0.297624,
+      "sinc": 0.367883,
+      "abs_resid": 0.070259
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.8,
+      "lambda_m": 22500.0,
+      "numeric": 0.137467,
+      "sinc": 0.233872,
+      "abs_resid": 0.096406
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.9,
+      "lambda_m": 20000.0,
+      "numeric": 0.033773,
+      "sinc": 0.109292,
+      "abs_resid": 0.075519
+    },
+    {
+      "L_m": 18000.0,
+      "L_over_lambda": 0.95,
+      "lambda_m": 18947.37,
+      "numeric": 0.0082,
+      "sinc": 0.052415,
+      "abs_resid": 0.044216
+    }
+  ],
+  "wall_s": 0.1
+}

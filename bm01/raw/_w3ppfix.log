@@ -1,0 +1,12 @@
+[FIX] L=6000 ΔQ= 76.0 period=   60s | mean=    97.6 A1 | point=   230.3 A3 | ALL_A3=False
+[FIX] L=6000 ΔQ= 76.0 period=  150s | mean=   119.5 A1 | point=   256.6 A3 | ALL_A3=False
+[FIX] L=6000 ΔQ= 76.0 period=  300s | mean=   155.2 A3 | point=   292.8 A3 | ALL_A3=True
+[FIX] L=6000 ΔQ= 80.0 period=   60s | mean=   106.8 A1 | point=   246.4 A3 | ALL_A3=False
+[FIX] L=6000 ΔQ= 80.0 period=  150s | mean=   129.7 A1 | point=   274.1 A3 | ALL_A3=False
+[FIX] L=6000 ΔQ= 80.0 period=  300s | mean=   167.3 A3 | point=   325.0 A3 | ALL_A3=True
+
+W3'' **第 2 段通过（修正后）**：在 L=6000 的起爆区内（ΔQ=%s），控制周期 300 s→60 s 使『三档全 A3』被救回：ΔQ=76：全池平均 155.2 → 97.6 mm；ΔQ=80：全池平均 167.3 → 106.8 mm。150 s 的效果：ΔQ=76 也已救回、ΔQ=80 也已救回。⇒ T_ctrl 机制在**两个池长上复现**，可写成可证伪通则。
+
+起爆形态对照: {"L2000_bifurcation": {"dq_prev": 14, "mean_prev_mm": 49.1, "dq_next": 15, "mean_next_mm": 3820.7, "ratio": 77.8, "type": "失稳型（准则性分岔）", "onset_m3s": [14, 15]}, "L6000_marginal": {"dq_prev": 70, "mean_prev_mm": 137.7, "dq_next": 75, "mean_next_mm": 152.2, "ratio": 1.1, "type": "边际型（池均稳态响应越带）", "onset_m3s": [70, 75]}, "note": "两者形态相差 71 倍（77.8 / 1.10）⇒ 是**两个不同机制**，不可混为一谈：短池是控制采样过慢导致的分岔，长池是池均响应平稳越带。C
+
+已写入 raw\bm01_w3pp_fix.json（149s）

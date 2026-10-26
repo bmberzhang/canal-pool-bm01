@@ -1,0 +1,97 @@
+{
+  "purpose": "E-FD-S 极限环周期附近的三通道频响补充探针",
+  "periods_s": [
+    5000.0,
+    6000.0,
+    7500.0,
+    9000.0
+  ],
+  "ncell": 240,
+  "results": {
+    "T5000": {
+      "channels": {
+        "mean": {
+          "amp_mm": 9.5101,
+          "phase_deg": 2.8
+        },
+        "avg100": {
+          "amp_mm": 6.9585,
+          "phase_deg": 11.7
+        },
+        "point": {
+          "amp_mm": 6.909,
+          "phase_deg": 11.9
+        }
+      },
+      "ratio_avg100_over_mean": 0.732,
+      "ratio_point_over_mean": 0.726,
+      "phase_diff_avg100_minus_mean_deg": 8.9,
+      "phase_diff_point_minus_mean_deg": 9.1,
+      "wall_s": 5.2
+    },
+    "T6000": {
+      "channels": {
+        "mean": {
+          "amp_mm": 11.4103,
+          "phase_deg": 3.2
+        },
+        "avg100": {
+          "amp_mm": 9.3399,
+          "phase_deg": 9.7
+        },
+        "point": {
+          "amp_mm": 9.2986,
+          "phase_deg": 9.8
+        }
+      },
+      "ratio_avg100_over_mean": 0.819,
+      "ratio_point_over_mean": 0.815,
+      "phase_diff_avg100_minus_mean_deg": 6.5,
+      "phase_diff_point_minus_mean_deg": 6.6,
+      "wall_s": 6.8
+    },
+    "T7500": {
+      "channels": {
+        "mean": {
+          "amp_mm": 14.2576,
+          "phase_deg": 3.8
+        },
+        "avg100": {
+          "amp_mm": 12.6604,
+          "phase_deg": 8.4
+        },
+        "point": {
+          "amp_mm": 12.6277,
+          "phase_deg": 8.5
+        }
+      },
+      "ratio_avg100_over_mean": 0.888,
+      "ratio_point_over_mean": 0.886,
+      "phase_diff_avg100_minus_mean_deg": 4.6,
+      "phase_diff_point_minus_mean_deg": 4.7,
+      "wall_s": 8.3
+    },
+    "T9000": {
+      "channels": {
+        "mean": {
+          "amp_mm": 17.1001,
+          "phase_deg": 4.3
+        },
+        "avg100": {
+          "amp_mm": 15.8158,
+          "phase_deg": 7.9
+        },
+        "point": {
+          "amp_mm": 15.789,
+          "phase_deg": 8.0
+        }
+      },
+      "ratio_avg100_over_mean": 0.925,
+      "ratio_point_over_mean": 0.923,
+      "phase_diff_avg100_minus_mean_deg": 3.6,
+      "phase_diff_point_minus_mean_deg": 3.7,
+      "wall_s": 9.9
+    }
+  },
+  "wall_total_s": 30.3
+}

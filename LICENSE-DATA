@@ -1,0 +1,19 @@
+Data, results and figures — license
+
+Copyright (c) 2026 Xu Zhang
+
+Everything in this repository that is NOT source code — namely the archived results in `bm01/raw/`,
+`bm01r/raw/`, the time series in `bm01/multiday/` and `bm01/normalized/`, the figures in `bm01/figures/`
+and `bm01r/figures/`, and the SWMM input deck `bm01/raw/_ext_swmm_pool.inp` — is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share and adapt this material for any purpose, including commercial use, provided you give
+appropriate credit, link to the license, and indicate if changes were made.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Source code (all `*.py` files) is licensed under the MIT License; see `LICENSE`.
+
+Third-party components keep their own licenses:
+* EPA SWMM 5.2, reached through the `pyswmm` / `swmm-toolkit` wheels — public domain / EPA terms.
+* numpy (BSD-3-Clause) and matplotlib (PSF-based matplotlib license).

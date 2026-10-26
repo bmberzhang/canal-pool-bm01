@@ -1,0 +1,333 @@
+{
+  "purpose": "W4'' 预注册检验：跃升倍数 vs rho = T_ctrl/(L/c_eff)",
+  "preregistered": {
+    "rho_range": [
+      0.4,
+      1.8
+    ],
+    "delta_m3s": 2.0,
+    "branch_A": "rho 取 ≥4 水平、R 随 rho 单调不降（Spearman ρs ≥ +0.7 且两端 R 相差 ≥3 倍）→ 两型存活",
+    "branch_B": "不满足 A ⇒ 砍掉两型，退回单一机制"
+  },
+  "c_eff_m_s": 8.801,
+  "rows": [
+    {
+      "L_m": 2000.0,
+      "ctrl_period_s": 100.0,
+      "rho": 0.44,
+      "onset_dq": 51.42,
+      "prev_dq": 49.42,
+      "mean_peak_onset_mm": 153.1,
+      "mean_peak_prev_mm": 143.44,
+      "jump_ratio_R": 1.07,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 204.15,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 204.15,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 153.1,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 227.2
+    },
+    {
+      "L_m": 2000.0,
+      "ctrl_period_s": 150.0,
+      "rho": 0.66,
+      "onset_dq": 46.97,
+      "prev_dq": 44.97,
+      "mean_peak_onset_mm": 152.6,
+      "mean_peak_prev_mm": 142.67,
+      "jump_ratio_R": 1.07,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 2404.59,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 259.19,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 152.6,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 227.2
+    },
+    {
+      "L_m": 2000.0,
+      "ctrl_period_s": 200.0,
+      "rho": 0.88,
+      "onset_dq": 50.53,
+      "prev_dq": 48.53,
+      "mean_peak_onset_mm": 3674.52,
+      "mean_peak_prev_mm": 141.94,
+      "jump_ratio_R": 25.89,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 3771.19,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 3680.52,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 3674.52,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 227.2
+    },
+    {
+      "L_m": 2000.0,
+      "ctrl_period_s": 250.0,
+      "rho": 1.1,
+      "onset_dq": 36.28,
+      "prev_dq": 34.28,
+      "mean_peak_onset_mm": 3895.41,
+      "mean_peak_prev_mm": 85.85,
+      "jump_ratio_R": 45.37,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 3876.88,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 3500.27,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 3895.41,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 227.2
+    },
+    {
+      "L_m": 2000.0,
+      "ctrl_period_s": 300.0,
+      "rho": 1.32,
+      "onset_dq": 14.91,
+      "prev_dq": 12.91,
+      "mean_peak_onset_mm": 4321.03,
+      "mean_peak_prev_mm": 44.73,
+      "jump_ratio_R": 96.59,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 4145.17,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 4072.45,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 4321.03,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 227.2
+    },
+    {
+      "L_m": 6000.0,
+      "ctrl_period_s": 300.0,
+      "rho": 0.44,
+      "onset_dq": 74.58,
+      "prev_dq": 72.58,
+      "mean_peak_onset_mm": 150.99,
+      "mean_peak_prev_mm": 145.14,
+      "jump_ratio_R": 1.04,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 285.95,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 532.83,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 150.99,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 681.7
+    },
+    {
+      "L_m": 6000.0,
+      "ctrl_period_s": 450.0,
+      "rho": 0.66,
+      "onset_dq": 63.89,
+      "prev_dq": 61.89,
+      "mean_peak_onset_mm": 150.35,
+      "mean_peak_prev_mm": 144.1,
+      "jump_ratio_R": 1.04,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 1309.45,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 689.08,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 150.35,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 681.7
+    },
+    {
+      "L_m": 6000.0,
+      "ctrl_period_s": 600.0,
+      "rho": 0.88,
+      "onset_dq": 62.11,
+      "prev_dq": 60.11,
+      "mean_peak_onset_mm": 1638.85,
+      "mean_peak_prev_mm": 112.18,
+      "jump_ratio_R": 14.61,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 1178.42,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 1062.89,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 1638.85,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 681.7
+    },
+    {
+      "L_m": 6000.0,
+      "ctrl_period_s": 800.0,
+      "rho": 1.173,
+      "onset_dq": 30.05,
+      "prev_dq": 28.05,
+      "mean_peak_onset_mm": 2108.3,
+      "mean_peak_prev_mm": 75.54,
+      "jump_ratio_R": 27.91,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 1392.61,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 1717.59,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 2108.3,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 681.7
+    },
+    {
+      "L_m": 6000.0,
+      "ctrl_period_s": 1000.0,
+      "rho": 1.467,
+      "onset_dq": 12.23,
+      "prev_dq": 10.23,
+      "mean_peak_onset_mm": 1621.5,
+      "mean_peak_prev_mm": 44.93,
+      "jump_ratio_R": 36.09,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 1778.56,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 1526.61,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 1621.5,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 681.7
+    },
+    {
+      "L_m": 6000.0,
+      "ctrl_period_s": 1200.0,
+      "rho": 1.76,
+      "onset_dq": 6.0,
+      "prev_dq": 6.0,
+      "mean_peak_onset_mm": 1594.64,
+      "mean_peak_prev_mm": 1594.64,
+      "jump_ratio_R": 1.0,
+      "arms_at_onset": {
+        "point": {
+          "peak_mean_mm": 2003.43,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 1613.48,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 1594.64,
+          "judgement": "A3"
+        }
+      },
+      "all_three_A3_at_onset": true,
+      "L_over_c_s": 681.7
+    }
+  ],
+  "wall_total_s": 864.1,
+  "n_levels": 11,
+  "spearman_rho": 0.4,
+  "R_max_over_R_min": 96.59,
+  "branch": "B（砍掉两型）",
+  "rhos": [
+    0.44,
+    0.44,
+    0.66,
+    0.66,
+    0.88,
+    0.88,
+    1.1,
+    1.173,
+    1.32,
+    1.467,
+    1.76
+  ],
+  "Rs": [
+    1.07,
+    1.04,
+    1.07,
+    1.04,
+    25.89,
+    14.61,
+    45.37,
+    27.91,
+    96.59,
+    36.09,
+    1.0
+  ],
+  "verdict": "**分支 B：砍掉两型。** 跃升倍数 R 随 rho 的 Spearman ρs = +0.400（需 ≥ +0.7）、两端相差 96.6 倍（需 ≥3 倍）⇒ 不满足预注册判据，**撤销失稳型/边际型之分**，退回单一机制【控制环路设计限制】，正文不得区分两型。"
+}

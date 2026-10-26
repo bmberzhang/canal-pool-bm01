@@ -1,0 +1,28 @@
+解析阈值 ΔQ* = 42.426 m³/s（A_surf=100000 m², 条带 150 mm）
+[SPEC] L=2000 ΔQ=20.0 | point=  3962.8 avg100=  4083.8 mean=  4450.2 | A3档=3 ALL_A3 | T_band/T_slew=4.500  ΔQ/ΔQ*=0.471
+[SPEC] L=2000 ΔQ=22.0 | point=  4163.6 avg100=  3729.9 mean=  4105.9 | A3档=3 ALL_A3 | T_band/T_slew=3.719  ΔQ/ΔQ*=0.519
+[SPEC] L=2000 ΔQ=24.0 | point=  3782.0 avg100=  4264.6 mean=  4236.3 | A3档=3 ALL_A3 | T_band/T_slew=3.125  ΔQ/ΔQ*=0.566
+[SPEC] L=2000 ΔQ=26.0 | point=  4287.6 avg100=  3890.6 mean=  4275.9 | A3档=3 ALL_A3 | T_band/T_slew=2.663  ΔQ/ΔQ*=0.613
+[SPEC] L=2000 ΔQ=28.0 | point=  3951.7 avg100=  3895.4 mean=  3815.8 | A3档=3 ALL_A3 | T_band/T_slew=2.296  ΔQ/ΔQ*=0.660
+[SPEC] L=2000 ΔQ=30.0 | point=  3617.8 avg100=  3691.9 mean=  3933.2 | A3档=3 ALL_A3 | T_band/T_slew=2.000  ΔQ/ΔQ*=0.707
+[SPEC] L=2000 ΔQ=32.0 | point=  4051.7 avg100=  4169.6 mean=  4142.4 | A3档=3 ALL_A3 | T_band/T_slew=1.758  ΔQ/ΔQ*=0.754
+[SPEC] L=2000 ΔQ=34.0 | point=  3716.2 avg100=  4204.4 mean=  4202.0 | A3档=3 ALL_A3 | T_band/T_slew=1.557  ΔQ/ΔQ*=0.801
+[SPEC] L=2000 ΔQ=36.0 | point=  3858.9 avg100=  3791.9 mean=  4354.3 | A3档=3 ALL_A3 | T_band/T_slew=1.389  ΔQ/ΔQ*=0.849
+[SPEC] L=2000 ΔQ=38.0 | point=  3978.0 avg100=  3608.3 mean=  3933.6 | A3档=3 ALL_A3 | T_band/T_slew=1.247  ΔQ/ΔQ*=0.896
+[SPEC] L=2000 ΔQ=40.0 | point=  3562.8 avg100=  3530.5 mean=  4439.5 | A3档=3 ALL_A3 | T_band/T_slew=1.125  ΔQ/ΔQ*=0.943
+[SPEC] L=2000 ΔQ=42.0 | point=  4502.5 avg100=  4090.6 mean=  4068.1 | A3档=3 ALL_A3 | T_band/T_slew=1.020  ΔQ/ΔQ*=0.990
+[SPEC] L=2000 ΔQ=44.0 | point=  3586.8 avg100=  4138.5 mean=  4202.6 | A3档=3 ALL_A3 | T_band/T_slew=0.930  ΔQ/ΔQ*=1.037
+[SPEC] L=2000 ΔQ=46.0 | point=  4250.2 avg100=  4194.4 mean=  4261.1 | A3档=3 ALL_A3 | T_band/T_slew=0.851  ΔQ/ΔQ*=1.084
+[SPEC] L=2000 ΔQ=48.0 | point=  3872.6 avg100=  4252.3 mean=  4318.6 | A3档=3 ALL_A3 | T_band/T_slew=0.781  ΔQ/ΔQ*=1.131
+[SPEC] L=2000 ΔQ=50.0 | point=  3908.1 avg100=  3908.1 mean=  3981.7 | A3档=3 ALL_A3 | T_band/T_slew=0.720  ΔQ/ΔQ*=1.179
+[SPEC] L=2000 ΔQ=52.0 | point=  3900.3 avg100=  3887.8 mean=  4443.0 | A3档=3 ALL_A3 | T_band/T_slew=0.666  ΔQ/ΔQ*=1.226
+[SPEC] L=2000 ΔQ=54.0 | point=  4083.7 avg100=  4083.7 mean=  4083.3 | A3档=3 ALL_A3 | T_band/T_slew=0.617  ΔQ/ΔQ*=1.273
+[SPEC] L=2000 ΔQ=56.0 | point=  3657.8 avg100=  3928.8 mean=  4158.7 | A3档=3 ALL_A3 | T_band/T_slew=0.574  ΔQ/ΔQ*=1.320
+[SPEC] L=2000 ΔQ=58.0 | point=  3658.6 avg100=  3658.6 mean=  4167.7 | A3档=3 ALL_A3 | T_band/T_slew=0.535  ΔQ/ΔQ*=1.367
+[SPEC] L=2000 ΔQ=60.0 | point=  3663.2 avg100=  3828.7 mean=  4278.6 | A3档=3 ALL_A3 | T_band/T_slew=0.500  ΔQ/ΔQ*=1.414
+
+全 A3 的 ΔQ: [20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60]
+非全 A3 的 ΔQ: []
+分离度: None
+verdict: 扫描区间内未出现（或全程出现）全 A3，无法定位转变点，需扩大扫描区间。
+已写入 raw\bm01_pred_spectrum.json（166s）

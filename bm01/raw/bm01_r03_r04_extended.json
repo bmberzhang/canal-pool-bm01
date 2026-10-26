@@ -1,0 +1,210 @@
+{
+  "purpose": "R03_sampling_scale_counterfactual + R04_table8_extended_replay",
+  "step_dq": 45.0,
+  "band_normal_mm": 150.0,
+  "settle_tol_m": 0.02,
+  "settle_window_s": 1800.0,
+  "R04_extended": {
+    "m=0|gate@480": {
+      "grid": 480,
+      "ctrl_on": "gate",
+      "m_slope": 0.0,
+      "durations": {
+        "4h": {
+          "early_peak_mm": 158.69,
+          "peak_mean_mm": 158.69,
+          "final_mean_mm": 112.64,
+          "over_band_s": 424.0,
+          "class": "③振荡",
+          "wall_s": 11.8
+        },
+        "8h": {
+          "early_peak_mm": 158.69,
+          "peak_mean_mm": 552.85,
+          "final_mean_mm": 552.85,
+          "over_band_s": 8603.5,
+          "class": "②单调漂移",
+          "wall_s": 24.1
+        },
+        "12h": {
+          "early_peak_mm": 158.69,
+          "peak_mean_mm": 1057.61,
+          "final_mean_mm": 969.86,
+          "over_band_s": 21459.0,
+          "class": "②单调漂移",
+          "wall_s": 36.3
+        }
+      }
+    },
+    "m=1.5|gate@480": {
+      "grid": 480,
+      "ctrl_on": "gate",
+      "m_slope": 1.5,
+      "durations": {
+        "4h": {
+          "early_peak_mm": 112.59,
+          "peak_mean_mm": 112.59,
+          "final_mean_mm": 78.3,
+          "over_band_s": 0.0,
+          "class": "③振荡",
+          "wall_s": 13.9
+        },
+        "8h": {
+          "early_peak_mm": 112.59,
+          "peak_mean_mm": 119.62,
+          "final_mean_mm": 47.57,
+          "over_band_s": 0.0,
+          "class": "③振荡",
+          "wall_s": 28.3
+        },
+        "12h": {
+          "early_peak_mm": 112.59,
+          "peak_mean_mm": 119.62,
+          "final_mean_mm": 30.33,
+          "over_band_s": 0.0,
+          "class": "③振荡",
+          "wall_s": 41.8
+        }
+      }
+    },
+    "m=1.5|gate_avg@480": {
+      "grid": 480,
+      "ctrl_on": "gate_avg",
+      "m_slope": 1.5,
+      "durations": {
+        "4h": {
+          "early_peak_mm": 112.59,
+          "peak_mean_mm": 132.7,
+          "final_mean_mm": 132.7,
+          "over_band_s": 0.0,
+          "class": "②单调漂移",
+          "wall_s": 14.2
+        },
+        "8h": {
+          "early_peak_mm": 112.59,
+          "peak_mean_mm": 307.73,
+          "final_mean_mm": 275.06,
+          "over_band_s": 7236.0,
+          "class": "②单调漂移",
+          "wall_s": 28.6
+        },
+        "12h": {
+          "early_peak_mm": 112.59,
+          "peak_mean_mm": 307.73,
+          "final_mean_mm": 102.11,
+          "over_band_s": 8063.5,
+          "class": "③振荡",
+          "wall_s": 44.3
+        }
+      }
+    },
+    "m=0|gate_avg@480": {
+      "grid": 480,
+      "ctrl_on": "gate_avg",
+      "m_slope": 0.0,
+      "durations": {
+        "4h": {
+          "early_peak_mm": 158.69,
+          "peak_mean_mm": 158.69,
+          "final_mean_mm": 69.45,
+          "over_band_s": 424.0,
+          "class": "③振荡",
+          "wall_s": 12.1
+        },
+        "8h": {
+          "early_peak_mm": 158.69,
+          "peak_mean_mm": 238.19,
+          "final_mean_mm": 209.23,
+          "over_band_s": 5117.5,
+          "class": "②单调漂移",
+          "wall_s": 24.2
+        },
+        "12h": {
+          "early_peak_mm": 158.69,
+          "peak_mean_mm": 579.52,
+          "final_mean_mm": 503.05,
+          "over_band_s": 15025.0,
+          "class": "②单调漂移",
+          "wall_s": 38.0
+        }
+      }
+    }
+  },
+  "R03_sampling_scale": {
+    "m=0.0": {
+      "gate": {
+        "early_peak_mm": 158.69,
+        "peak_mean_mm": 158.69,
+        "final_mean_mm": 112.64,
+        "over_band_s": 424.0,
+        "judgement": "A3(越带)",
+        "wall_s": 12.1
+      },
+      "gate_avg": {
+        "early_peak_mm": 158.69,
+        "peak_mean_mm": 158.69,
+        "final_mean_mm": 69.45,
+        "over_band_s": 424.0,
+        "judgement": "A3(越带)",
+        "wall_s": 12.1
+      },
+      "mean": {
+        "early_peak_mm": 74.81,
+        "peak_mean_mm": 74.81,
+        "final_mean_mm": 3.73,
+        "over_band_s": 0.0,
+        "judgement": "A1(带内)",
+        "wall_s": 12.2
+      }
+    },
+    "m=1.5": {
+      "gate": {
+        "early_peak_mm": 112.59,
+        "peak_mean_mm": 112.59,
+        "final_mean_mm": 78.3,
+        "over_band_s": 0.0,
+        "judgement": "A1(带内)",
+        "wall_s": 14.3
+      },
+      "gate_avg": {
+        "early_peak_mm": 112.59,
+        "peak_mean_mm": 132.7,
+        "final_mean_mm": 132.7,
+        "over_band_s": 0.0,
+        "judgement": "A1(带内)",
+        "wall_s": 14.6
+      },
+      "mean": {
+        "early_peak_mm": 57.17,
+        "peak_mean_mm": 57.17,
+        "final_mean_mm": 2.76,
+        "over_band_s": 0.0,
+        "judgement": "A1(带内)",
+        "wall_s": 14.0
+      }
+    }
+  },
+  "R04_960_4h_pathology": {
+    "m=0|gate@960": {
+      "peak_mean_mm": 212.24,
+      "final_mean_mm": 212.24,
+      "peak_gate_mm": 527.29,
+      "over_band_s": 2051.5,
+      "wall_s": 49.1
+    },
+    "m=1.5|gate@960": {
+      "peak_mean_mm": 112.58,
+      "final_mean_mm": 58.19,
+      "peak_gate_mm": 275.98,
+      "over_band_s": 0.0,
+      "wall_s": 56.1
+    },
+    "m=1.5|gate_avg@960": {
+      "peak_mean_mm": 112.58,
+      "final_mean_mm": 59.74,
+      "peak_gate_mm": 191.82,
+      "over_band_s": 0.0,
+      "wall_s": 56.5
+    }
+  }
+}

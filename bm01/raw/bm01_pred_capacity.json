@@ -1,0 +1,179 @@
+{
+  "purpose": "E-PRED：检验两因框架中『因一』的解析判据是否预测 E-MC 实测",
+  "h_n_180_m": 7.0,
+  "S0": 5.3803958913129835e-06,
+  "band_m": 0.15,
+  "kg": 360.0,
+  "rate_limit_per_s": 0.0003333333333333333,
+  "cells": [
+    {
+      "L_m": 2000.0,
+      "dq": 10.0,
+      "ncell": 80,
+      "peaks_mm": {
+        "point": 3635.59,
+        "avg100": 3607.53,
+        "mean": 33.56
+      },
+      "actual": "FLIP",
+      "n_A3_arms": 2,
+      "C1_dh_normal_mm": 253.68,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 1500.0,
+      "C3_T_slew_s": 83.3,
+      "C3_predict_fail": false,
+      "C3_dq_star_m3s": 42.43,
+      "C3_margin_pct": -76.4
+    },
+    {
+      "L_m": 2000.0,
+      "dq": 45.0,
+      "ncell": 80,
+      "peaks_mm": {
+        "point": 4214.02,
+        "avg100": 4198.56,
+        "mean": 4202.76
+      },
+      "actual": "ALL_A3",
+      "n_A3_arms": 3,
+      "C1_dh_normal_mm": 1113.04,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 333.3,
+      "C3_T_slew_s": 375.0,
+      "C3_predict_fail": true,
+      "C3_dq_star_m3s": 42.43,
+      "C3_margin_pct": 6.1
+    },
+    {
+      "L_m": 6000.0,
+      "dq": 10.0,
+      "ncell": 240,
+      "peaks_mm": {
+        "point": 1006.43,
+        "avg100": 1286.56,
+        "mean": 15.23
+      },
+      "actual": "FLIP",
+      "n_A3_arms": 2,
+      "C1_dh_normal_mm": 253.68,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 4500.0,
+      "C3_T_slew_s": 83.3,
+      "C3_predict_fail": false,
+      "C3_dq_star_m3s": 73.48,
+      "C3_margin_pct": -86.4
+    },
+    {
+      "L_m": 6000.0,
+      "dq": 45.0,
+      "ncell": 240,
+      "peaks_mm": {
+        "point": 470.78,
+        "avg100": 658.76,
+        "mean": 75.05
+      },
+      "actual": "FLIP",
+      "n_A3_arms": 2,
+      "C1_dh_normal_mm": 1113.04,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 1000.0,
+      "C3_T_slew_s": 375.0,
+      "C3_predict_fail": false,
+      "C3_dq_star_m3s": 73.48,
+      "C3_margin_pct": -38.8
+    },
+    {
+      "L_m": 12000.0,
+      "dq": 10.0,
+      "ncell": 480,
+      "peaks_mm": {
+        "point": 42.09,
+        "avg100": 54.19,
+        "mean": 12.36
+      },
+      "actual": "ALL_A1",
+      "n_A3_arms": 0,
+      "C1_dh_normal_mm": 253.68,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 9000.0,
+      "C3_T_slew_s": 83.3,
+      "C3_predict_fail": false,
+      "C3_dq_star_m3s": 103.92,
+      "C3_margin_pct": -90.4
+    },
+    {
+      "L_m": 12000.0,
+      "dq": 45.0,
+      "ncell": 480,
+      "peaks_mm": {
+        "point": 125.08,
+        "avg100": 125.08,
+        "mean": 48.71
+      },
+      "actual": "ALL_A1",
+      "n_A3_arms": 0,
+      "C1_dh_normal_mm": 1113.04,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 2000.0,
+      "C3_T_slew_s": 375.0,
+      "C3_predict_fail": false,
+      "C3_dq_star_m3s": 103.92,
+      "C3_margin_pct": -56.7
+    },
+    {
+      "L_m": 18000.0,
+      "dq": 10.0,
+      "ncell": 720,
+      "peaks_mm": {
+        "point": 24.62,
+        "avg100": 24.4,
+        "mean": 12.23
+      },
+      "actual": "ALL_A1",
+      "n_A3_arms": 0,
+      "C1_dh_normal_mm": 253.68,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 13500.0,
+      "C3_T_slew_s": 83.3,
+      "C3_predict_fail": false,
+      "C3_dq_star_m3s": 127.28,
+      "C3_margin_pct": -92.1
+    },
+    {
+      "L_m": 18000.0,
+      "dq": 45.0,
+      "ncell": 720,
+      "peaks_mm": {
+        "point": 113.71,
+        "avg100": 113.71,
+        "mean": 41.83
+      },
+      "actual": "ALL_A1",
+      "n_A3_arms": 0,
+      "C1_dh_normal_mm": 1113.04,
+      "C1_predict_fail": true,
+      "C3_T_band_s": 3000.0,
+      "C3_T_slew_s": 375.0,
+      "C3_predict_fail": false,
+      "C3_dq_star_m3s": 127.28,
+      "C3_margin_pct": -64.6
+    }
+  ],
+  "criteria": {
+    "C1_uniform_flow": {
+      "hit": 1,
+      "false_alarm": 7,
+      "miss": 0,
+      "exact": false
+    },
+    "C3_actuator": {
+      "hit": 1,
+      "false_alarm": 0,
+      "miss": 0,
+      "exact": true
+    }
+  },
+  "n_cells": 8,
+  "n_all_A3": 1,
+  "verdict": "E-PRED 结论：**因一不是『输水容量』，而是『执行器能力（可控性）限制』**。C1（均匀流水深越带）把全部 4 个 ΔQ=45 格都判『容量失败』，但实测只有 L=2000 那一格全 A3 → C1 被数据否证（虚警 7）。C3（T_band < T_slew，即 ΔQ² > k_g·r·A_surf·band）在 8 格上**全中**（命中 1、虚警 0、漏判 0），且阈值 ΔQ* = √(k_g·r·A_surf·band) 是**闭式解析**、与控制器增益和取样位置都无关 —— 正符合『因一』要求的性质。⇒ 两因框架须改述：因一 = 执行器能力限制（池子相对扰动太小 / 执行器太慢），因二 = 反馈取样尺度。"
+}

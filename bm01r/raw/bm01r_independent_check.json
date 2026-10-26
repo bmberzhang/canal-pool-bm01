@@ -1,0 +1,75 @@
+{
+  "check": "independent_backwater_vs_fv_sve",
+  "method": "standard-step M2 integration (energy equation) vs case FV-Rusanov SVE solver",
+  "inputs": {
+    "b_m": 20.75,
+    "m_slope": 2.25,
+    "h_target_m": 4.5,
+    "S0": 4.4346790794794846e-05,
+    "n": 0.015,
+    "q_design_m3s": 135.0,
+    "q_stepped_m3s": 180.0,
+    "length_m": 25567.0,
+    "nx": 4000
+  },
+  "manning": {
+    "h_normal_design_m": 4.5,
+    "h_normal_stepped_m": 5.242,
+    "rise_required_mm": 742.0,
+    "ratio_to_band": 4.95
+  },
+  "backwater": {
+    "gate_at_target_mean_mm": 295.7,
+    "gate_plus_50mm_mean_mm": 322.1,
+    "upstream_depth_m": 4.9996
+  },
+  "conflict": {
+    "gate_dev_needed_for_band_mm": -297.6
+  },
+  "cross_checks": [
+    {
+      "name": "B2 池均峰值 (256 格)",
+      "case_value": 338.8186,
+      "independent_value": 322.1315,
+      "rel_diff": 0.051802,
+      "tolerance": 0.1,
+      "pass": true
+    },
+    {
+      "name": "B2 稳态池均 (256 格)",
+      "case_value": 338.321,
+      "independent_value": 322.1315,
+      "rel_diff": 0.050257,
+      "tolerance": 0.1,
+      "pass": true
+    },
+    {
+      "name": "B2 S0 与独立反解一致",
+      "case_value": 0.0,
+      "independent_value": 0.0,
+      "rel_diff": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "10 天稳态池均 (128 格)",
+      "case_value": 333.3998,
+      "independent_value": 322.1315,
+      "rel_diff": 0.03498,
+      "tolerance": 0.1,
+      "pass": true
+    },
+    {
+      "name": "案例记录的输水能力抬升 mm",
+      "case_value": 742.0,
+      "independent_value": 742.0482,
+      "rel_diff": 6.5e-05,
+      "tolerance": 1.0,
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "evidence_grade": "literature-parameterized",
+  "sealed": false,
+  "note": "只读校验，不改动案例任何结果；容差 10%（网格 128/256 格与解析水面线之间的离散差）。"
+}

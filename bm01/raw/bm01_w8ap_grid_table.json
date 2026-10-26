@@ -1,0 +1,130 @@
+{
+  "purpose": "W8a' 主卖点网格对照汇总（单点 vs 池均，跨 3 算例）",
+  "preregistered": {
+    "P1_翻转算例数_ge": 2,
+    "P2_离散度比_ge": 2.0
+  },
+  "rows": [
+    {
+      "case": "A_短池_原周期",
+      "L_m": 2000.0,
+      "dq": 45.0,
+      "period_s": 300.0,
+      "arm": "mean",
+      "dx50": 4263.21,
+      "dx25": 4202.76,
+      "dx125": 4192.34,
+      "spread_pct": 1.69,
+      "codes": [
+        "A3",
+        "A3",
+        "A3"
+      ],
+      "codes_consistent": true
+    },
+    {
+      "case": "A_短池_原周期",
+      "L_m": 2000.0,
+      "dq": 45.0,
+      "period_s": 300.0,
+      "arm": "point",
+      "dx50": 4206.92,
+      "dx25": 4214.02,
+      "dx125": 4116.71,
+      "spread_pct": 2.36,
+      "codes": [
+        "A3",
+        "A3",
+        "A3"
+      ],
+      "codes_consistent": true
+    },
+    {
+      "case": "B_短池_快周期",
+      "L_m": 2000.0,
+      "dq": 45.0,
+      "period_s": 60.0,
+      "arm": "mean",
+      "dx50": 102.5,
+      "dx25": 102.27,
+      "dx125": 108.2,
+      "spread_pct": 5.8,
+      "codes": [
+        "A1",
+        "A1",
+        "A1"
+      ],
+      "codes_consistent": true
+    },
+    {
+      "case": "B_短池_快周期",
+      "L_m": 2000.0,
+      "dq": 45.0,
+      "period_s": 60.0,
+      "arm": "point",
+      "dx50": 164.8,
+      "dx25": 174.97,
+      "dx125": 184.09,
+      "spread_pct": 11.71,
+      "codes": [
+        "A3",
+        "A3",
+        "A3"
+      ],
+      "codes_consistent": true
+    },
+    {
+      "case": "C_主案例",
+      "L_m": 6000.0,
+      "dq": 45.0,
+      "period_s": 300.0,
+      "arm": "mean",
+      "dx50": 74.69,
+      "dx25": 75.05,
+      "dx125": 74.81,
+      "spread_pct": 0.48,
+      "codes": [
+        "A1",
+        "A1",
+        "A1"
+      ],
+      "codes_consistent": true
+    },
+    {
+      "case": "C_主案例",
+      "L_m": 6000.0,
+      "dq": 45.0,
+      "period_s": 300.0,
+      "arm": "point",
+      "dx50": 813.76,
+      "dx25": 470.78,
+      "dx125": 1057.61,
+      "spread_pct": 124.65,
+      "codes": [
+        "A3",
+        "A3",
+        "A3"
+      ],
+      "codes_consistent": true
+    }
+  ],
+  "flip_cases": [
+    {
+      "L_m": 2000.0,
+      "ctrl_period_s": 60.0
+    },
+    {
+      "L_m": 6000.0,
+      "ctrl_period_s": 300.0
+    }
+  ],
+  "flip_case_count": 2,
+  "spread_ratio_point_over_mean": {
+    "L2000_60s": 2.02,
+    "L6000_300s": 259.69
+  },
+  "P1_pass": true,
+  "P2_pass": true,
+  "W8ap_pass": true,
+  "verdict": "W8a' **通过**：翻转算例 2 个（≥2），翻转算例的『单点/池均』离散度比 {'L2000_60s': 2.02, 'L6000_300s': 259.69}（均 ≥2） ⇒ 主卖点由 1 个算例扩至 2 个独立算例，且『池均网格无关 vs 单点网格病态』复现。"
+}

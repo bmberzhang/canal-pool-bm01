@@ -1,0 +1,131 @@
+{
+  "appendix": "long-run convergence check",
+  "days": 10.0,
+  "ncell": 128,
+  "dt_s": 5,
+  "S0": 4.4346790794794846e-05,
+  "manning": {
+    "q_design_m3s": 135.0,
+    "h_normal_design_m": 4.5,
+    "q_stepped_m3s": 180.0,
+    "h_normal_stepped_m": 5.242,
+    "rise_required_mm": 742.0,
+    "band_mm": 150.0,
+    "ratio_to_band": 4.95
+  },
+  "metrics": {
+    "peak_mean_mm": 333.7561774387261,
+    "peak_gate_mm": 94.3639663689293,
+    "final_mean_mm": 333.39978182510777,
+    "over_band_s": 859570,
+    "mass_balance_rel_err": 0.0027133635532481863
+  },
+  "samples": [
+    {
+      "t_h": 0.0,
+      "dev_mean_mm": 0.0,
+      "dev_gate_mm": 0.0
+    },
+    {
+      "t_h": 12.0,
+      "dev_mean_mm": 330.7,
+      "dev_gate_mm": 44.8
+    },
+    {
+      "t_h": 24.0,
+      "dev_mean_mm": 329.7,
+      "dev_gate_mm": 55.1
+    },
+    {
+      "t_h": 36.0,
+      "dev_mean_mm": 330.3,
+      "dev_gate_mm": 51.0
+    },
+    {
+      "t_h": 48.0,
+      "dev_mean_mm": 330.4,
+      "dev_gate_mm": 40.6
+    },
+    {
+      "t_h": 60.0,
+      "dev_mean_mm": 330.4,
+      "dev_gate_mm": 43.7
+    },
+    {
+      "t_h": 72.0,
+      "dev_mean_mm": 328.9,
+      "dev_gate_mm": 40.3
+    },
+    {
+      "t_h": 84.0,
+      "dev_mean_mm": 332.1,
+      "dev_gate_mm": 57.4
+    },
+    {
+      "t_h": 96.0,
+      "dev_mean_mm": 329.0,
+      "dev_gate_mm": 46.4
+    },
+    {
+      "t_h": 108.0,
+      "dev_mean_mm": 332.1,
+      "dev_gate_mm": 60.3
+    },
+    {
+      "t_h": 120.0,
+      "dev_mean_mm": 332.1,
+      "dev_gate_mm": 57.7
+    },
+    {
+      "t_h": 132.0,
+      "dev_mean_mm": 328.9,
+      "dev_gate_mm": 36.5
+    },
+    {
+      "t_h": 144.0,
+      "dev_mean_mm": 332.5,
+      "dev_gate_mm": 54.8
+    },
+    {
+      "t_h": 156.0,
+      "dev_mean_mm": 331.0,
+      "dev_gate_mm": 66.3
+    },
+    {
+      "t_h": 168.0,
+      "dev_mean_mm": 329.1,
+      "dev_gate_mm": 45.0
+    },
+    {
+      "t_h": 180.0,
+      "dev_mean_mm": 330.0,
+      "dev_gate_mm": 50.1
+    },
+    {
+      "t_h": 192.0,
+      "dev_mean_mm": 329.9,
+      "dev_gate_mm": 35.6
+    },
+    {
+      "t_h": 204.0,
+      "dev_mean_mm": 332.9,
+      "dev_gate_mm": 58.0
+    },
+    {
+      "t_h": 216.0,
+      "dev_mean_mm": 331.7,
+      "dev_gate_mm": 46.9
+    },
+    {
+      "t_h": 228.0,
+      "dev_mean_mm": 329.8,
+      "dev_gate_mm": 34.2
+    },
+    {
+      "t_h": 240.0,
+      "dev_mean_mm": 331.4,
+      "dev_gate_mm": 43.4
+    }
+  ],
+  "note": "本脚本只做收敛性检验，不产生判定码。判定见 bm01r_lit.py。参数为公开文献值（literature-parameterized），sealed: false。"
+}

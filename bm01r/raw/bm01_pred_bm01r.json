@@ -1,0 +1,55 @@
+{
+  "purpose": "E-PRED-R：复核 BM-01R 的失败归属（容量 vs 取样）",
+  "geometry": {
+    "b_m": 20.75,
+    "m_slope": 2.25,
+    "h_target_m": 4.5,
+    "L_m": 25567.0,
+    "q0": 135.0,
+    "dq": 45.0,
+    "n": 0.015,
+    "kg": 360.0,
+    "rate_limit_per_s": 0.0003333333333333333
+  },
+  "manning": {
+    "h_normal_q0_m": 4.5,
+    "h_normal_q0dq_m": 5.242,
+    "dh_normal_mm": 742.0,
+    "band_mm": 150.0,
+    "ratio_to_band": 4.95
+  },
+  "C1_uniform_flow": {
+    "predict_capacity_fail": true,
+    "actual_0d_fullpool_code": "A1",
+    "verdict": "C1 预测'容量失败'，但 0D（≡全池平均）判 A1（45.31 mm）⇒ C1 在 BM-01R 上错误",
+    "actual_0d_peak_mm": 45.31
+  },
+  "C3_actuator": {
+    "A_surf_m2": 1048247.0,
+    "T_band_s": 3494.2,
+    "T_slew_s": 375.0,
+    "dq_star_m3s": 137.4,
+    "margin_x": 3.05,
+    "predict_capacity_fail": false
+  },
+  "evidence_from_literature_json": {
+    "1d_runs_ctrl_on": {
+      "B0": "gate",
+      "B1": "gate",
+      "B2": "gate",
+      "B3": "gate",
+      "B4": "gate"
+    },
+    "0d_lumped_runs": {
+      "A0": {
+        "peak_mm": 72.74,
+        "code": "A1"
+      },
+      "A1": {
+        "peak_mm": 45.31,
+        "code": "A1"
+      }
+    }
+  },
+  "verdict": "BM-01R 的失败**不是容量失败，而是取样翻转**：全部 5 个 1D 算例的反馈通道都是单点 `gate`（闸前单点），而 0D 集总（≡ 1D 全池空间平均，F1）在同一真实几何下判 A1（45.31 mm）。⇒ 同对象、同控制器、同扰动，仅换取样位置，判定码 A1↔A3 翻转 —— **F2 受控反例在一条 25.6 km 真实渠段上独立复现**。连带修正：round-4 的『+742 mm 是输水容量上限』应删除（C1 已被否证，此处再添一例错误）；『稳态壅高』恰是『闸前单点被守住、池均自由漂移』的典型取样特征。"
+}

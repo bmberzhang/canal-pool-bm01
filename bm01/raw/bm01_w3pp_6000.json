@@ -1,0 +1,317 @@
+{
+  "purpose": "W3''：把 T_ctrl 机制从单案例升级为可证伪通则（失败分支已预先写死）",
+  "config": {
+    "L_m": 6000.0,
+    "ncell": 240,
+    "dx_m": 25.0,
+    "band_mm": 150.0,
+    "dqs_scan": [
+      55.0,
+      60.0,
+      65.0,
+      70.0,
+      75.0,
+      80.0
+    ],
+    "periods_s": [
+      60.0,
+      150.0,
+      300.0
+    ],
+    "W9_precondition_passed": true
+  },
+  "part1_onset_scan": [
+    {
+      "dq": 55.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 664.35,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 617.91,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 97.94,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 60.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 382.13,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 475.55,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 110.6,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 65.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 336.19,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 504.08,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 123.86,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 70.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 272.5,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 339.68,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 137.74,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 75.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 340.93,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 306.94,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 152.24,
+          "judgement": "A3"
+        }
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true
+    },
+    {
+      "dq": 80.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 325.04,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 312.18,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 167.34,
+          "judgement": "A3"
+        }
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true
+    }
+  ],
+  "part2_period_compare": [
+    {
+      "dq": 72.5,
+      "ctrl_period_s": 60.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 217.54,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 216.55,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 89.71,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 72.5,
+      "ctrl_period_s": 150.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 242.9,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 241.61,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 110.78,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 72.5,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 276.08,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 276.08,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 144.91,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    }
+  ],
+  "part3_boundary_perturb": [
+    {
+      "dq": 68.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 338.15,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 354.93,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 132.12,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 69.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 259.7,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 259.7,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 134.92,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 70.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 272.5,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 339.68,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 137.74,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 75.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 340.93,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 306.94,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 152.24,
+          "judgement": "A3"
+        }
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true
+    },
+    {
+      "dq": 76.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 292.76,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 292.76,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 155.21,
+          "judgement": "A3"
+        }
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true
+    }
+  ],
+  "wall_total_s": 334.4,
+  "part1_onset_bracket_m3s": [
+    70.0,
+    75.0
+  ],
+  "part1_has_onset": true,
+  "grade": "未通过（tier-3）",
+  "verdict": "W3'' **未通过**：既未在 L=6000 找到起爆点，周期对照也未显示救回效果 ⇒ 判据降格为经验性设计提示，不得写入摘要；且须复核 W0-c 的可复现性。"
+}

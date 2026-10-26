@@ -1,0 +1,70 @@
+{
+  "purpose": "W2：BM-01R 真实梯形几何上的 0D/1D 对照，排除水面线形状差异",
+  "config": {
+    "b_m": 20.75,
+    "m_slope": 2.25,
+    "h_target_m": 4.5,
+    "L_m": 25567.0,
+    "q0": 135.0,
+    "dq": 45.0,
+    "n": 0.015,
+    "kg": 270.0,
+    "rate_limit_per_s": 0.0003333333333333333,
+    "ncell": 256,
+    "dx_m": 99.87109375,
+    "duration_h": 24.0,
+    "S0": 4.4346790794794846e-05,
+    "band_mm": 150.0
+  },
+  "zero_d_reference": {
+    "peak_mm": 45.31,
+    "code": "A1",
+    "source": "raw/bm01r_literature.json runs.A1"
+  },
+  "C3_with_real_kg": {
+    "A_surf_m2": 1048247.0,
+    "T_band_s": 3494.2,
+    "T_slew_s": 500.0,
+    "dq_star_m3s": 119.0,
+    "dq_over_dqstar": 0.3783,
+    "predict_capacity_fail": false
+  },
+  "arms": {
+    "point": {
+      "peak_mean_mm": 338.82,
+      "final_mean_mm": 338.32,
+      "peak_gate_mm": 118.51,
+      "early_peak_mm": 229.15,
+      "judgement": "A3",
+      "mass_err": 0.000339,
+      "wall_s": 5.7
+    },
+    "avg100": {
+      "peak_mean_mm": 338.82,
+      "final_mean_mm": 338.32,
+      "peak_gate_mm": 118.51,
+      "early_peak_mm": 229.15,
+      "judgement": "A3",
+      "mass_err": 0.000339,
+      "wall_s": 11.3
+    },
+    "mean": {
+      "peak_mean_mm": 49.74,
+      "final_mean_mm": 5.58,
+      "peak_gate_mm": 1028.24,
+      "early_peak_mm": 49.74,
+      "judgement": "A1",
+      "mass_err": 0.0156,
+      "wall_s": 16.9
+    }
+  },
+  "zero_d_vs_1d_mean": {
+    "zero_d_mm": 45.31,
+    "one_d_mean_mm": 49.74,
+    "abs_diff_mm": 4.43,
+    "rel_diff_pct": 9.78,
+    "codes_agree": true
+  },
+  "wall_total_s": 16.9,
+  "verdict": "0D ≡ 1D 全池平均在 BM-01R 的**真实梯形几何**上成立：0D 集总 A1（45.31 mm）vs 1D 全池平均 A1（49.74 mm），相差 9.78%（4.43 mm）→ '0D 漏掉水面线形状'这一刀被排除。同时 1D 闸前单点判 A3（338.82 mm）而全池平均判 A1 → **BM-01R 确为取样翻转**，且是 F2 受控反例在真实渠段上的第二次独立命中。C3（用真实 kg=270）给出 ΔQ/ΔQ* = 0.378 → 非容量失败，与之一致。"
+}

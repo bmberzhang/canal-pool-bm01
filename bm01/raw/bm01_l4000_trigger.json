@@ -1,0 +1,58 @@
+{
+ "L6000": {
+  "pool_len_m": 6000.0,
+  "ncell": 240,
+  "dx_m": 25.0,
+  "L_over_c_s": 681.8,
+  "ratio": 0.44,
+  "dq": 45.0,
+  "point": {
+   "peak_mean_mm": 470.78,
+   "verdict": "A3",
+   "mass_err": 2.58e-14,
+   "wall_s": 8.5
+  },
+  "avg100": {
+   "peak_mean_mm": 658.76,
+   "verdict": "A3",
+   "mass_err": 1.77e-13,
+   "wall_s": 8.4
+  },
+  "mean": {
+   "peak_mean_mm": 75.05,
+   "verdict": "A1",
+   "mass_err": 7.41e-13,
+   "wall_s": 8.8
+  },
+  "flip_point_vs_mean": true,
+  "flip_avg100_vs_mean": true
+ },
+ "L4000": {
+  "pool_len_m": 4000.0,
+  "ncell": 160,
+  "dx_m": 25.0,
+  "L_over_c_s": 454.5,
+  "ratio": 0.66,
+  "dq": 45.0,
+  "point": {
+   "peak_mean_mm": 2159.92,
+   "verdict": "A3",
+   "mass_err": 1.27e-14,
+   "wall_s": 5.8
+  },
+  "avg100": {
+   "peak_mean_mm": 2287.5,
+   "verdict": "A3",
+   "mass_err": 5.77e-15,
+   "wall_s": 6.1
+  },
+  "mean": {
+   "peak_mean_mm": 108.34,
+   "verdict": "A1",
+   "mass_err": 1.22e-12,
+   "wall_s": 5.9
+  },
+  "flip_point_vs_mean": true,
+  "flip_avg100_vs_mean": true
+ }
+}

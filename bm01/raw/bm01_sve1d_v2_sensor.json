@@ -1,0 +1,202 @@
+{
+  "case_id": "BM-01",
+  "purpose": "sensor_channel_grid_invariance",
+  "evidence_grade": "synthetic-1d-sve",
+  "note": "诊断项：只回答「传感器通道是否网格无关」，不改变 BM-01 判定码与证据等级。",
+  "root_cause": "控制器测点/动作点都在最末单元，回路增益 ∝ 1/dx；300 s 采样周期下，网格加密越过稳定边界 → 增幅极限环。",
+  "fix": "测点改为闸前固定物理长度 100 m 内平均（gate_avg），响应速率分母为 B·L_s（dx 无关）⇒ 回路增益与网格无关。",
+  "experiment": {
+    "grids": [
+      240,
+      480,
+      960
+    ],
+    "mslopes": [
+      0.0,
+      1.5
+    ],
+    "sensor_len_m": 100.0,
+    "step_dq": 45.0
+  },
+  "results": {
+    "m=0|gate": [
+      {
+        "grid": 240,
+        "dt_s": 1.125,
+        "peak_mean_mm": 156.60790387240198,
+        "early_peak_mm": 156.60790387240198,
+        "final_mean_mm": 63.913737290518746,
+        "peak_gate_mm": 262.89466035476215,
+        "over_band_s": 370.125,
+        "gate_min": 0.5,
+        "gate_max": 0.8155800000000047,
+        "mass_balance_rel_err": 4.856735720444553e-14
+      },
+      {
+        "grid": 480,
+        "dt_s": 0.5,
+        "peak_mean_mm": 158.69431351482353,
+        "early_peak_mm": 158.69431351482353,
+        "final_mean_mm": 112.6357656350514,
+        "peak_gate_mm": 373.94940554353974,
+        "over_band_s": 424.0,
+        "gate_min": 0.4569666666666776,
+        "gate_max": 0.8246400000000011,
+        "mass_balance_rel_err": 3.431183164094189e-14
+      },
+      {
+        "grid": 960,
+        "dt_s": 0.25,
+        "peak_mean_mm": 212.23941162737515,
+        "early_peak_mm": 158.67807182386784,
+        "final_mean_mm": 212.23941162737515,
+        "peak_gate_mm": 527.292664703646,
+        "over_band_s": 2051.5,
+        "gate_min": 0.3981633333333575,
+        "gate_max": 0.8979966666666358,
+        "mass_balance_rel_err": 1.4914012985745917e-14
+      }
+    ],
+    "m=0|gate_avg": [
+      {
+        "grid": 240,
+        "dt_s": 1.125,
+        "peak_mean_mm": 161.9529952023946,
+        "early_peak_mm": 156.60790387240198,
+        "final_mean_mm": 161.9529952023946,
+        "peak_gate_mm": 451.136995644724,
+        "over_band_s": 896.625,
+        "gate_min": 0.4206249999999958,
+        "gate_max": 0.9137500000000145,
+        "mass_balance_rel_err": 1.9638455988318074e-14
+      },
+      {
+        "grid": 480,
+        "dt_s": 0.5,
+        "peak_mean_mm": 158.69431351482353,
+        "early_peak_mm": 158.69431351482353,
+        "final_mean_mm": 69.4541330680778,
+        "peak_gate_mm": 339.77105409582896,
+        "over_band_s": 424.0,
+        "gate_min": 0.42832666666668895,
+        "gate_max": 0.8457600000000001,
+        "mass_balance_rel_err": 3.232024177163387e-14
+      },
+      {
+        "grid": 960,
+        "dt_s": 0.25,
+        "peak_mean_mm": 158.67807182386784,
+        "early_peak_mm": 158.67807182386784,
+        "final_mean_mm": 155.38074399051015,
+        "peak_gate_mm": 304.24269853245625,
+        "over_band_s": 907.75,
+        "gate_min": 0.43160333333334755,
+        "gate_max": 0.8909566666666476,
+        "mass_balance_rel_err": 1.64189013373001e-14
+      }
+    ],
+    "m=1.5|gate": [
+      {
+        "grid": 240,
+        "dt_s": 1.125,
+        "peak_mean_mm": 175.86011243717792,
+        "early_peak_mm": 112.85033813297218,
+        "final_mean_mm": 175.86011243717792,
+        "peak_gate_mm": 316.44046526208314,
+        "over_band_s": 844.875,
+        "gate_min": 0.32602499999998535,
+        "gate_max": 0.9196500000000079,
+        "mass_balance_rel_err": 0.0002594330043011935
+      },
+      {
+        "grid": 480,
+        "dt_s": 0.5,
+        "peak_mean_mm": 112.59312258311115,
+        "early_peak_mm": 112.59312258311115,
+        "final_mean_mm": 78.29934648936731,
+        "peak_gate_mm": 206.96565895202036,
+        "over_band_s": 0.0,
+        "gate_min": 0.41296666666667037,
+        "gate_max": 0.8307133333333152,
+        "mass_balance_rel_err": 0.0008887786749981896
+      },
+      {
+        "grid": 960,
+        "dt_s": 0.25,
+        "peak_mean_mm": 112.580055624929,
+        "early_peak_mm": 112.580055624929,
+        "final_mean_mm": 58.18959605252694,
+        "peak_gate_mm": 275.9780726643699,
+        "over_band_s": 0.0,
+        "gate_min": 0.4514433333333464,
+        "gate_max": 0.8131200000000003,
+        "mass_balance_rel_err": 0.00029212996356285615
+      }
+    ],
+    "m=1.5|gate_avg": [
+      {
+        "grid": 240,
+        "dt_s": 1.125,
+        "peak_mean_mm": 117.25068355929037,
+        "early_peak_mm": 112.85033813297218,
+        "final_mean_mm": 87.18678956243942,
+        "peak_gate_mm": 231.09715651104602,
+        "over_band_s": 0.0,
+        "gate_min": 0.38655999999999,
+        "gate_max": 0.8279650000000092,
+        "mass_balance_rel_err": 0.00036924133261775254
+      },
+      {
+        "grid": 480,
+        "dt_s": 0.5,
+        "peak_mean_mm": 132.6962096322566,
+        "early_peak_mm": 112.59312258311115,
+        "final_mean_mm": 132.6962096322566,
+        "peak_gate_mm": 316.9568340814237,
+        "over_band_s": 0.0,
+        "gate_min": 0.4304066666666784,
+        "gate_max": 0.8404733333333131,
+        "mass_balance_rel_err": 0.00015256418458292354
+      },
+      {
+        "grid": 960,
+        "dt_s": 0.25,
+        "peak_mean_mm": 112.580055624929,
+        "early_peak_mm": 112.580055624929,
+        "final_mean_mm": 59.73586288758703,
+        "peak_gate_mm": 191.81870658181845,
+        "over_band_s": 0.0,
+        "gate_min": 0.4456833333333562,
+        "gate_max": 0.8024000000000012,
+        "mass_balance_rel_err": 0.0004228324067585945
+      }
+    ]
+  },
+  "verdict": [
+    {
+      "channel": "m=0|gate",
+      "peak_drift_pct": 26.21167639337617,
+      "early_peak_drift_pct": 1.3147349745626944,
+      "converged_peak_ok": false
+    },
+    {
+      "channel": "m=0|gate_avg",
+      "peak_drift_pct": 2.022144372466863,
+      "early_peak_drift_pct": 1.3147349745626944,
+      "converged_peak_ok": true
+    },
+    {
+      "channel": "m=1.5|gate",
+      "peak_drift_pct": 35.98317772874977,
+      "early_peak_drift_pct": 0.23950527088780665,
+      "converged_peak_ok": false
+    },
+    {
+      "channel": "m=1.5|gate_avg",
+      "peak_drift_pct": 15.159554340757625,
+      "early_peak_drift_pct": 0.23950527088780665,
+      "converged_peak_ok": false
+    }
+  ],
+  "runtime_s": 299.33
+}

@@ -1,0 +1,302 @@
+{
+  "purpose": "W0 C3 余量谱：密扫边界，检验 C3 是判据还是仅是诊断不等式",
+  "config": {
+    "L_m": 2000.0,
+    "ncell": 80,
+    "dx_m": 25.0,
+    "duration_h": 12.0,
+    "band_mm": 150.0,
+    "dqs": [
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40
+    ],
+    "A_surf_m2": 100000.0,
+    "dq_star_m3s": 42.426
+  },
+  "rows": [
+    {
+      "dq": 8,
+      "peaks_mm": {
+        "point": 3950.39,
+        "avg100": 3930.77,
+        "mean": 26.24
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false,
+      "T_band_s": 1875.0,
+      "T_slew_s": 66.7,
+      "T_band_over_T_slew": 28.125,
+      "dq_over_dqstar": 0.1886
+    },
+    {
+      "dq": 10,
+      "peaks_mm": {
+        "point": 3635.59,
+        "avg100": 3607.53,
+        "mean": 33.56
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false,
+      "T_band_s": 1500.0,
+      "T_slew_s": 83.3,
+      "T_band_over_T_slew": 18.0,
+      "dq_over_dqstar": 0.2357
+    },
+    {
+      "dq": 12,
+      "peaks_mm": {
+        "point": 4091.34,
+        "avg100": 3703.13,
+        "mean": 41.18
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false,
+      "T_band_s": 1250.0,
+      "T_slew_s": 100.0,
+      "T_band_over_T_slew": 12.5,
+      "dq_over_dqstar": 0.2828
+    },
+    {
+      "dq": 14,
+      "peaks_mm": {
+        "point": 3849.12,
+        "avg100": 3444.24,
+        "mean": 49.11
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false,
+      "T_band_s": 1071.4,
+      "T_slew_s": 116.7,
+      "T_band_over_T_slew": 9.1837,
+      "dq_over_dqstar": 0.33
+    },
+    {
+      "dq": 16,
+      "peaks_mm": {
+        "point": 4264.0,
+        "avg100": 4025.12,
+        "mean": 4288.59
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 937.5,
+      "T_slew_s": 133.3,
+      "T_band_over_T_slew": 7.0312,
+      "dq_over_dqstar": 0.3771
+    },
+    {
+      "dq": 18,
+      "peaks_mm": {
+        "point": 3935.23,
+        "avg100": 4010.9,
+        "mean": 4338.79
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 833.3,
+      "T_slew_s": 150.0,
+      "T_band_over_T_slew": 5.5556,
+      "dq_over_dqstar": 0.4243
+    },
+    {
+      "dq": 20,
+      "peaks_mm": {
+        "point": 3962.81,
+        "avg100": 4083.85,
+        "mean": 4450.17
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 750.0,
+      "T_slew_s": 166.7,
+      "T_band_over_T_slew": 4.5,
+      "dq_over_dqstar": 0.4714
+    },
+    {
+      "dq": 22,
+      "peaks_mm": {
+        "point": 4163.58,
+        "avg100": 3729.87,
+        "mean": 4105.91
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 681.8,
+      "T_slew_s": 183.3,
+      "T_band_over_T_slew": 3.719,
+      "dq_over_dqstar": 0.5185
+    },
+    {
+      "dq": 24,
+      "peaks_mm": {
+        "point": 3782.04,
+        "avg100": 4264.64,
+        "mean": 4236.27
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 625.0,
+      "T_slew_s": 200.0,
+      "T_band_over_T_slew": 3.125,
+      "dq_over_dqstar": 0.5657
+    },
+    {
+      "dq": 26,
+      "peaks_mm": {
+        "point": 4287.55,
+        "avg100": 3890.62,
+        "mean": 4275.93
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 576.9,
+      "T_slew_s": 216.7,
+      "T_band_over_T_slew": 2.6627,
+      "dq_over_dqstar": 0.6128
+    },
+    {
+      "dq": 28,
+      "peaks_mm": {
+        "point": 3951.68,
+        "avg100": 3895.43,
+        "mean": 3815.75
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 535.7,
+      "T_slew_s": 233.3,
+      "T_band_over_T_slew": 2.2959,
+      "dq_over_dqstar": 0.66
+    },
+    {
+      "dq": 30,
+      "peaks_mm": {
+        "point": 3617.75,
+        "avg100": 3691.95,
+        "mean": 3933.21
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 500.0,
+      "T_slew_s": 250.0,
+      "T_band_over_T_slew": 2.0,
+      "dq_over_dqstar": 0.7071
+    },
+    {
+      "dq": 32,
+      "peaks_mm": {
+        "point": 4051.74,
+        "avg100": 4169.6,
+        "mean": 4142.39
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 468.8,
+      "T_slew_s": 266.7,
+      "T_band_over_T_slew": 1.7578,
+      "dq_over_dqstar": 0.7542
+    },
+    {
+      "dq": 34,
+      "peaks_mm": {
+        "point": 3716.18,
+        "avg100": 4204.39,
+        "mean": 4201.97
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 441.2,
+      "T_slew_s": 283.3,
+      "T_band_over_T_slew": 1.5571,
+      "dq_over_dqstar": 0.8014
+    },
+    {
+      "dq": 36,
+      "peaks_mm": {
+        "point": 3858.88,
+        "avg100": 3791.94,
+        "mean": 4354.32
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 416.7,
+      "T_slew_s": 300.0,
+      "T_band_over_T_slew": 1.3889,
+      "dq_over_dqstar": 0.8485
+    },
+    {
+      "dq": 38,
+      "peaks_mm": {
+        "point": 3977.99,
+        "avg100": 3608.35,
+        "mean": 3933.57
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 394.7,
+      "T_slew_s": 316.7,
+      "T_band_over_T_slew": 1.2465,
+      "dq_over_dqstar": 0.8957
+    },
+    {
+      "dq": 40,
+      "peaks_mm": {
+        "point": 3562.79,
+        "avg100": 3530.53,
+        "mean": 4439.53
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true,
+      "T_band_s": 375.0,
+      "T_slew_s": 333.3,
+      "T_band_over_T_slew": 1.125,
+      "dq_over_dqstar": 0.9428
+    }
+  ],
+  "all_A3_dqs": [
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40
+  ],
+  "not_all_A3_dqs": [
+    8,
+    10,
+    12,
+    14
+  ],
+  "onset_dq_all_A3": 16,
+  "last_dq_not_all_A3": 14,
+  "separation_in_dq_over_dqstar": {
+    "pos_min": 0.3771,
+    "neg_max": 0.33,
+    "gap_abs": 0.0471,
+    "gap_rel_pct": 14.27
+  },
+  "wall_total_s": 134.7,
+  "verdict": "实测转变点落在 ΔQ ∈ (14, 16]，即 15.0 m³/s（解析 ΔQ*=42.43，偏差 62.3%）。正类 ΔQ/ΔQ* 最小值 0.377、最近负类 0.330，相对间距 14.3% → 间距 ≥10%，C3 可作为**判定阈值**写入正文。"
+}

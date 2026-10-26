@@ -1,0 +1,50 @@
+{
+ "dx50.0": {
+  "dx_m": 50.0,
+  "ncell": 80,
+  "point": {
+   "peak_mm": 2227.46,
+   "verdict": "A3"
+  },
+  "avg100": {
+   "peak_mm": 1992.62,
+   "verdict": "A3"
+  },
+  "mean": {
+   "peak_mm": 107.56,
+   "verdict": "A1"
+  }
+ },
+ "dx25.0": {
+  "dx_m": 25.0,
+  "ncell": 160,
+  "point": {
+   "peak_mm": 2159.92,
+   "verdict": "A3"
+  },
+  "avg100": {
+   "peak_mm": 2287.5,
+   "verdict": "A3"
+  },
+  "mean": {
+   "peak_mm": 108.34,
+   "verdict": "A1"
+  }
+ },
+ "dx12.5": {
+  "dx_m": 12.5,
+  "ncell": 320,
+  "point": {
+   "peak_mm": 2351.43,
+   "verdict": "A3"
+  },
+  "avg100": {
+   "peak_mm": 2480.04,
+   "verdict": "A3"
+  },
+  "mean": {
+   "peak_mm": 107.96,
+   "verdict": "A1"
+  }
+ }
+}

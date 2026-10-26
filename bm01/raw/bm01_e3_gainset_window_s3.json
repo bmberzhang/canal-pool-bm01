@@ -1,0 +1,216 @@
+{
+  "experiment": "E3 S3 gain-set x window scan",
+  "wins": [
+    0,
+    100,
+    500,
+    1500,
+    3000,
+    6000
+  ],
+  "gains": [
+    {
+      "name": "V1_base",
+      "kp": 1.6,
+      "ki": 0.0016
+    },
+    {
+      "name": "V2_cons",
+      "kp": 0.8,
+      "ki": 0.0008
+    },
+    {
+      "name": "V3_aggr",
+      "kp": 3.2,
+      "ki": 0.0032
+    }
+  ],
+  "rows": [
+    {
+      "gain_set": "V1_base",
+      "kp": 1.6,
+      "ki": 0.0016,
+      "win_m": 0,
+      "peak_mm": 1057.6,
+      "final_mm": 969.9,
+      "over_band_min": 357.6,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V1_base",
+      "kp": 1.6,
+      "ki": 0.0016,
+      "win_m": 100,
+      "peak_mm": 579.5,
+      "final_mm": 503.0,
+      "over_band_min": 250.4,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V1_base",
+      "kp": 1.6,
+      "ki": 0.0016,
+      "win_m": 500,
+      "peak_mm": 434.0,
+      "final_mm": 224.9,
+      "over_band_min": 325.8,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V1_base",
+      "kp": 1.6,
+      "ki": 0.0016,
+      "win_m": 1500,
+      "peak_mm": 1374.0,
+      "final_mm": 1374.0,
+      "over_band_min": 434.9,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V1_base",
+      "kp": 1.6,
+      "ki": 0.0016,
+      "win_m": 3000,
+      "peak_mm": 798.2,
+      "final_mm": 798.2,
+      "over_band_min": 347.6,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V1_base",
+      "kp": 1.6,
+      "ki": 0.0016,
+      "win_m": 6000,
+      "peak_mm": 74.8,
+      "final_mm": 3.8,
+      "over_band_min": 0.0,
+      "code": "A1"
+    },
+    {
+      "gain_set": "V2_cons",
+      "kp": 0.8,
+      "ki": 0.0008,
+      "win_m": 0,
+      "peak_mm": 158.7,
+      "final_mm": 136.5,
+      "over_band_min": 7.4,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V2_cons",
+      "kp": 0.8,
+      "ki": 0.0008,
+      "win_m": 100,
+      "peak_mm": 158.7,
+      "final_mm": 93.3,
+      "over_band_min": 7.3,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V2_cons",
+      "kp": 0.8,
+      "ki": 0.0008,
+      "win_m": 500,
+      "peak_mm": 190.2,
+      "final_mm": 190.2,
+      "over_band_min": 33.9,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V2_cons",
+      "kp": 0.8,
+      "ki": 0.0008,
+      "win_m": 1500,
+      "peak_mm": 126.7,
+      "final_mm": 18.6,
+      "over_band_min": 0.0,
+      "code": "A1"
+    },
+    {
+      "gain_set": "V2_cons",
+      "kp": 0.8,
+      "ki": 0.0008,
+      "win_m": 3000,
+      "peak_mm": 119.4,
+      "final_mm": 4.1,
+      "over_band_min": 0.0,
+      "code": "A1"
+    },
+    {
+      "gain_set": "V2_cons",
+      "kp": 0.8,
+      "ki": 0.0008,
+      "win_m": 6000,
+      "peak_mm": 93.5,
+      "final_mm": 5.6,
+      "over_band_min": 0.0,
+      "code": "A1"
+    },
+    {
+      "gain_set": "V3_aggr",
+      "kp": 3.2,
+      "ki": 0.0032,
+      "win_m": 0,
+      "peak_mm": 1422.9,
+      "final_mm": 1323.1,
+      "over_band_min": 569.2,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V3_aggr",
+      "kp": 3.2,
+      "ki": 0.0032,
+      "win_m": 100,
+      "peak_mm": 1460.7,
+      "final_mm": 756.4,
+      "over_band_min": 571.8,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V3_aggr",
+      "kp": 3.2,
+      "ki": 0.0032,
+      "win_m": 500,
+      "peak_mm": 1598.4,
+      "final_mm": 815.0,
+      "over_band_min": 578.2,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V3_aggr",
+      "kp": 3.2,
+      "ki": 0.0032,
+      "win_m": 1500,
+      "peak_mm": 1594.4,
+      "final_mm": 1295.5,
+      "over_band_min": 539.0,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V3_aggr",
+      "kp": 3.2,
+      "ki": 0.0032,
+      "win_m": 3000,
+      "peak_mm": 1602.4,
+      "final_mm": 684.7,
+      "over_band_min": 549.9,
+      "code": "A3"
+    },
+    {
+      "gain_set": "V3_aggr",
+      "kp": 3.2,
+      "ki": 0.0032,
+      "win_m": 6000,
+      "peak_mm": 1696.9,
+      "final_mm": 949.7,
+      "over_band_min": 524.9,
+      "code": "A3"
+    }
+  ],
+  "nonmonotone_gain_sets": [
+    "V1_base",
+    "V2_cons"
+  ],
+  "verdict": "S3 排除：多组增益均出现中间窗长最不稳 → 非单调是稳健现象（一区增量有意义）",
+  "note": "code: A1=峰值<150mm, A3=峰值>=150mm；mid_max=峰值出现在中间窗长"
+}

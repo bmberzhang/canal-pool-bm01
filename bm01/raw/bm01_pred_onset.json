@@ -1,0 +1,327 @@
+{
+  "purpose": "W0-b 多池长的因一起爆点：检验 C3 的标度是否正确",
+  "config": {
+    "dx_m": 25.0,
+    "duration_h": 12.0,
+    "band_mm": 150.0,
+    "kg": 360.0,
+    "rate_limit_per_s": 0.0003333333333333333
+  },
+  "by_length": {
+    "L2000": {
+      "pool_len_m": 2000.0,
+      "ncell": 80,
+      "A_surf_m2": 100000.0,
+      "C3_dq_star_m3s": 42.43,
+      "onset_bracket_m3s": [
+        14,
+        15
+      ],
+      "onset_mid_m3s": 14.5,
+      "ratio_C3_over_actual": 2.93,
+      "rows": [
+        {
+          "dq": 10,
+          "peaks_mm": {
+            "point": 3635.59,
+            "avg100": 3607.53,
+            "mean": 33.56
+          },
+          "mean_arm_peak_mm": 33.56,
+          "mean_arm_final_mm": 4.77,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 12,
+          "peaks_mm": {
+            "point": 4091.34,
+            "avg100": 3703.13,
+            "mean": 41.18
+          },
+          "mean_arm_peak_mm": 41.18,
+          "mean_arm_final_mm": 4.11,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 13,
+          "peaks_mm": {
+            "point": 3782.22,
+            "avg100": 4040.2,
+            "mean": 45.11
+          },
+          "mean_arm_peak_mm": 45.11,
+          "mean_arm_final_mm": 3.2,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 14,
+          "peaks_mm": {
+            "point": 3849.12,
+            "avg100": 3444.24,
+            "mean": 49.11
+          },
+          "mean_arm_peak_mm": 49.11,
+          "mean_arm_final_mm": 3.47,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 15,
+          "peaks_mm": {
+            "point": 3768.77,
+            "avg100": 3836.14,
+            "mean": 3820.65
+          },
+          "mean_arm_peak_mm": 3820.65,
+          "mean_arm_final_mm": 3753.18,
+          "n_A3_arms": 3,
+          "ALL_A3": true
+        },
+        {
+          "dq": 16,
+          "peaks_mm": {
+            "point": 4264.0,
+            "avg100": 4025.12,
+            "mean": 4288.59
+          },
+          "mean_arm_peak_mm": 4288.59,
+          "mean_arm_final_mm": 2296.03,
+          "n_A3_arms": 3,
+          "ALL_A3": true
+        }
+      ]
+    },
+    "L6000": {
+      "pool_len_m": 6000.0,
+      "ncell": 240,
+      "A_surf_m2": 300000.0,
+      "C3_dq_star_m3s": 73.48,
+      "onset_bracket_m3s": null,
+      "onset_mid_m3s": null,
+      "ratio_C3_over_actual": null,
+      "rows": [
+        {
+          "dq": 14,
+          "peaks_mm": {
+            "point": 1201.94,
+            "avg100": 1356.55,
+            "mean": 19.66
+          },
+          "mean_arm_peak_mm": 19.66,
+          "mean_arm_final_mm": 5.62,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 16,
+          "peaks_mm": {
+            "point": 274.7,
+            "avg100": 333.57,
+            "mean": 22.75
+          },
+          "mean_arm_peak_mm": 22.75,
+          "mean_arm_final_mm": 6.37,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 20,
+          "peaks_mm": {
+            "point": 1002.93,
+            "avg100": 1049.18,
+            "mean": 29.13
+          },
+          "mean_arm_peak_mm": 29.13,
+          "mean_arm_final_mm": 3.88,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 24,
+          "peaks_mm": {
+            "point": 276.69,
+            "avg100": 952.13,
+            "mean": 35.78
+          },
+          "mean_arm_peak_mm": 35.78,
+          "mean_arm_final_mm": 4.69,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 28,
+          "peaks_mm": {
+            "point": 193.95,
+            "avg100": 1088.7,
+            "mean": 42.7
+          },
+          "mean_arm_peak_mm": 42.7,
+          "mean_arm_final_mm": 4.65,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 32,
+          "peaks_mm": {
+            "point": 494.46,
+            "avg100": 1164.85,
+            "mean": 49.89
+          },
+          "mean_arm_peak_mm": 49.89,
+          "mean_arm_final_mm": 4.74,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 36,
+          "peaks_mm": {
+            "point": 891.49,
+            "avg100": 803.43,
+            "mean": 57.34
+          },
+          "mean_arm_peak_mm": 57.34,
+          "mean_arm_final_mm": 4.72,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 40,
+          "peaks_mm": {
+            "point": 302.27,
+            "avg100": 539.33,
+            "mean": 65.05
+          },
+          "mean_arm_peak_mm": 65.05,
+          "mean_arm_final_mm": 4.53,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 45,
+          "peaks_mm": {
+            "point": 470.78,
+            "avg100": 658.76,
+            "mean": 75.05
+          },
+          "mean_arm_peak_mm": 75.05,
+          "mean_arm_final_mm": 3.82,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 50,
+          "peaks_mm": {
+            "point": 358.12,
+            "avg100": 327.28,
+            "mean": 85.88
+          },
+          "mean_arm_peak_mm": 85.88,
+          "mean_arm_final_mm": 2.51,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        }
+      ]
+    },
+    "L12000": {
+      "pool_len_m": 12000.0,
+      "ncell": 480,
+      "A_surf_m2": 600000.0,
+      "C3_dq_star_m3s": 103.92,
+      "onset_bracket_m3s": null,
+      "onset_mid_m3s": null,
+      "ratio_C3_over_actual": null,
+      "rows": [
+        {
+          "dq": 24,
+          "peaks_mm": {
+            "point": 63.52,
+            "avg100": 90.49,
+            "mean": 25.2
+          },
+          "mean_arm_peak_mm": 25.2,
+          "mean_arm_final_mm": 3.34,
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 32,
+          "peaks_mm": {
+            "point": 86.31,
+            "avg100": 86.31,
+            "mean": 34.18
+          },
+          "mean_arm_peak_mm": 34.18,
+          "mean_arm_final_mm": 4.56,
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 40,
+          "peaks_mm": {
+            "point": 109.92,
+            "avg100": 109.92,
+            "mean": 43.22
+          },
+          "mean_arm_peak_mm": 43.22,
+          "mean_arm_final_mm": 6.53,
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 45,
+          "peaks_mm": {
+            "point": 125.08,
+            "avg100": 125.08,
+            "mean": 48.71
+          },
+          "mean_arm_peak_mm": 48.71,
+          "mean_arm_final_mm": 7.51,
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 50,
+          "peaks_mm": {
+            "point": 140.55,
+            "avg100": 140.55,
+            "mean": 54.96
+          },
+          "mean_arm_peak_mm": 54.96,
+          "mean_arm_final_mm": 8.64,
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 60,
+          "peaks_mm": {
+            "point": 172.42,
+            "avg100": 172.42,
+            "mean": 66.72
+          },
+          "mean_arm_peak_mm": 66.72,
+          "mean_arm_final_mm": 5.42,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 70,
+          "peaks_mm": {
+            "point": 205.54,
+            "avg100": 205.54,
+            "mean": 79.57
+          },
+          "mean_arm_peak_mm": 79.57,
+          "mean_arm_final_mm": 5.51,
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        }
+      ]
+    }
+  },
+  "C3_reference": {},
+  "wall_total_s": 660.9,
+  "verdict": "因一起爆点存在且可定位（L=2000: ΔQ∈[14, 15]），但 C3 的闭式（隐含系数 k=1）预测值高估数倍，且 √A_surf 标度检验样本不足无法检验 → **不得把 C3 写成判定阈值**；因一目前只能操作性识别（三档全失败），如实写入局限。"
+}

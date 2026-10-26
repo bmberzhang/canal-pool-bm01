@@ -1,0 +1,62 @@
+{
+  "purpose": "E-VER T5b 长时间回水曲线对照 + 开环时间常数辨识",
+  "ncell": 240,
+  "step_dq": 15.0,
+  "dt_s": 1.125,
+  "dx_m": 25.0,
+  "h_down_theory_m": 8.21528,
+  "checkpoints": [
+    {
+      "t_h": 4.0,
+      "h_end_m": 7.51617,
+      "h_up_m": 7.51156,
+      "gap_vs_theory_mm": 699.112
+    },
+    {
+      "t_h": 8.0,
+      "h_end_m": 7.82435,
+      "h_up_m": 7.81701,
+      "gap_vs_theory_mm": 390.924
+    },
+    {
+      "t_h": 12.0,
+      "h_end_m": 7.99548,
+      "h_up_m": 7.9877,
+      "gap_vs_theory_mm": 219.802
+    },
+    {
+      "t_h": 24.0,
+      "h_end_m": 8.17586,
+      "h_up_m": 8.16716,
+      "gap_vs_theory_mm": 39.42
+    },
+    {
+      "t_h": 48.0,
+      "h_end_m": 8.214,
+      "h_up_m": 8.20511,
+      "gap_vs_theory_mm": 1.281
+    },
+    {
+      "t_h": 96.0,
+      "h_end_m": 8.21528,
+      "h_up_m": 8.20639,
+      "gap_vs_theory_mm": 0.001
+    },
+    {
+      "t_h": 144.0,
+      "h_end_m": 8.21528,
+      "h_up_m": 8.20639,
+      "gap_vs_theory_mm": 0.0
+    }
+  ],
+  "tau_estimates_h": [
+    6.88,
+    6.95,
+    6.98,
+    7.0
+  ],
+  "tau_median_h": 6.98,
+  "final_profile_RMSE_mm": 0.0139,
+  "final_profile_max_abs_err_mm": 0.0187,
+  "wall_s": 71.2
+}

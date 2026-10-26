@@ -1,0 +1,183 @@
+{
+ "case": "BM-01",
+ "step_dq": 45.0,
+ "band_mm": 150.0,
+ "rows": [
+  {
+   "code": "SVE-1D",
+   "impl": "本仓库",
+   "ctrl": "mean",
+   "ncell": 60,
+   "dx_m": 100.0,
+   "dt_s": 4,
+   "peak_pool_mm": 74.8728972739494,
+   "peak_gate_mm": 69.59105721806137,
+   "verdict": "A1"
+  },
+  {
+   "code": "SVE-1D",
+   "impl": "本仓库",
+   "ctrl": "gate",
+   "ncell": 60,
+   "dx_m": 100.0,
+   "dt_s": 4,
+   "peak_pool_mm": 314.794818190034,
+   "peak_gate_mm": 436.98419644515417,
+   "verdict": "A3"
+  },
+  {
+   "code": "SVE-1D",
+   "impl": "本仓库",
+   "ctrl": "mean",
+   "ncell": 120,
+   "dx_m": 50.0,
+   "dt_s": 2.25,
+   "peak_pool_mm": 74.68819646838031,
+   "peak_gate_mm": 81.20972937752846,
+   "verdict": "A1"
+  },
+  {
+   "code": "SVE-1D",
+   "impl": "本仓库",
+   "ctrl": "gate",
+   "ncell": 120,
+   "dx_m": 50.0,
+   "dt_s": 2.25,
+   "peak_pool_mm": 813.7631560643692,
+   "peak_gate_mm": 798.1787492621013,
+   "verdict": "A3"
+  },
+  {
+   "code": "SVE-1D",
+   "impl": "本仓库",
+   "ctrl": "mean",
+   "ncell": 240,
+   "dx_m": 25.0,
+   "dt_s": 1.125,
+   "peak_pool_mm": 75.04996531073438,
+   "peak_gate_mm": 85.14327073989314,
+   "verdict": "A1"
+  },
+  {
+   "code": "SVE-1D",
+   "impl": "本仓库",
+   "ctrl": "gate",
+   "ncell": 240,
+   "dx_m": 25.0,
+   "dt_s": 1.125,
+   "peak_pool_mm": 470.7761159865118,
+   "peak_gate_mm": 639.4626833873147,
+   "verdict": "A3"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "pool",
+   "ncell": 20,
+   "dx_m": 300.0,
+   "dt_s": 5.0,
+   "peak_pool_mm": 71.54500012477703,
+   "peak_gate_mm": 286.16078953323944,
+   "verdict": "A1"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "pool",
+   "ncell": 40,
+   "dx_m": 150.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 72.55283032205907,
+   "peak_gate_mm": 536.9962805431259,
+   "verdict": "A1"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "pool",
+   "ncell": 60,
+   "dx_m": 100.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 72.18075469056461,
+   "peak_gate_mm": 499.27929850105727,
+   "verdict": "A1"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "pool",
+   "ncell": 120,
+   "dx_m": 50.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 72.40096721059165,
+   "peak_gate_mm": 1024.8903120497523,
+   "verdict": "A1"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "pool",
+   "ncell": 240,
+   "dx_m": 25.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 67.36812967437355,
+   "peak_gate_mm": 257.3852761359987,
+   "verdict": "A1"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "gate",
+   "ncell": 20,
+   "dx_m": 300.0,
+   "dt_s": 5.0,
+   "peak_pool_mm": 202.40475520646316,
+   "peak_gate_mm": 161.9501107645105,
+   "verdict": "A3"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "gate",
+   "ncell": 40,
+   "dx_m": 150.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 396.0501676893129,
+   "peak_gate_mm": 237.5132253001491,
+   "verdict": "A3"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "gate",
+   "ncell": 60,
+   "dx_m": 100.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 326.82336319349577,
+   "peak_gate_mm": 126.27558118284642,
+   "verdict": "A3"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "gate",
+   "ncell": 120,
+   "dx_m": 50.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 467.1497761095651,
+   "peak_gate_mm": 339.26339820694284,
+   "verdict": "A3"
+  },
+  {
+   "code": "EPA SWMM",
+   "impl": "外部",
+   "ctrl": "gate",
+   "ncell": 240,
+   "dx_m": 25.0,
+   "dt_s": 2.0,
+   "peak_pool_mm": 354.3829305926618,
+   "peak_gate_mm": 437.5713439020634,
+   "verdict": "A3"
+  }
+ ]
+}

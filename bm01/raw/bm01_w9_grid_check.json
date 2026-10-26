@@ -1,0 +1,243 @@
+{
+  "purpose": "W9 网格无关性检查（W3'' 的前置）",
+  "tolerance_pct": 15.0,
+  "cases": {
+    "A_短池_原周期": {
+      "pool_len_m": 2000.0,
+      "dq": 45.0,
+      "ctrl_period_s": 300.0,
+      "rows": [
+        {
+          "dx_m": 50.0,
+          "ncell": 40,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 4206.92,
+              "judgement": "A3",
+              "mass_err": 1.11e-15
+            },
+            "mean": {
+              "peak_mean_mm": 4263.21,
+              "judgement": "A3",
+              "mass_err": 2.84e-14
+            }
+          }
+        },
+        {
+          "dx_m": 25.0,
+          "ncell": 80,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 4214.02,
+              "judgement": "A3",
+              "mass_err": 7.6e-15
+            },
+            "mean": {
+              "peak_mean_mm": 4202.76,
+              "judgement": "A3",
+              "mass_err": 2.18e-15
+            }
+          }
+        },
+        {
+          "dx_m": 12.5,
+          "ncell": 160,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 4116.71,
+              "judgement": "A3",
+              "mass_err": 2.18e-15
+            },
+            "mean": {
+              "peak_mean_mm": 4192.34,
+              "judgement": "A3",
+              "mass_err": 1.01e-14
+            }
+          }
+        }
+      ],
+      "deviations": [
+        {
+          "dx_m": 50.0,
+          "mean_peak_mm": 4263.21,
+          "rel_dev_pct": 1.69,
+          "code": "A3"
+        },
+        {
+          "dx_m": 25.0,
+          "mean_peak_mm": 4202.76,
+          "rel_dev_pct": 0.25,
+          "code": "A3"
+        },
+        {
+          "dx_m": 12.5,
+          "mean_peak_mm": 4192.34,
+          "rel_dev_pct": 0.0,
+          "code": "A3"
+        }
+      ],
+      "max_rel_dev_pct": 1.69,
+      "codes_consistent": true,
+      "pass": true
+    },
+    "B_短池_快周期": {
+      "pool_len_m": 2000.0,
+      "dq": 45.0,
+      "ctrl_period_s": 60.0,
+      "rows": [
+        {
+          "dx_m": 50.0,
+          "ncell": 40,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 164.8,
+              "judgement": "A3",
+              "mass_err": 1.9e-12
+            },
+            "mean": {
+              "peak_mean_mm": 102.5,
+              "judgement": "A1",
+              "mass_err": 4.27e-13
+            }
+          }
+        },
+        {
+          "dx_m": 25.0,
+          "ncell": 80,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 174.97,
+              "judgement": "A3",
+              "mass_err": 1.91e-12
+            },
+            "mean": {
+              "peak_mean_mm": 102.27,
+              "judgement": "A1",
+              "mass_err": 1.01e-12
+            }
+          }
+        },
+        {
+          "dx_m": 12.5,
+          "ncell": 160,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 184.09,
+              "judgement": "A3",
+              "mass_err": 1.62e-12
+            },
+            "mean": {
+              "peak_mean_mm": 108.2,
+              "judgement": "A1",
+              "mass_err": 2.35e-13
+            }
+          }
+        }
+      ],
+      "deviations": [
+        {
+          "dx_m": 50.0,
+          "mean_peak_mm": 102.5,
+          "rel_dev_pct": 5.27,
+          "code": "A1"
+        },
+        {
+          "dx_m": 25.0,
+          "mean_peak_mm": 102.27,
+          "rel_dev_pct": 5.48,
+          "code": "A1"
+        },
+        {
+          "dx_m": 12.5,
+          "mean_peak_mm": 108.2,
+          "rel_dev_pct": 0.0,
+          "code": "A1"
+        }
+      ],
+      "max_rel_dev_pct": 5.48,
+      "codes_consistent": true,
+      "pass": true
+    },
+    "C_主案例": {
+      "pool_len_m": 6000.0,
+      "dq": 45.0,
+      "ctrl_period_s": 300.0,
+      "rows": [
+        {
+          "dx_m": 50.0,
+          "ncell": 120,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 813.76,
+              "judgement": "A3",
+              "mass_err": 5.56e-15
+            },
+            "mean": {
+              "peak_mean_mm": 74.69,
+              "judgement": "A1",
+              "mass_err": 7.4e-14
+            }
+          }
+        },
+        {
+          "dx_m": 25.0,
+          "ncell": 240,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 470.78,
+              "judgement": "A3",
+              "mass_err": 2.58e-14
+            },
+            "mean": {
+              "peak_mean_mm": 75.05,
+              "judgement": "A1",
+              "mass_err": 7.41e-13
+            }
+          }
+        },
+        {
+          "dx_m": 12.5,
+          "ncell": 480,
+          "arms": {
+            "point": {
+              "peak_mean_mm": 1057.61,
+              "judgement": "A3",
+              "mass_err": 1.02e-13
+            },
+            "mean": {
+              "peak_mean_mm": 74.81,
+              "judgement": "A1",
+              "mass_err": 5.71e-13
+            }
+          }
+        }
+      ],
+      "deviations": [
+        {
+          "dx_m": 50.0,
+          "mean_peak_mm": 74.69,
+          "rel_dev_pct": 0.16,
+          "code": "A1"
+        },
+        {
+          "dx_m": 25.0,
+          "mean_peak_mm": 75.05,
+          "rel_dev_pct": 0.32,
+          "code": "A1"
+        },
+        {
+          "dx_m": 12.5,
+          "mean_peak_mm": 74.81,
+          "rel_dev_pct": 0.0,
+          "code": "A1"
+        }
+      ],
+      "max_rel_dev_pct": 0.32,
+      "codes_consistent": true,
+      "pass": true
+    }
+  },
+  "wall_total_s": 150.4,
+  "W9_pass": true,
+  "verdict": "W9 **通过**：三个关键算例在三档网格（dx=50/25/12.5 m）上最大相对偏差 5.48%（阈值 15%）、判定码三档一致 ⇒ W0-c 的『救回』结论与 W3'' 的设计前提成立，可继续。"
+}

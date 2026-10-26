@@ -1,0 +1,283 @@
+{
+  "case_id": "BM-01",
+  "purpose": "1d_model_fidelity_upgrade",
+  "evidence_grade": "synthetic-1d-sve",
+  "note": "断面形状开关逐项量化；不改变 BM-01 证据等级；量级示例参数，非现场结论。2026-10-01 修正：梯形档此前沿用矩形反解纵坡（偏大 1.38~1.79 倍），已改用断面感知纵坡（section_normal_slope），旧值在 legacy_rect_slope 留档。传感器由单点 h[-1] 改为闸前固定长度平均（gate_avg），旧行为见 sensor_channel_study。峰值指标弃用 Richardson 外推（序列非单调），改报最细网格收敛值 converged_mm。",
+  "solver": {
+    "base": "v1 conservative Rusanov + explicit Euler",
+    "deps": "python stdlib only",
+    "manning_n": 0.014,
+    "cfl": 0.4,
+    "slope_S0_rect_legacy": 5.3803958913129835e-06,
+    "slope_S0_note": "矩形基准档（m=0）两种反解恒等，故基准不受纵坡修正影响；梯形档实际使用的纵坡见各 switch_results 的 slope_S0_section_aware",
+    "sensor_channel": "gate_avg",
+    "sensor_len_m": 100.0,
+    "sensor_note": "闸前固定物理长度内取平均水位。单点 h[-1] 的回路增益 ∝ 1/dx，960 格上产生增幅极限环（伪峰 212 mm、闸前 527 mm）；详见 bm01_sve1d_v2_sensor.py 与 sensor_channel_study。",
+    "peak_metric": "converged_mm = 最细网格峰均；early_peak_mm = 前 2 h 内峰均（物理瞬变窗）",
+    "wave_celevity_mps": 8.28673639015988,
+    "travel_time_min": 12.067476904266607
+  },
+  "params_source": "raw/bm01_main.json",
+  "grids": [
+    240,
+    480
+  ],
+  "baseline_rect": {
+    "peak_mean_mm": {
+      "240": 161.9529952023946,
+      "480": 158.69431351482353
+    },
+    "early_peak_mm": {
+      "240": 156.60790387240198,
+      "480": 158.69431351482353
+    },
+    "peak_gate_mm": {
+      "240": 451.136995644724,
+      "480": 339.77105409582896
+    },
+    "converged_mm": 158.69431351482353,
+    "converged_grid": 480,
+    "converged_metric": "early_peak_mm（前 2h 窗）",
+    "converged_fullrun_mm": 158.69431351482353,
+    "grid_spread_mm": 2.0864096424215575,
+    "superseded_table": {
+      "peak_120_mm": 142.88,
+      "peak_240_mm": 156.61,
+      "extrapolated_2b_minus_a_mm": 170.33,
+      "note": "更正前口径复现（单点传感器 + 矩形反解纵坡 + 全程峰 + 两级外推）"
+    },
+    "extrapolated_mm_legacy": 155.43563182725248
+  },
+  "sensor_channel_study": {
+    "note": "单点传感器 h[-1] 的回路增益 ∝ 1/dx，细网格上出现晚期增幅极限环（矩形 960 格全程峰 212 mm、闸前 527 mm；早峰仍为 158.7 mm 稳定）。本包已改用闸前固定长度平均（gate_avg）。完整网格扫描见 raw/bm01_sve1d_v2_sensor.json（bm01_sve1d_v2_sensor.py）。",
+    "root_cause": "控制器测点/动作点都在最末单元；网格越细该单元蓄量越小，回路增益上升，300 s 采样周期下 PI 回路转为增幅极限环。",
+    "impact": "只影响**晚期**响应（t>150 min）；物理峰出现在 t≈36 min，用前 2h 窗（early_peak_mm）作收敛指标即不受影响。"
+  },
+  "switch_results": [
+    {
+      "tag": "S2a",
+      "name": "梯形断面 边坡 m=1.0",
+      "switches": {
+        "m_slope": 1.0
+      },
+      "slope_S0_section_aware": 3.9026261121641605e-06,
+      "superseded_table": {
+        "peak_120_mm": 117.74,
+        "peak_240_mm": 116.95,
+        "extrapolated_2b_minus_a_mm": 116.16,
+        "note": "更正前口径复现（单点传感器 + 矩形反解纵坡 + 全程峰 + 两级外推）"
+      },
+      "peak_mean_mm": {
+        "240": 124.91728567337113,
+        "480": 124.63318502062393
+      },
+      "early_peak_mm": {
+        "240": 124.91728567337113,
+        "480": 124.63318502062393
+      },
+      "peak_gate_mm": {
+        "240": 255.3796896426146,
+        "480": 207.30205328974625
+      },
+      "final_mean_mm": {
+        "240": 106.1319651067576,
+        "480": 78.82000070322005
+      },
+      "over_band_s": {
+        "240": 0.0,
+        "480": 0.0
+      },
+      "mass_balance_rel_err": {
+        "240": 0.004609738975855095,
+        "480": 0.0001614573074546989
+      },
+      "converged_mm": 124.63318502062393,
+      "converged_grid": 480,
+      "converged_metric": "early_peak_mm（前 2h 窗）",
+      "converged_fullrun_mm": 124.63318502062393,
+      "grid_spread_mm": 0.284100652747199,
+      "delta_vs_base_mm": -34.06112849419961,
+      "delta_pct": -21.463357911068424,
+      "legacy_rect_slope": {
+        "slope_S0": 5.3803958913129835e-06,
+        "ratio_over_section_aware": 1.3786603524592678,
+        "peak_mean_mm": {
+          "240": 116.95249735474889,
+          "480": 116.67569848489734
+        },
+        "early_peak_mm": {
+          "240": 116.95249735474889,
+          "480": 116.67569848489734
+        },
+        "peak_gate_mm": {
+          "240": 263.5709448482588,
+          "480": 325.9193776400595
+        },
+        "final_mean_mm": {
+          "240": 68.44738153092945,
+          "480": 76.69839134995016
+        },
+        "over_band_s": {
+          "240": 0.0,
+          "480": 0.0
+        },
+        "converged_mm": 116.67569848489734,
+        "note": "更正前的记录（矩形反解纵坡）；保留用于说明错纵坡的影响，不作结论依据"
+      }
+    },
+    {
+      "tag": "S2b",
+      "name": "梯形断面 边坡 m=1.5",
+      "switches": {
+        "m_slope": 1.5
+      },
+      "slope_S0_section_aware": 3.5362744773515093e-06,
+      "superseded_table": {
+        "peak_120_mm": 103.85,
+        "peak_240_mm": 103.14,
+        "extrapolated_2b_minus_a_mm": 102.44,
+        "note": "更正前口径复现（单点传感器 + 矩形反解纵坡 + 全程峰 + 两级外推）"
+      },
+      "peak_mean_mm": {
+        "240": 117.25068355929037,
+        "480": 132.6962096322566
+      },
+      "early_peak_mm": {
+        "240": 112.85033813297218,
+        "480": 112.59312258311115
+      },
+      "peak_gate_mm": {
+        "240": 231.09715651104602,
+        "480": 316.9568340814237
+      },
+      "final_mean_mm": {
+        "240": 87.18678956243942,
+        "480": 132.6962096322566
+      },
+      "over_band_s": {
+        "240": 0.0,
+        "480": 0.0
+      },
+      "mass_balance_rel_err": {
+        "240": 0.00036924133261775254,
+        "480": 0.00015256418458292354
+      },
+      "converged_mm": 112.59312258311115,
+      "converged_grid": 480,
+      "converged_metric": "early_peak_mm（前 2h 窗）",
+      "converged_fullrun_mm": 132.6962096322566,
+      "grid_spread_mm": 0.25721554986103,
+      "delta_vs_base_mm": -46.10119093171238,
+      "delta_pct": -29.050310569197613,
+      "legacy_rect_slope": {
+        "slope_S0": 5.3803958913129835e-06,
+        "ratio_over_section_aware": 1.52148706944904,
+        "peak_mean_mm": {
+          "240": 103.9525685149192,
+          "480": 103.70324678925246
+        },
+        "early_peak_mm": {
+          "240": 103.9525685149192,
+          "480": 103.70324678925246
+        },
+        "peak_gate_mm": {
+          "240": 213.15945364361255,
+          "480": 209.51495046076298
+        },
+        "final_mean_mm": {
+          "240": 65.23676136139488,
+          "480": 44.25819656093655
+        },
+        "over_band_s": {
+          "240": 0.0,
+          "480": 0.0
+        },
+        "converged_mm": 103.70324678925246,
+        "note": "更正前的记录（矩形反解纵坡）；保留用于说明错纵坡的影响，不作结论依据"
+      }
+    },
+    {
+      "tag": "S2c",
+      "name": "梯形断面 边坡 m=2.5",
+      "switches": {
+        "m_slope": 2.5
+      },
+      "slope_S0_section_aware": 3.0114045316405044e-06,
+      "superseded_table": {
+        "peak_120_mm": 84.6,
+        "peak_240_mm": 83.29,
+        "extrapolated_2b_minus_a_mm": 81.98,
+        "note": "更正前口径复现（单点传感器 + 矩形反解纵坡 + 全程峰 + 两级外推）"
+      },
+      "peak_mean_mm": {
+        "240": 94.60047311109588,
+        "480": 94.38410033956579
+      },
+      "early_peak_mm": {
+        "240": 94.60047311109588,
+        "480": 94.38410033956579
+      },
+      "peak_gate_mm": {
+        "240": 165.3867855434976,
+        "480": 239.1187629127751
+      },
+      "final_mean_mm": {
+        "240": 33.95231795984888,
+        "480": 38.939823160238696
+      },
+      "over_band_s": {
+        "240": 0.0,
+        "480": 0.0
+      },
+      "mass_balance_rel_err": {
+        "240": 0.002388591472949319,
+        "480": 0.0006826567814572109
+      },
+      "converged_mm": 94.38410033956579,
+      "converged_grid": 480,
+      "converged_metric": "early_peak_mm（前 2h 窗）",
+      "converged_fullrun_mm": 94.38410033956579,
+      "grid_spread_mm": 0.21637277153008938,
+      "delta_vs_base_mm": -64.31021317525774,
+      "delta_pct": -40.524585759180695,
+      "legacy_rect_slope": {
+        "slope_S0": 5.3803958913129835e-06,
+        "ratio_over_section_aware": 1.7866732399389524,
+        "peak_mean_mm": {
+          "240": 84.0101327980527,
+          "480": 89.8740977850041
+        },
+        "early_peak_mm": {
+          "240": 84.0101327980527,
+          "480": 83.080149999069
+        },
+        "peak_gate_mm": {
+          "240": 188.39093679432128,
+          "480": 256.3869255526088
+        },
+        "final_mean_mm": {
+          "240": 57.17421150529223,
+          "480": 81.61674980907563
+        },
+        "over_band_s": {
+          "240": 0.0,
+          "480": 0.0
+        },
+        "converged_mm": 83.080149999069,
+        "note": "更正前的记录（矩形反解纵坡）；保留用于说明错纵坡的影响，不作结论依据"
+      }
+    }
+  ],
+  "disabled_switches": {
+    "R_hydraulic_full_rect": {
+      "switch": "完整水力半径 R=A/P（矩形）",
+      "reason": "m=0 时 P=b+2h 与 v1 的 (B+2h) 恒等，增量恒为 0——同一个式子，不列入成果"
+    },
+    "gate_internal": {
+      "switch": "闸门改内部建筑物",
+      "reason": "闸室单元占全池水面 1/120，本参数下影响 <0.5 mm 不可辨；要有实质区别需闸门局部收缩（侧收缩/胸墙/淹没出流）等真实结构，留待有断面资料时再做"
+    }
+  },
+  "lumped_recorded_mm": 72.74,
+  "runtime_s": 129.56
+}

@@ -1,0 +1,203 @@
+{
+  "purpose": "E-FD 频域机制分离 + 环路增益直接测量",
+  "config": {
+    "pool_len_m": 6000.0,
+    "pool_width_m": 50.0,
+    "h_target": 7.0,
+    "q0": 180.0,
+    "kg": 360.0,
+    "a0": 0.5,
+    "sensor_len_m": 100.0
+  },
+  "partA_limit_cycle": {
+    "point": {
+      "peak_mean_mm": 1057.61,
+      "final_mean_mm": 969.86,
+      "judgement": "A3",
+      "period_s": {
+        "T_zerocross_s": 7710.0,
+        "T_acf_s": 8820.0,
+        "tail_swing_mm": 1846.48,
+        "n_zerocross": 3
+      },
+      "dt_s": 0.5,
+      "tail_amp_mm": 745.5,
+      "wall_s": 43.5
+    },
+    "avg100": {
+      "peak_mean_mm": 579.52,
+      "final_mean_mm": 503.05,
+      "judgement": "A3",
+      "period_s": {
+        "T_zerocross_s": 5355.0,
+        "T_acf_s": 5910.0,
+        "tail_swing_mm": 1082.55,
+        "n_zerocross": 3
+      },
+      "dt_s": 0.5,
+      "tail_amp_mm": 541.28,
+      "wall_s": 45.4
+    },
+    "mean": {
+      "peak_mean_mm": 74.81,
+      "final_mean_mm": 3.83,
+      "judgement": "A1",
+      "period_s": {
+        "T_zerocross_s": 712.8,
+        "T_acf_s": 1500.0,
+        "tail_swing_mm": 0.54,
+        "n_zerocross": 30
+      },
+      "dt_s": 0.5,
+      "tail_amp_mm": 0.27,
+      "wall_s": 45.0
+    }
+  },
+  "reference_time_scales": {
+    "celerity_m_s": 8.801,
+    "T_half_pool_2L_c_s": 1363.5,
+    "T_quarter_pool_4L_c_s": 2727.0,
+    "ctrl_period_s": 300.0,
+    "gate_full_stroke_s": 1500.0
+  },
+  "partB_frequency_response": {
+    "T1200": {
+      "ncell": 240,
+      "dx_m": 25.0,
+      "dt_s": 1.125,
+      "steps": 6401,
+      "period_s": 1200.0,
+      "dA": 0.01,
+      "n_periods": 6.0,
+      "channels": {
+        "mean": {
+          "amp_mm": 2.303,
+          "phase_deg": 2.4
+        },
+        "avg100": {
+          "amp_mm": 9.1888,
+          "phase_deg": -7.5
+        },
+        "point": {
+          "amp_mm": 8.9709,
+          "phase_deg": -7.4
+        }
+      }
+    },
+    "T2400": {
+      "ncell": 240,
+      "dx_m": 25.0,
+      "dt_s": 1.125,
+      "steps": 12801,
+      "period_s": 2400.0,
+      "dA": 0.01,
+      "n_periods": 6.0,
+      "channels": {
+        "mean": {
+          "amp_mm": 4.5596,
+          "phase_deg": 0.6
+        },
+        "avg100": {
+          "amp_mm": 3.1054,
+          "phase_deg": 152.6
+        },
+        "point": {
+          "amp_mm": 3.2089,
+          "phase_deg": 153.5
+        }
+      }
+    },
+    "T4800": {
+      "ncell": 240,
+      "dx_m": 25.0,
+      "dt_s": 1.125,
+      "steps": 25601,
+      "period_s": 4800.0,
+      "dA": 0.01,
+      "n_periods": 6.0,
+      "channels": {
+        "mean": {
+          "amp_mm": 9.1296,
+          "phase_deg": 2.7
+        },
+        "avg100": {
+          "amp_mm": 6.4479,
+          "phase_deg": 12.4
+        },
+        "point": {
+          "amp_mm": 6.3964,
+          "phase_deg": 12.7
+        }
+      }
+    },
+    "T9600": {
+      "ncell": 240,
+      "dx_m": 25.0,
+      "dt_s": 1.125,
+      "steps": 51201,
+      "period_s": 9600.0,
+      "dA": 0.01,
+      "n_periods": 6.0,
+      "channels": {
+        "mean": {
+          "amp_mm": 18.2351,
+          "phase_deg": 4.5
+        },
+        "avg100": {
+          "amp_mm": 17.049,
+          "phase_deg": 7.8
+        },
+        "point": {
+          "amp_mm": 17.0241,
+          "phase_deg": 7.9
+        }
+      }
+    },
+    "T14400": {
+      "ncell": 240,
+      "dx_m": 25.0,
+      "dt_s": 1.125,
+      "steps": 76801,
+      "period_s": 14400.0,
+      "dA": 0.01,
+      "n_periods": 6.0,
+      "channels": {
+        "mean": {
+          "amp_mm": 27.2816,
+          "phase_deg": 6.0
+        },
+        "avg100": {
+          "amp_mm": 26.6023,
+          "phase_deg": 8.1
+        },
+        "point": {
+          "amp_mm": 26.5871,
+          "phase_deg": 8.1
+        }
+      }
+    }
+  },
+  "wall_total_s": 175.8,
+  "gain_ratio_summary": {
+    "T1200": {
+      "avg100_over_mean": 3.99,
+      "point_over_mean": 3.895
+    },
+    "T2400": {
+      "avg100_over_mean": 0.681,
+      "point_over_mean": 0.704
+    },
+    "T4800": {
+      "avg100_over_mean": 0.706,
+      "point_over_mean": 0.701
+    },
+    "T9600": {
+      "avg100_over_mean": 0.935,
+      "point_over_mean": 0.934
+    },
+    "T14400": {
+      "avg100_over_mean": 0.975,
+      "point_over_mean": 0.975
+    }
+  }
+}

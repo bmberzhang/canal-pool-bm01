@@ -1,0 +1,831 @@
+{
+  "purpose": "E-TUNE-D 谷底加密扫描：检验 R1 是否只是'增益网格太粗'造成的假象",
+  "config": {
+    "ncell": 240,
+    "dx_m": 25.0,
+    "duration_h": 12.0,
+    "step_dq": 45.0,
+    "band_mm": 150.0,
+    "kps": [
+      0.1,
+      0.3,
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4,
+      1.6,
+      2.0,
+      2.4,
+      2.8,
+      3.2
+    ],
+    "kis": [
+      0.0001,
+      0.0002,
+      0.0003,
+      0.0004,
+      0.0006,
+      0.0008
+    ]
+  },
+  "maps": {
+    "gate_avg": {
+      "grid": {
+        "kp0.10": {
+          "ki0.00010": {
+            "peak_mean_mm": 325.57,
+            "judgement": "A3",
+            "final_mean_mm": 19.74
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 258.45,
+            "judgement": "A3",
+            "final_mean_mm": 5.6
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 229.41,
+            "judgement": "A3",
+            "final_mean_mm": 17.94
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 210.71,
+            "judgement": "A3",
+            "final_mean_mm": 6.04
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 184.75,
+            "judgement": "A3",
+            "final_mean_mm": 11.79
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 170.71,
+            "judgement": "A3",
+            "final_mean_mm": 12.1
+          }
+        },
+        "kp0.30": {
+          "ki0.00010": {
+            "peak_mean_mm": 237.9,
+            "judgement": "A3",
+            "final_mean_mm": 6.4
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 210.68,
+            "judgement": "A3",
+            "final_mean_mm": 16.13
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 197.64,
+            "judgement": "A3",
+            "final_mean_mm": 6.62
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 186.06,
+            "judgement": "A3",
+            "final_mean_mm": 1.58
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 169.8,
+            "judgement": "A3",
+            "final_mean_mm": 17.5
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 161.63,
+            "judgement": "A3",
+            "final_mean_mm": 2.61
+          }
+        },
+        "kp0.60": {
+          "ki0.00010": {
+            "peak_mean_mm": 190.38,
+            "judgement": "A3",
+            "final_mean_mm": 28.05
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 180.21,
+            "judgement": "A3",
+            "final_mean_mm": 22.1
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 170.46,
+            "judgement": "A3",
+            "final_mean_mm": 29.41
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 163.35,
+            "judgement": "A3",
+            "final_mean_mm": 43.73
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 158.13,
+            "judgement": "A3",
+            "final_mean_mm": 36.21
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 158.13,
+            "judgement": "A3",
+            "final_mean_mm": 32.78
+          }
+        },
+        "kp0.80": {
+          "ki0.00010": {
+            "peak_mean_mm": 172.7,
+            "judgement": "A3",
+            "final_mean_mm": 49.93
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 163.83,
+            "judgement": "A3",
+            "final_mean_mm": 51.24
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 159.17,
+            "judgement": "A3",
+            "final_mean_mm": 51.45
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 157.82,
+            "judgement": "A3",
+            "final_mean_mm": 69.04
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 157.82,
+            "judgement": "A3",
+            "final_mean_mm": 80.04
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 157.82,
+            "judgement": "A3",
+            "final_mean_mm": 87.89
+          }
+        },
+        "kp1.00": {
+          "ki0.00010": {
+            "peak_mean_mm": 160.58,
+            "judgement": "A3",
+            "final_mean_mm": 50.42
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 157.52,
+            "judgement": "A3",
+            "final_mean_mm": 32.66
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 157.52,
+            "judgement": "A3",
+            "final_mean_mm": 64.94
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 157.52,
+            "judgement": "A3",
+            "final_mean_mm": 62.6
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 173.15,
+            "judgement": "A3",
+            "final_mean_mm": 91.9
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 157.52,
+            "judgement": "A3",
+            "final_mean_mm": 81.82
+          }
+        },
+        "kp1.20": {
+          "ki0.00010": {
+            "peak_mean_mm": 157.21,
+            "judgement": "A3",
+            "final_mean_mm": 66.3
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 157.21,
+            "judgement": "A3",
+            "final_mean_mm": 52.78
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 157.21,
+            "judgement": "A3",
+            "final_mean_mm": 73.65
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 157.21,
+            "judgement": "A3",
+            "final_mean_mm": 96.47
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 231.8,
+            "judgement": "A3",
+            "final_mean_mm": 124.42
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 158.88,
+            "judgement": "A3",
+            "final_mean_mm": 147.8
+          }
+        },
+        "kp1.40": {
+          "ki0.00010": {
+            "peak_mean_mm": 156.91,
+            "judgement": "A3",
+            "final_mean_mm": 53.55
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 156.91,
+            "judgement": "A3",
+            "final_mean_mm": 82.52
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 156.91,
+            "judgement": "A3",
+            "final_mean_mm": 140.99
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 162.08,
+            "judgement": "A3",
+            "final_mean_mm": 118.82
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 156.91,
+            "judgement": "A3",
+            "final_mean_mm": 126.15
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 177.1,
+            "judgement": "A3",
+            "final_mean_mm": 113.85
+          }
+        },
+        "kp1.60": {
+          "ki0.00010": {
+            "peak_mean_mm": 156.61,
+            "judgement": "A3",
+            "final_mean_mm": 32.88
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 156.61,
+            "judgement": "A3",
+            "final_mean_mm": 80.45
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 156.61,
+            "judgement": "A3",
+            "final_mean_mm": 50.26
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 156.61,
+            "judgement": "A3",
+            "final_mean_mm": 147.21
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 334.4,
+            "judgement": "A3",
+            "final_mean_mm": 334.4
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 164.24,
+            "judgement": "A3",
+            "final_mean_mm": 52.65
+          }
+        },
+        "kp2.00": {
+          "ki0.00010": {
+            "peak_mean_mm": 156.01,
+            "judgement": "A3",
+            "final_mean_mm": 78.12
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 162.79,
+            "judgement": "A3",
+            "final_mean_mm": 139.24
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 185.81,
+            "judgement": "A3",
+            "final_mean_mm": 141.36
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 156.01,
+            "judgement": "A3",
+            "final_mean_mm": 55.7
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 248.35,
+            "judgement": "A3",
+            "final_mean_mm": 114.89
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 331.71,
+            "judgement": "A3",
+            "final_mean_mm": 259.81
+          }
+        },
+        "kp2.40": {
+          "ki0.00010": {
+            "peak_mean_mm": 170.06,
+            "judgement": "A3",
+            "final_mean_mm": 132.4
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 283.33,
+            "judgement": "A3",
+            "final_mean_mm": 32.99
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 223.81,
+            "judgement": "A3",
+            "final_mean_mm": 51.51
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 291.87,
+            "judgement": "A3",
+            "final_mean_mm": 177.94
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 233.64,
+            "judgement": "A3",
+            "final_mean_mm": 218.01
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 202.28,
+            "judgement": "A3",
+            "final_mean_mm": 133.52
+          }
+        },
+        "kp2.80": {
+          "ki0.00010": {
+            "peak_mean_mm": 183.93,
+            "judgement": "A3",
+            "final_mean_mm": 66.59
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 271.52,
+            "judgement": "A3",
+            "final_mean_mm": 80.49
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 154.82,
+            "judgement": "A3",
+            "final_mean_mm": 52.63
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 229.59,
+            "judgement": "A3",
+            "final_mean_mm": 73.46
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 156.37,
+            "judgement": "A3",
+            "final_mean_mm": 156.37
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 383.67,
+            "judgement": "A3",
+            "final_mean_mm": 257.32
+          }
+        },
+        "kp3.20": {
+          "ki0.00010": {
+            "peak_mean_mm": 206.09,
+            "judgement": "A3",
+            "final_mean_mm": 154.81
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 224.42,
+            "judgement": "A3",
+            "final_mean_mm": 61.06
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 154.23,
+            "judgement": "A3",
+            "final_mean_mm": 47.46
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 201.61,
+            "judgement": "A3",
+            "final_mean_mm": 102.74
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 246.73,
+            "judgement": "A3",
+            "final_mean_mm": 107.53
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 295.27,
+            "judgement": "A3",
+            "final_mean_mm": 209.13
+          }
+        }
+      },
+      "a1_cells": 0,
+      "total_cells": 72,
+      "min_peak_all_tunings_mm": 154.23,
+      "min_peak_location": [
+        3.2,
+        0.0003
+      ]
+    },
+    "mean": {
+      "grid": {
+        "kp0.10": {
+          "ki0.00010": {
+            "peak_mean_mm": 315.13,
+            "judgement": "A3",
+            "final_mean_mm": 13.4
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 244.5,
+            "judgement": "A3",
+            "final_mean_mm": 5.26
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 210.27,
+            "judgement": "A3",
+            "final_mean_mm": 11.19
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 188.63,
+            "judgement": "A3",
+            "final_mean_mm": 11.29
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 159.98,
+            "judgement": "A3",
+            "final_mean_mm": 11.01
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 142.93,
+            "judgement": "A1",
+            "final_mean_mm": 8.59
+          }
+        },
+        "kp0.30": {
+          "ki0.00010": {
+            "peak_mean_mm": 222.71,
+            "judgement": "A3",
+            "final_mean_mm": 3.5
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 187.58,
+            "judgement": "A3",
+            "final_mean_mm": 7.57
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 168.04,
+            "judgement": "A3",
+            "final_mean_mm": 3.59
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 153.95,
+            "judgement": "A3",
+            "final_mean_mm": 5.55
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 135.41,
+            "judgement": "A1",
+            "final_mean_mm": 3.97
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 123.11,
+            "judgement": "A1",
+            "final_mean_mm": 3.51
+          }
+        },
+        "kp0.60": {
+          "ki0.00010": {
+            "peak_mean_mm": 152.73,
+            "judgement": "A3",
+            "final_mean_mm": 7.79
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 137.64,
+            "judgement": "A1",
+            "final_mean_mm": 1.64
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 126.94,
+            "judgement": "A1",
+            "final_mean_mm": 9.03
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 120.03,
+            "judgement": "A1",
+            "final_mean_mm": 5.16
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 110.08,
+            "judgement": "A1",
+            "final_mean_mm": 2.62
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 103.51,
+            "judgement": "A1",
+            "final_mean_mm": 9.48
+          }
+        },
+        "kp0.80": {
+          "ki0.00010": {
+            "peak_mean_mm": 126.37,
+            "judgement": "A1",
+            "final_mean_mm": 9.54
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 115.92,
+            "judgement": "A1",
+            "final_mean_mm": 7.53
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 109.75,
+            "judgement": "A1",
+            "final_mean_mm": 4.76
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 104.61,
+            "judgement": "A1",
+            "final_mean_mm": 0.5
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 98.47,
+            "judgement": "A1",
+            "final_mean_mm": 9.66
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 93.84,
+            "judgement": "A1",
+            "final_mean_mm": 5.52
+          }
+        },
+        "kp1.00": {
+          "ki0.00010": {
+            "peak_mean_mm": 106.77,
+            "judgement": "A1",
+            "final_mean_mm": 9.76
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 100.72,
+            "judgement": "A1",
+            "final_mean_mm": 9.56
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 96.95,
+            "judgement": "A1",
+            "final_mean_mm": 8.57
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 93.92,
+            "judgement": "A1",
+            "final_mean_mm": 6.79
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 89.78,
+            "judgement": "A1",
+            "final_mean_mm": 1.72
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 87.39,
+            "judgement": "A1",
+            "final_mean_mm": 3.67
+          }
+        },
+        "kp1.20": {
+          "ki0.00010": {
+            "peak_mean_mm": 93.02,
+            "judgement": "A1",
+            "final_mean_mm": 9.89
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 89.63,
+            "judgement": "A1",
+            "final_mean_mm": 9.82
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 87.42,
+            "judgement": "A1",
+            "final_mean_mm": 8.81
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 86.1,
+            "judgement": "A1",
+            "final_mean_mm": 8.63
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 83.96,
+            "judgement": "A1",
+            "final_mean_mm": 6.84
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 81.78,
+            "judgement": "A1",
+            "final_mean_mm": 2.9
+          }
+        },
+        "kp1.40": {
+          "ki0.00010": {
+            "peak_mean_mm": 83.98,
+            "judgement": "A1",
+            "final_mean_mm": 9.91
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 82.79,
+            "judgement": "A1",
+            "final_mean_mm": 9.87
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 81.66,
+            "judgement": "A1",
+            "final_mean_mm": 9.68
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 80.6,
+            "judgement": "A1",
+            "final_mean_mm": 9.65
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 79.52,
+            "judgement": "A1",
+            "final_mean_mm": 7.83
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 78.81,
+            "judgement": "A1",
+            "final_mean_mm": 7.86
+          }
+        },
+        "kp1.60": {
+          "ki0.00010": {
+            "peak_mean_mm": 78.92,
+            "judgement": "A1",
+            "final_mean_mm": 10.49
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 78.58,
+            "judgement": "A1",
+            "final_mean_mm": 9.94
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 78.25,
+            "judgement": "A1",
+            "final_mean_mm": 10.01
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 77.93,
+            "judgement": "A1",
+            "final_mean_mm": 8.97
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 77.33,
+            "judgement": "A1",
+            "final_mean_mm": 8.93
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 76.78,
+            "judgement": "A1",
+            "final_mean_mm": 8.95
+          }
+        },
+        "kp2.00": {
+          "ki0.00010": {
+            "peak_mean_mm": 75.35,
+            "judgement": "A1",
+            "final_mean_mm": 9.78
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 75.17,
+            "judgement": "A1",
+            "final_mean_mm": 9.72
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 74.99,
+            "judgement": "A1",
+            "final_mean_mm": 9.86
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 74.83,
+            "judgement": "A1",
+            "final_mean_mm": 9.68
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 74.54,
+            "judgement": "A1",
+            "final_mean_mm": 9.8
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 9.52
+          }
+        },
+        "kp2.40": {
+          "ki0.00010": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.75
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 9.91
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.13
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.05
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 9.77
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 9.9
+          }
+        },
+        "kp2.80": {
+          "ki0.00010": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.71
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.15
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.41
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 9.89
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.07
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.07
+          }
+        },
+        "kp3.20": {
+          "ki0.00010": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 11.29
+          },
+          "ki0.00020": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.32
+          },
+          "ki0.00030": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.09
+          },
+          "ki0.00040": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 9.85
+          },
+          "ki0.00060": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.28
+          },
+          "ki0.00080": {
+            "peak_mean_mm": 74.35,
+            "judgement": "A1",
+            "final_mean_mm": 10.01
+          }
+        }
+      },
+      "a1_cells": 62,
+      "total_cells": 72,
+      "min_peak_all_tunings_mm": 74.35,
+      "min_peak_location": [
+        2.0,
+        0.0008
+      ]
+    }
+  },
+  "overlap_A1_cells_both_arms": 0,
+  "gate_avg_floor_mm": 154.23,
+  "gate_avg_floor_margin_pct": 2.82,
+  "gate_avg_plateau_cells_within_10pct_floor": 35,
+  "total_cells": 72,
+  "wall_total_s": 1118.4,
+  "verdict": "R1 彻底证伪（加密后依然）：局部档在 72 组增益里 A1 格 = 0，全平面最小峰值 154.2 mm，仍比 150 mm 条带高 2.8%；最小峰值邻域 1.1 倍以内有 35/72 格 → 谷底是**平台**而非尖点，'加密网格就能掉进条带'的通道不存在。"
+}

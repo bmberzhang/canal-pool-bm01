@@ -1,0 +1,278 @@
+{
+  "purpose": "W-tau-b 通道对照：h_end（闸前） vs h_mean（全池平均）",
+  "channel_defs": {
+    "h_end": "闸前/下游端点水深",
+    "h_mean": "全池空间平均水深"
+  },
+  "control_state": "开环（控制器关闭，闸门开度固定 a0=0.5 m2）",
+  "fit_interval_h": [
+    4.0,
+    48.0
+  ],
+  "settle_tolerance_mm": 3.0,
+  "ncell": 240,
+  "dx_m": 25.0,
+  "cases": {
+    "dq_15": {
+      "dq_m3s": 15.0,
+      "Qs_m3s": 195.0,
+      "h_ss_downstream_m": 8.215278,
+      "h_ss_poolmean_m": 8.210827,
+      "rows": [
+        {
+          "t_h": 4.0,
+          "h_end_m": 7.516153,
+          "h_mean_m": 7.513543,
+          "gap_end_mm": 699.1247,
+          "gap_mean_mm": 697.284
+        },
+        {
+          "t_h": 8.0,
+          "h_end_m": 7.824348,
+          "h_mean_m": 7.820627,
+          "gap_end_mm": 390.9301,
+          "gap_mean_mm": 390.2
+        },
+        {
+          "t_h": 12.0,
+          "h_end_m": 7.995475,
+          "h_mean_m": 7.991533,
+          "gap_end_mm": 219.8031,
+          "gap_mean_mm": 219.294
+        },
+        {
+          "t_h": 24.0,
+          "h_end_m": 8.175858,
+          "h_mean_m": 8.171492,
+          "gap_end_mm": 39.4201,
+          "gap_mean_mm": 39.335
+        },
+        {
+          "t_h": 48.0,
+          "h_end_m": 8.213997,
+          "h_mean_m": 8.209548,
+          "gap_end_mm": 1.281,
+          "gap_mean_mm": 1.279
+        },
+        {
+          "t_h": 96.0,
+          "h_end_m": 8.215276,
+          "h_mean_m": 8.210825,
+          "gap_end_mm": 0.0014,
+          "gap_mean_mm": 0.002
+        },
+        {
+          "t_h": 144.0,
+          "h_end_m": 8.215278,
+          "h_mean_m": 8.210827,
+          "gap_end_mm": 0.0,
+          "gap_mean_mm": 0.0
+        }
+      ],
+      "channel_h_end": {
+        "tau_segments": [
+          {
+            "seg_h": [
+              4.0,
+              8.0
+            ],
+            "tau_h": 6.881
+          },
+          {
+            "seg_h": [
+              8.0,
+              12.0
+            ],
+            "tau_h": 6.947
+          },
+          {
+            "seg_h": [
+              12.0,
+              24.0
+            ],
+            "tau_h": 6.983
+          },
+          {
+            "seg_h": [
+              24.0,
+              48.0
+            ],
+            "tau_h": 7.004
+          }
+        ],
+        "tau_median_h": 6.983,
+        "tau_logfit_h": 6.986,
+        "logfit_R2": 0.999995
+      },
+      "channel_h_mean": {
+        "tau_segments": [
+          {
+            "seg_h": [
+              4.0,
+              8.0
+            ],
+            "tau_h": 6.89
+          },
+          {
+            "seg_h": [
+              8.0,
+              12.0
+            ],
+            "tau_h": 6.941
+          },
+          {
+            "seg_h": [
+              12.0,
+              24.0
+            ],
+            "tau_h": 6.984
+          },
+          {
+            "seg_h": [
+              24.0,
+              48.0
+            ],
+            "tau_h": 7.005
+          }
+        ],
+        "tau_median_h": 6.984,
+        "tau_logfit_h": 6.987,
+        "logfit_R2": 0.999996
+      },
+      "gap_at_4h_end_mm": 699.1247,
+      "gap_at_4h_mean_mm": 697.284,
+      "channel_tau_diff_pct": 0.01
+    },
+    "dq_45": {
+      "dq_m3s": 45.0,
+      "Qs_m3s": 225.0,
+      "h_ss_downstream_m": 10.9375,
+      "h_ss_poolmean_m": 10.928034,
+      "rows": [
+        {
+          "t_h": 4.0,
+          "h_end_m": 8.562473,
+          "h_mean_m": 8.550582,
+          "gap_end_mm": 2375.0272,
+          "gap_mean_mm": 2377.452
+        },
+        {
+          "t_h": 8.0,
+          "h_end_m": 9.51802,
+          "h_mean_m": 9.510656,
+          "gap_end_mm": 1419.4799,
+          "gap_mean_mm": 1417.378
+        },
+        {
+          "t_h": 12.0,
+          "h_end_m": 10.083592,
+          "h_mean_m": 10.074685,
+          "gap_end_mm": 853.9084,
+          "gap_mean_mm": 853.349
+        },
+        {
+          "t_h": 24.0,
+          "h_end_m": 10.746499,
+          "h_mean_m": 10.737173,
+          "gap_end_mm": 191.001,
+          "gap_mean_mm": 190.861
+        },
+        {
+          "t_h": 48.0,
+          "h_end_m": 10.927687,
+          "h_mean_m": 10.918229,
+          "gap_end_mm": 9.8126,
+          "gap_mean_mm": 9.805
+        },
+        {
+          "t_h": 96.0,
+          "h_end_m": 10.937474,
+          "h_mean_m": 10.928008,
+          "gap_end_mm": 0.0261,
+          "gap_mean_mm": 0.026
+        },
+        {
+          "t_h": 144.0,
+          "h_end_m": 10.9375,
+          "h_mean_m": 10.928034,
+          "gap_end_mm": 0.0001,
+          "gap_mean_mm": 0.0
+        }
+      ],
+      "channel_h_end": {
+        "tau_segments": [
+          {
+            "seg_h": [
+              4.0,
+              8.0
+            ],
+            "tau_h": 7.771
+          },
+          {
+            "seg_h": [
+              8.0,
+              12.0
+            ],
+            "tau_h": 7.871
+          },
+          {
+            "seg_h": [
+              12.0,
+              24.0
+            ],
+            "tau_h": 8.013
+          },
+          {
+            "seg_h": [
+              24.0,
+              48.0
+            ],
+            "tau_h": 8.085
+          }
+        ],
+        "tau_median_h": 8.013,
+        "tau_logfit_h": 8.028,
+        "logfit_R2": 0.999969
+      },
+      "channel_h_mean": {
+        "tau_segments": [
+          {
+            "seg_h": [
+              4.0,
+              8.0
+            ],
+            "tau_h": 7.734
+          },
+          {
+            "seg_h": [
+              8.0,
+              12.0
+            ],
+            "tau_h": 7.883
+          },
+          {
+            "seg_h": [
+              12.0,
+              24.0
+            ],
+            "tau_h": 8.013
+          },
+          {
+            "seg_h": [
+              24.0,
+              48.0
+            ],
+            "tau_h": 8.084
+          }
+        ],
+        "tau_median_h": 8.013,
+        "tau_logfit_h": 8.027,
+        "logfit_R2": 0.999966
+      },
+      "gap_at_4h_end_mm": 2375.0272,
+      "gap_at_4h_mean_mm": 2377.452,
+      "channel_tau_diff_pct": 0.0
+    }
+  },
+  "wall_s": 168.1
+}

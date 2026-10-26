@@ -1,0 +1,182 @@
+{
+  "campaign_id": "local-bm01-synthetic-r1",
+  "case_id": "BM-01",
+  "official_activity": null,
+  "note": "本包为本地可复跑最小案例，非官方登记活动；官方 R12-standard-benchmarks-r1 仅完成题单结构契约检查（structure_checked），不等于物理回放已经完成。",
+  "registered_at": "2026-09-14T13:46:17",
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "commands": [
+    {
+      "cmd": "python bm01_pool_step.py --scenario all --out . --verify",
+      "exit_code": 0,
+      "started_epoch": 1789364776.68,
+      "finished_epoch": 1789364777.462,
+      "duration_s": 0.783
+    },
+    {
+      "cmd": "python bm01_sve1d_v2.py --selftest",
+      "exit_code": 0,
+      "started_epoch": 1790830133.94,
+      "finished_epoch": 1790830135.94,
+      "duration_s": 2.0
+    },
+    {
+      "cmd": "python bm01_sve1d_v2.py",
+      "exit_code": 0,
+      "started_epoch": 1790829725.24,
+      "finished_epoch": 1790829864.14,
+      "duration_s": 138.9
+    },
+    {
+      "cmd": "python bm01_sve1d_v2_sensor.py",
+      "exit_code": 0,
+      "started_epoch": 1790829543.34,
+      "finished_epoch": 1790829842.64,
+      "duration_s": 299.3
+    },
+    {
+      "cmd": "python bm01_sve1d_v2_plot.py",
+      "exit_code": 0,
+      "started_epoch": 1790830135.94,
+      "finished_epoch": 1790830141.94,
+      "duration_s": 6.0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "raw/bm01_main.json",
+      "sha256": "75a6bcfb610d99fafc9f2022fbb868023643509d6933b4dea9a21ece0f005c97",
+      "size_bytes": 52073
+    },
+    {
+      "path": "raw/bm01_chain_local_only.json",
+      "sha256": "a90e4bafd48883bf5ea149bb7101bef791a39accf87e785b7a6868346dfc2bf0",
+      "size_bytes": 56468
+    },
+    {
+      "path": "raw/bm01_chain_feedforward.json",
+      "sha256": "6728ac0e7575945acf3509bc2c0389528b85e8984ecfa1a526f8d7fce5a8920d",
+      "size_bytes": 56722
+    },
+    {
+      "path": "raw/bm01_overload.json",
+      "sha256": "58304e7594ba26c8209d4e92511b8d55be28590d3b52d0f4dc9b0477e041644e",
+      "size_bytes": 50606
+    },
+    {
+      "path": "raw/bm01_timeseries.csv",
+      "sha256": "aa1ab11fc5f4ae901f7802826ce4eb15fefe39788cc3f7888c598d2dcbdbd588",
+      "size_bytes": 70393
+    },
+    {
+      "path": "figures/bm01_level_response.png",
+      "sha256": "7f33eba4ccb691909e0736b12df734dacb6c6cc83b81a3a92ae1c02e14849e9c",
+      "size_bytes": 240718
+    },
+    {
+      "path": "normalized/records.jsonl",
+      "sha256": "8b93682a1d70f2ae62439e8556e0ad4ee57d5a5d6c970e1704e1e9255b03f11e",
+      "size_bytes": 8379
+    },
+    {
+      "path": "summary.md",
+      "sha256": "8aa0b1092866ab9d57282ca573e3c001c0d1d98341f7f05d5ce0e2772c37bcb6",
+      "size_bytes": 6334
+    },
+    {
+      "path": "review/reproducibility.json",
+      "sha256": "1e5cc982eff20be4a702142186f9ae6bf966f3cad5f1740a76b17c4353517d86",
+      "size_bytes": 225
+    },
+    {
+      "path": "bm01_sve1d_compare.py",
+      "sha256": "5849cb38e4ebcf6483dbfdd43a615832be91f2ccde44342484312cbf5be2bb18",
+      "size_bytes": 19789
+    },
+    {
+      "path": "bm01_sve1d_check.py",
+      "sha256": "e3b1e5312065aa19fb74eb32d5ee0943b0e8fd0c2604711d75bef2c75b5b3777",
+      "size_bytes": 7945
+    },
+    {
+      "path": "bm01_sve1d_plot.py",
+      "sha256": "806ab2e8e4d56313459e3a95d13520a9b627fc11e0a59205d229ffd67d782756",
+      "size_bytes": 5423
+    },
+    {
+      "path": "bm01_sve1d_v2.py",
+      "sha256": "5bcedc324eacb111edbb46b86ec0e68490786be65055f83e9815565f15b96d6a",
+      "size_bytes": 27492
+    },
+    {
+      "path": "bm01_sve1d_v2_plot.py",
+      "sha256": "ba40a68ca255905b675fda06ac06b463c1569f440e3551fc46b3e4d798ab3c95",
+      "size_bytes": 5086
+    },
+    {
+      "path": "bm01_band_sensitivity.py",
+      "sha256": "208f7cb7f2c70d52f80e3254a9559cc35936fea1be6545499b6252b84813cdbb",
+      "size_bytes": 5133
+    },
+    {
+      "path": "raw/bm01_sve1d_compare.json",
+      "sha256": "b50be091d68033d3a5139cbb50879636dbe1873ff688b3c7ee0b20ac2cffe68b",
+      "size_bytes": 85285
+    },
+    {
+      "path": "raw/bm01_sve1d_compare.csv",
+      "sha256": "cb8031df8161634fb78671e6152097eecb613d6e8516556b0585c82164f40c40",
+      "size_bytes": 63971
+    },
+    {
+      "path": "raw/bm01_sve1d_robustness.json",
+      "sha256": "518db6d79415dca12087787ce389f8fd54ffe2cdcb986232a71b4aca97513ead",
+      "size_bytes": 3835
+    },
+    {
+      "path": "raw/bm01_sve1d_v2.json",
+      "sha256": "62552f71a16559c57e76b6d292554edf77413da9482d947e536b5c7cbfb05f94",
+      "size_bytes": 10425
+    },
+    {
+      "path": "raw/bm01_band_sensitivity.json",
+      "sha256": "35f48657d80fe49ee58ee5a9495021fcfb0177cbb01dd6aab0658c41972fc1e4",
+      "size_bytes": 9209
+    },
+    {
+      "path": "figures/bm01_lumped_vs_sve1d.png",
+      "sha256": "3d799db2f8745a16168cede3b3c26080b285454f652b3cf9642fbf1e0958f477",
+      "size_bytes": 283400
+    },
+    {
+      "path": "figures/bm01_sect_shape_sensitivity.png",
+      "sha256": "2bc4fc76e410be0475e31be5af19598f382c1ae5fdfccbe4070d8bc1589c308d",
+      "size_bytes": 190158
+    },
+    {
+      "path": "README.md",
+      "sha256": "7d519247104c75abb68aa6452e90204e2bad7df025e977dfac92fe5ebd6f2df5",
+      "size_bytes": 17466
+    },
+    {
+      "path": "bm01_sve1d_v2_sensor.py",
+      "sha256": "b1ff1aa075993e3c4038741b19127acba04fffa01af9d1684ceb82323100d452",
+      "size_bytes": 6493
+    },
+    {
+      "path": "raw/bm01_sve1d_v2_sensor.json",
+      "sha256": "1a0335bf193fb728ad72dcec08bb650956d6e47f1903f41fcb2ca645e1577c26",
+      "size_bytes": 6570
+    }
+  ],
+  "sealed": false,
+  "seal_note": "本地最小案例，未走官方封存流程；不得与官方活动拼接或替代官方结论",
+  "revision_note": "2026-09-30：应 BM-01R（文献参数化重跑）需要，给 bm01_sve1d_v2.py 补两处，均为「默认路径行为不变」的加法：（1）新增 section_normal_slope() 断面感知纵坡反解 + sve_1d_v2(..., s0=) 可选入口——原纵坡反解是矩形专用式（A=B·h、R=A/(B+2h)），梯形下偏大 2.31 倍、平衡流量会漂到 205 m³/s；（2）蓄量积分改用精确式 Δh·[b+m(x+ht)]——原 B(x)·Δh 只在 Δh→0 成立，Δh≈335 mm 时守恒误差 1.8%（曾被误读为求解器发散）。以上均不改变 BM-01 既有结论：--selftest 矩形档仍 142.88 / 156.61 mm，差 0.000 mm。本次仅 bm01_sve1d_v2.py 一个工件哈希变化；raw/、normalized/、figures/ 与其余脚本未改动、未重跑。断面形状的进一步结论（含真实渠段参数下的判定翻转）见平行案例 BM-01R。",
+  "revision_note_v2": "2026-10-01 第六轮复核：一维附加诊断（v1/v2）三处口径更正，主判定与主结果文件未动。（1）梯形档此前沿用矩形反解纵坡（P=b+2h 低估梯形湿周），反解 S0 偏大 1.38/1.52/1.79 倍（m=1/1.5/2.5）→ 初值不是均匀流；已改用 section_normal_slope()，旧值在 legacy_rect_slope 留档。（2）断面形状表此前用 120/240 两级网格做 Richardson 外推（170.3 mm），丢掉了 v1 已有的 480 格那一级→ 高估；已改报网格序列 + 最细网格收敛值。（3）控制器用单点传感器 h[-1]，回路增益 ∝ 1/dx，960 格上出现晚期增幅极限环（伪峰 212 mm、闸前 527 mm）→ 已改用闸前固定长度平均（gate_avg, 100 m）；新增独立诊断脚本与结果文件。峰值指标改为前 2h 窗 early_peak_mm（物理峰 t≈36 min，晚期病态 t>150 min，取窗解耦），该指标对网格与传感器类型漂移 ≤1.3%。更正后（收敛峰值）：矩形 158.7 / m=1.0 124.6 / m=1.5 112.6 / m=2.5 94.4 mm（旧 170.3/116.2/102.4/82.0）。结论方向不变（矩形越带 A3、梯形在带内 A1），但矩形越带幅度由 +13.5% 收窄到 +5.8%，属脆弱判定。注：2026-09-30 那条 revision_note 里的「偏大 2.31 倍、平衡流量漂到 205 m³/s」是 BM-01R 几何（b=20.75、m=2.25）的数，不适用于 BM-01（BM-01 为 1.38~1.79 倍）。",
+  "reviewed_at_v2": "2026-10-01",
+  "revision_note_v3": "2026-10-01 第七轮（复核）：补「旧表」口径留档。README §9/§4.2 与 summary.md 引用的旧值（170.3/116.2/102.4/82.0 mm）此前在包内只能手工复算——legacy_rect_slope 留的是「错纵坡 + 最细网格收敛」，与旧表口径「错纵坡 + 120/240 两级外推」差一档。现增 superseded_two_level()，把旧口径整体跑出并写入 baseline_rect.superseded_table 与各 switch_results[].superseded_table；复现值 116.16/102.44/81.98 与文档一致。不含数值更正，主判定与主结果未动。",
+  "reviewed_at_v3": "2026-10-01"
+}

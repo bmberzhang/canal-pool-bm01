@@ -1,0 +1,106 @@
+{
+  "F1 肖楼分水口1.xlsx": {
+    "n": 37,
+    "mean": 0.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "F2-望城岗分水口.xlsx": {
+    "n": 37,
+    "mean": 1.0271,
+    "sd": 0.0752,
+    "range": 0.3384,
+    "max_adj_diff": 0.2572,
+    "mean_adj_diff": 0.0543
+  },
+  "F3-彭家分水口.xlsx": {
+    "n": 37,
+    "mean": 0.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "JZZ2-刁河渡槽进口节制闸-1.xlsx": {
+    "n": 37,
+    "mean": 2070.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "JZZ2-刁河渡槽进口节制闸-2.xlsx": {
+    "n": 37,
+    "mean": 2100.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "T1-刁河退水闸.xlsx": {
+    "n": 37,
+    "mean": 0.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "T2-湍河退水闸.xlsx": {
+    "n": 37,
+    "mean": 0.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "T3-严陵河退水闸.xlsx": {
+    "n": 37,
+    "mean": 0.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "严陵河退水闸-前序列.xlsx": {
+    "n": 37,
+    "mean": 143.6443,
+    "sd": 0.0079,
+    "range": 0.0327,
+    "max_adj_diff": 0.0202,
+    "mean_adj_diff": 0.0088
+  },
+  "丹江口水库.xlsx": {
+    "n": 37,
+    "mean": 164.9928,
+    "sd": 1.3981,
+    "range": 4.764,
+    "max_adj_diff": 3.36,
+    "mean_adj_diff": 1.0965
+  },
+  "湍河渡槽进口节制闸-1.xlsx": {
+    "n": 37,
+    "mean": 2060.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "湍河渡槽进口节制闸-2.xlsx": {
+    "n": 37,
+    "mean": 2060.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  },
+  "湍河渡槽进口节制闸-3.xlsx": {
+    "n": 37,
+    "mean": 2060.0,
+    "sd": 0.0,
+    "range": 0.0,
+    "max_adj_diff": 0.0,
+    "mean_adj_diff": 0.0
+  }
+}

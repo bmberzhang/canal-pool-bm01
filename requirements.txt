@@ -1,0 +1,7 @@
+# Core (required)
+numpy>=1.26
+matplotlib>=3.8
+
+# Independent-solver arm only (Section 8 / Figure 4).
+# Brings the EPA SWMM 5.2 engine through the swmm-toolkit wheel.
+pyswmm>=1.0.1

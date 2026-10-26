@@ -1,0 +1,24 @@
+解析阈值 ΔQ* = 42.426 m³/s（A_surf=100000 m², 条带 150 mm）
+[SPEC] L=2000 ΔQ= 8.0 | point=  3950.4 avg100=  3930.8 mean=    26.2 | A3档=2       | T_band/T_slew=28.125  ΔQ/ΔQ*=0.189
+[SPEC] L=2000 ΔQ=10.0 | point=  3635.6 avg100=  3607.5 mean=    33.6 | A3档=2       | T_band/T_slew=18.000  ΔQ/ΔQ*=0.236
+[SPEC] L=2000 ΔQ=12.0 | point=  4091.3 avg100=  3703.1 mean=    41.2 | A3档=2       | T_band/T_slew=12.500  ΔQ/ΔQ*=0.283
+[SPEC] L=2000 ΔQ=14.0 | point=  3849.1 avg100=  3444.2 mean=    49.1 | A3档=2       | T_band/T_slew=9.184  ΔQ/ΔQ*=0.330
+[SPEC] L=2000 ΔQ=16.0 | point=  4264.0 avg100=  4025.1 mean=  4288.6 | A3档=3 ALL_A3 | T_band/T_slew=7.031  ΔQ/ΔQ*=0.377
+[SPEC] L=2000 ΔQ=18.0 | point=  3935.2 avg100=  4010.9 mean=  4338.8 | A3档=3 ALL_A3 | T_band/T_slew=5.556  ΔQ/ΔQ*=0.424
+[SPEC] L=2000 ΔQ=20.0 | point=  3962.8 avg100=  4083.8 mean=  4450.2 | A3档=3 ALL_A3 | T_band/T_slew=4.500  ΔQ/ΔQ*=0.471
+[SPEC] L=2000 ΔQ=22.0 | point=  4163.6 avg100=  3729.9 mean=  4105.9 | A3档=3 ALL_A3 | T_band/T_slew=3.719  ΔQ/ΔQ*=0.519
+[SPEC] L=2000 ΔQ=24.0 | point=  3782.0 avg100=  4264.6 mean=  4236.3 | A3档=3 ALL_A3 | T_band/T_slew=3.125  ΔQ/ΔQ*=0.566
+[SPEC] L=2000 ΔQ=26.0 | point=  4287.6 avg100=  3890.6 mean=  4275.9 | A3档=3 ALL_A3 | T_band/T_slew=2.663  ΔQ/ΔQ*=0.613
+[SPEC] L=2000 ΔQ=28.0 | point=  3951.7 avg100=  3895.4 mean=  3815.8 | A3档=3 ALL_A3 | T_band/T_slew=2.296  ΔQ/ΔQ*=0.660
+[SPEC] L=2000 ΔQ=30.0 | point=  3617.8 avg100=  3691.9 mean=  3933.2 | A3档=3 ALL_A3 | T_band/T_slew=2.000  ΔQ/ΔQ*=0.707
+[SPEC] L=2000 ΔQ=32.0 | point=  4051.7 avg100=  4169.6 mean=  4142.4 | A3档=3 ALL_A3 | T_band/T_slew=1.758  ΔQ/ΔQ*=0.754
+[SPEC] L=2000 ΔQ=34.0 | point=  3716.2 avg100=  4204.4 mean=  4202.0 | A3档=3 ALL_A3 | T_band/T_slew=1.557  ΔQ/ΔQ*=0.801
+[SPEC] L=2000 ΔQ=36.0 | point=  3858.9 avg100=  3791.9 mean=  4354.3 | A3档=3 ALL_A3 | T_band/T_slew=1.389  ΔQ/ΔQ*=0.849
+[SPEC] L=2000 ΔQ=38.0 | point=  3978.0 avg100=  3608.3 mean=  3933.6 | A3档=3 ALL_A3 | T_band/T_slew=1.247  ΔQ/ΔQ*=0.896
+[SPEC] L=2000 ΔQ=40.0 | point=  3562.8 avg100=  3530.5 mean=  4439.5 | A3档=3 ALL_A3 | T_band/T_slew=1.125  ΔQ/ΔQ*=0.943
+
+全 A3 的 ΔQ: [16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40]
+非全 A3 的 ΔQ: [8, 10, 12, 14]
+分离度: {'pos_min': 0.3771, 'neg_max': 0.33, 'gap_abs': 0.0471, 'gap_rel_pct': 14.27}
+verdict: 实测转变点落在 ΔQ ∈ (14, 16]，即 15.0 m³/s（解析 ΔQ*=42.43，偏差 62.3%）。正类 ΔQ/ΔQ* 最小值 0.377、最近负类 0.330，相对间距 14.3% → 间距 ≥10%，C3 可作为**判定阈值**写入正文。
+已写入 raw\bm01_pred_spectrum.json（135s）

@@ -1,0 +1,145 @@
+{
+  "purpose": "W0-c 控制周期 vs 池体动力学：因一是否含第二个子机制",
+  "config": {
+    "L_m": 2000.0,
+    "ncell": 80,
+    "duration_h": 12.0,
+    "dqs": [
+      14.0,
+      16.0,
+      20.0,
+      30.0,
+      45.0
+    ],
+    "periods_s": [
+      60.0,
+      300.0
+    ]
+  },
+  "results": {
+    "period60": {
+      "rows": [
+        {
+          "dq": 14.0,
+          "peaks_mm": {
+            "point": 41.05,
+            "avg100": 40.21,
+            "mean": 20.7
+          },
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 16.0,
+          "peaks_mm": {
+            "point": 48.21,
+            "avg100": 47.28,
+            "mean": 23.32
+          },
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 20.0,
+          "peaks_mm": {
+            "point": 62.31,
+            "avg100": 61.26,
+            "mean": 29.98
+          },
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 30.0,
+          "peaks_mm": {
+            "point": 102.19,
+            "avg100": 100.8,
+            "mean": 53.9
+          },
+          "n_A3_arms": 0,
+          "ALL_A3": false
+        },
+        {
+          "dq": 45.0,
+          "peaks_mm": {
+            "point": 174.97,
+            "avg100": 171.1,
+            "mean": 102.27
+          },
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        }
+      ],
+      "all_A3_dqs": [],
+      "onset_bracket_m3s": null,
+      "mean_arm_max_mm": 102.27
+    },
+    "period300": {
+      "rows": [
+        {
+          "dq": 14.0,
+          "peaks_mm": {
+            "point": 3849.12,
+            "avg100": 3444.24,
+            "mean": 49.11
+          },
+          "n_A3_arms": 2,
+          "ALL_A3": false
+        },
+        {
+          "dq": 16.0,
+          "peaks_mm": {
+            "point": 4264.0,
+            "avg100": 4025.12,
+            "mean": 4288.59
+          },
+          "n_A3_arms": 3,
+          "ALL_A3": true
+        },
+        {
+          "dq": 20.0,
+          "peaks_mm": {
+            "point": 3962.81,
+            "avg100": 4083.85,
+            "mean": 4450.17
+          },
+          "n_A3_arms": 3,
+          "ALL_A3": true
+        },
+        {
+          "dq": 30.0,
+          "peaks_mm": {
+            "point": 3617.75,
+            "avg100": 3691.95,
+            "mean": 3933.21
+          },
+          "n_A3_arms": 3,
+          "ALL_A3": true
+        },
+        {
+          "dq": 45.0,
+          "peaks_mm": {
+            "point": 4214.02,
+            "avg100": 4198.56,
+            "mean": 4202.76
+          },
+          "n_A3_arms": 3,
+          "ALL_A3": true
+        }
+      ],
+      "all_A3_dqs": [
+        16.0,
+        20.0,
+        30.0,
+        45.0
+      ],
+      "onset_bracket_m3s": [
+        14.0,
+        16.0
+      ],
+      "mean_arm_max_mm": 4450.17
+    }
+  },
+  "wall_total_s": 109.6,
+  "verdict": "**因一存在第二个子机制：控制采样周期 vs 池体波行时间。**L=2000、ctrl_period=300 s（池体波行时间 L/c≈227 s < 周期）时，ΔQ≥16.0 三档全失败；把周期缩到 60 s 后，ΔQ=[16.0, 20.0, 30.0, 45.0] 被救回（不再全 A3），全池平均档最大峰值由 4450.2 mm 降到 102.3 mm。⇒ 短池的失效**不是执行器能力（k_g·r）问题**（执行器参数一字未改），而是「控制器采样比池体动力学还慢」。因此因一应写成两项：① 执行器能力；② 控制采样周期相对池体波行时间。"
+}

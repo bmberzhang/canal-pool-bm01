@@ -1,0 +1,52 @@
+{
+  "geometry": {
+    "pool_len_m": 6000.0,
+    "pool_width_m": 50.0,
+    "area_m2": 300000.0,
+    "h_target_m": 7.0,
+    "q0_m3s": 180.0,
+    "a0": 0.5,
+    "kg": 360.0,
+    "gate_up_capacity_m3s": 180.0,
+    "step_dq_m3s": 45.0,
+    "ctrl_period_s": 300.0,
+    "rate_limit_per_s": 0.0003333333333333333,
+    "full_stroke_s": 3000.0,
+    "band_normal_mm": 150.0
+  },
+  "tau": {
+    "v_flow": 0.5142857142857142,
+    "c_gravity_wave": 8.28673639015988,
+    "c_dynamic": 8.801022104445595,
+    "tau_s": 681.7389990384486,
+    "tau_kinematic_h": 6.481481481266319,
+    "tau_kin_label": "6.5 h"
+  },
+  "scales": {
+    "free_rise_mm_per_ctrl": 45.0,
+    "ideal_ff_open": 0.125,
+    "t_act_s": 375.0,
+    "tau_over_ctrl": 2.272463330128162,
+    "tau_over_tact": 1.8179706641025295
+  },
+  "lumped": {
+    "off_peak_mm": 72.73511542634648,
+    "ff_peak_mm": 72.08288243989358
+  },
+  "id_model": {
+    "off_peak_mm": 66.47003965963717,
+    "ff_delay0_peak_mm": 26.250481497704037,
+    "ff_best_peak_mm": 16.347157043989036,
+    "ff_gain_pct": 75.40672891471797,
+    "ff_delay0_gain_pct": 60.50779925494131,
+    "margin_before_mm": 83.52996034036283,
+    "margin_after_mm": 133.65284295601097
+  },
+  "bottleneck": {
+    "fast_ctrl_only": 49.71900848250854,
+    "no_rate_limit_only": 53.24924341764259,
+    "ff_plus_no_limit": 10.984873483728563
+  },
+  "t_step_min": 15.0,
+  "t_tail_start_min": 26.36231665064081
+}

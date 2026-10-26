@@ -1,0 +1,85 @@
+{
+  "check": "gate_and_pipe_capacity_vs_channel_capacity",
+  "geometry": {
+    "n": 3,
+    "b_each_m": 5.5,
+    "b_total_m": 16.5,
+    "pipe_section_m": [
+      5.5,
+      5.7
+    ],
+    "pipe_area_m2": 94.05,
+    "source": "管身 3 孔 1 联 5.5×5.7 m：中国水利报社 / 百度文库 / 筑龙 / 豆丁四来源一致；出口检修闸孔口净宽 5.5 m、3 孔共用：期刊VIP"
+  },
+  "formula": "Q = sigma*m*n*b*e*sqrt(2*g*h1)  (闸孔出流；中线建模统一式)",
+  "inputs": {
+    "h1_m": 4.5,
+    "e_range_m": [
+      4.5,
+      7.5
+    ],
+    "m_range": [
+      0.55,
+      0.65
+    ],
+    "v_allow_m_s": [
+      1.5,
+      2.0
+    ],
+    "q_design_m3s": 135.0,
+    "q_enlarged_m3s": 160.0,
+    "q_stepped_m3s": 180.0
+  },
+  "gate_cases": [
+    {
+      "m": 0.55,
+      "e_m": 4.5,
+      "q_capacity_m3s": 383.7,
+      "ratio_to_design": 2.84,
+      "ratio_to_enlarged": 2.4,
+      "ratio_to_stepped": 2.13
+    },
+    {
+      "m": 0.55,
+      "e_m": 7.5,
+      "q_capacity_m3s": 639.5,
+      "ratio_to_design": 4.74,
+      "ratio_to_enlarged": 4.0,
+      "ratio_to_stepped": 3.55
+    },
+    {
+      "m": 0.65,
+      "e_m": 4.5,
+      "q_capacity_m3s": 453.5,
+      "ratio_to_design": 3.36,
+      "ratio_to_enlarged": 2.83,
+      "ratio_to_stepped": 2.52
+    },
+    {
+      "m": 0.65,
+      "e_m": 7.5,
+      "q_capacity_m3s": 755.8,
+      "ratio_to_design": 5.6,
+      "ratio_to_enlarged": 4.72,
+      "ratio_to_stepped": 4.2
+    }
+  ],
+  "gate_capacity_range_m3s": [
+    383.7,
+    755.8
+  ],
+  "pipe_capacity_range_m3s": [
+    141.1,
+    188.1
+  ],
+  "pipe_velocity_m_s": {
+    "q135": 1.435,
+    "q160": 1.701,
+    "q180": 1.914
+  },
+  "bottleneck": "channel",
+  "verdict": "闸门与管身过流能力均充裕，瓶颈在渠道输水能力（与主案例结论一致）",
+  "evidence_grade": "literature-parameterized",
+  "sealed": false,
+  "note": "只做能力校核，不产生判定码。流量系数 m 为率定区间而非设计单点，故给区间不给点值。开度上限以检修闸总高 7.5 m 为量级参照。管身控制为倒虹吸的主控断面；闸孔式为旁证。【第二轮修正】首轮误将'孔口净宽 5.5 m'与'3 孔'拼成总净宽 16.5 m，该拼法无单一来源直接陈述且违背倒虹吸工作原理，已改用管身断面主控。"
+}

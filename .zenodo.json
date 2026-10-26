@@ -1,0 +1,34 @@
+{
+  "title": "Feedback quantity can flip the absorbability verdict for upstream steps in canal pools: code and data for a controlled numerical counterexample",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "language": "eng",
+  "publication_date": "2026-10-26",
+  "creators": [
+    {
+      "name": "Zhang, Xu",
+      "affiliation": "School of Water Conservancy and Hydropower Engineering, Hebei University of Engineering, Handan 056038, China"
+    }
+  ],
+  "description": "<p>Reproduction package for the manuscript <em>Feedback quantity can flip the absorbability verdict for upstream steps in canal pools: a controlled numerical counterexample</em> (submitted to Journal of Hydroinformatics, IWA Publishing).</p><p>Contents: a 1D Saint-Venant solver, a lumped 0D storage model with the A1/A3 decision rules, the canal controller with the two contrasted feedback quantities (pool-mean level and gate-adjacent single point), an independent replication in EPA SWMM 5.2 driven through pyswmm, a 25.6 km real reach parameterised from published data, every archived JSON/CSV result, and the figure scripts.</p><p>The central claim the package supports: holding the pool, the controller law, the gains, the setpoint and the disturbance fixed, and changing only the feedback measurement operator, flips the absorbability verdict (pool-mean peak 75.0 mm, A1) versus (gate-adjacent peak 470.8 mm, A3). The verdict pair is reproduced by EPA SWMM at every tested grid resolution.</p><p>Code is MIT licensed; data, results and figures are CC BY 4.0.</p>",
+  "keywords": [
+    "canal pool",
+    "canal automation",
+    "feedback sampling",
+    "absorbability",
+    "reduced-order model",
+    "Saint-Venant equations",
+    "EPA SWMM",
+    "cross-code verification",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "Journal of Hydroinformatics (submitted)",
+      "resource_type": "publication-article"
+    }
+  ],
+  "notes": "Decision codes: A1 = absorbable within the ±150 mm band, A3 = non-absorbable / degrade. The BM-01 case is a synthetic reduced-model benchmark, not a calibrated model of a specific canal."
+}

@@ -1,0 +1,7 @@
+{
+  "check": "deterministic_rerun",
+  "pairs": "4/4",
+  "identical_metrics": true,
+  "mismatches": [],
+  "note": "同一输入下复跑指标逐字段一致，用于证明本案例可复跑；不增加任何分值。"
+}

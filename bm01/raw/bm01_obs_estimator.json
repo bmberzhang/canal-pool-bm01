@@ -1,0 +1,79 @@
+{
+  "purpose": "E-OBS：理想全池平均能否被工程可实现的估计量替代",
+  "config": {
+    "pool_len_m": 6000.0,
+    "ncell": 240,
+    "dx_m": 25.0,
+    "duration_h": 12.0,
+    "step_dq": 45.0,
+    "band_mm": 150.0,
+    "kp": 1.6,
+    "ki": 0.0016
+  },
+  "reference_arms": {
+    "point": {
+      "peak_mean_mm": 470.78,
+      "final_mean_mm": 314.28,
+      "judgement": "A3"
+    },
+    "avg100": {
+      "peak_mean_mm": 658.76,
+      "final_mean_mm": 47.9,
+      "judgement": "A3"
+    },
+    "mean": {
+      "peak_mean_mm": 75.05,
+      "final_mean_mm": 3.82,
+      "judgement": "A1"
+    }
+  },
+  "estimated_arms": {
+    "midpoint": {
+      "peak_mean_mm": 111.85,
+      "final_mean_mm": 25.95,
+      "judgement": "A1",
+      "est_track_err_mm": 86.0,
+      "mass_err": 4.92e-15
+    },
+    "mp3": {
+      "peak_mean_mm": 79.07,
+      "final_mean_mm": 2.47,
+      "judgement": "A1",
+      "est_track_err_mm": 21.54,
+      "mass_err": 1.06e-12
+    },
+    "mp5": {
+      "peak_mean_mm": 76.32,
+      "final_mean_mm": 2.63,
+      "judgement": "A1",
+      "est_track_err_mm": 13.1,
+      "mass_err": 6.01e-13
+    },
+    "volbal": {
+      "peak_mean_mm": 75.05,
+      "final_mean_mm": 3.82,
+      "judgement": "A1",
+      "est_track_err_mm": 0.0,
+      "mass_err": 7.41e-13
+    }
+  },
+  "regression": {
+    "point": {
+      "expect_mm": 470.8,
+      "got_mm": 470.78,
+      "match": true
+    },
+    "avg100": {
+      "expect_mm": 658.8,
+      "got_mm": 658.76,
+      "match": true
+    },
+    "mean": {
+      "expect_mm": 75.0,
+      "got_mm": 75.05,
+      "match": true
+    }
+  },
+  "verdict": "R2 被闭合：理想全池平均峰值 75.0 mm（A1）；在 4 种工程可实现估计量中，midpoint、mp3、mp5、volbal 同样判 A1（111.8 mm、79.1 mm、76.3 mm、75.0 mm），最佳可实现估计偏差 0.0 mm。⇒ 判定码翻转**不依赖理想量测**，可用上下游流量计（容积平衡）实现。",
+  "wall_total_s": 55.0
+}

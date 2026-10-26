@@ -1,0 +1,542 @@
+{
+  "case_id": "window_convergence",
+  "purpose": "判定窗口收敛：C_主案例跑到48h，峰值-窗口曲线",
+  "L_m": 6000.0,
+  "dq": 45.0,
+  "ctrl_period_s": 300.0,
+  "dx_m": 25.0,
+  "ncell": 240,
+  "duration_h": 48.0,
+  "band_mm": 150.0,
+  "arms": {
+    "mean": {
+      "peak_curve": [
+        {
+          "window_h": 2.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 4.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 6.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 8.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 10.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 12.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 16.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 24.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 36.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        },
+        {
+          "window_h": 48.0,
+          "peak_mm": 75.01,
+          "t_peak_h": 0.44,
+          "judgement": "A1"
+        }
+      ],
+      "hourly_envelope": [
+        {
+          "h": 1,
+          "env_max_mm": 75.01
+        },
+        {
+          "h": 2,
+          "env_max_mm": 4.2
+        },
+        {
+          "h": 3,
+          "env_max_mm": 3.84
+        },
+        {
+          "h": 4,
+          "env_max_mm": 3.87
+        },
+        {
+          "h": 5,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 6,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 7,
+          "env_max_mm": 3.78
+        },
+        {
+          "h": 8,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 9,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 10,
+          "env_max_mm": 3.83
+        },
+        {
+          "h": 11,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 12,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 13,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 14,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 15,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 16,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 17,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 18,
+          "env_max_mm": 3.83
+        },
+        {
+          "h": 19,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 20,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 21,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 22,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 23,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 24,
+          "env_max_mm": 3.78
+        },
+        {
+          "h": 25,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 26,
+          "env_max_mm": 3.83
+        },
+        {
+          "h": 27,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 28,
+          "env_max_mm": 3.79
+        },
+        {
+          "h": 29,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 30,
+          "env_max_mm": 3.83
+        },
+        {
+          "h": 31,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 32,
+          "env_max_mm": 3.78
+        },
+        {
+          "h": 33,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 34,
+          "env_max_mm": 3.79
+        },
+        {
+          "h": 35,
+          "env_max_mm": 3.83
+        },
+        {
+          "h": 36,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 37,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 38,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 39,
+          "env_max_mm": 3.83
+        },
+        {
+          "h": 40,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 41,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 42,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 43,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 44,
+          "env_max_mm": 3.81
+        },
+        {
+          "h": 45,
+          "env_max_mm": 3.82
+        },
+        {
+          "h": 46,
+          "env_max_mm": 3.8
+        },
+        {
+          "h": 47,
+          "env_max_mm": 3.83
+        },
+        {
+          "h": 48,
+          "env_max_mm": 3.81
+        }
+      ],
+      "peak_48h_mm": 75.01,
+      "t_peak_48h_h": 0.44,
+      "peak_at_4h_over_48h": 1.0,
+      "peak_at_12h_over_48h": 1.0,
+      "peak_at_24h_over_48h": 1.0,
+      "converged_by_12h_1pct": true
+    },
+    "point": {
+      "peak_curve": [
+        {
+          "window_h": 2.0,
+          "peak_mm": 156.61,
+          "t_peak_h": 0.6,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 4.0,
+          "peak_mm": 156.61,
+          "t_peak_h": 0.6,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 6.0,
+          "peak_mm": 156.61,
+          "t_peak_h": 0.6,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 8.0,
+          "peak_mm": 354.49,
+          "t_peak_h": 7.4,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 10.0,
+          "peak_mm": 470.74,
+          "t_peak_h": 8.25,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 12.0,
+          "peak_mm": 470.74,
+          "t_peak_h": 8.25,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 16.0,
+          "peak_mm": 470.74,
+          "t_peak_h": 8.25,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 24.0,
+          "peak_mm": 470.74,
+          "t_peak_h": 8.25,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 36.0,
+          "peak_mm": 470.74,
+          "t_peak_h": 8.25,
+          "judgement": "A3"
+        },
+        {
+          "window_h": 48.0,
+          "peak_mm": 527.31,
+          "t_peak_h": 41.18,
+          "judgement": "A3"
+        }
+      ],
+      "hourly_envelope": [
+        {
+          "h": 1,
+          "env_max_mm": 156.61
+        },
+        {
+          "h": 2,
+          "env_max_mm": 67.05
+        },
+        {
+          "h": 3,
+          "env_max_mm": 58.09
+        },
+        {
+          "h": 4,
+          "env_max_mm": 63.91
+        },
+        {
+          "h": 5,
+          "env_max_mm": 67.2
+        },
+        {
+          "h": 6,
+          "env_max_mm": 110.67
+        },
+        {
+          "h": 7,
+          "env_max_mm": 252.59
+        },
+        {
+          "h": 8,
+          "env_max_mm": 354.49
+        },
+        {
+          "h": 9,
+          "env_max_mm": 470.74
+        },
+        {
+          "h": 10,
+          "env_max_mm": 418.68
+        },
+        {
+          "h": 11,
+          "env_max_mm": 411.84
+        },
+        {
+          "h": 12,
+          "env_max_mm": 314.26
+        },
+        {
+          "h": 13,
+          "env_max_mm": 211.8
+        },
+        {
+          "h": 14,
+          "env_max_mm": 70.53
+        },
+        {
+          "h": 15,
+          "env_max_mm": 149.32
+        },
+        {
+          "h": 16,
+          "env_max_mm": 173.98
+        },
+        {
+          "h": 17,
+          "env_max_mm": 306.4
+        },
+        {
+          "h": 18,
+          "env_max_mm": 334.26
+        },
+        {
+          "h": 19,
+          "env_max_mm": 324.85
+        },
+        {
+          "h": 20,
+          "env_max_mm": 217.34
+        },
+        {
+          "h": 21,
+          "env_max_mm": 76.25
+        },
+        {
+          "h": 22,
+          "env_max_mm": 39.04
+        },
+        {
+          "h": 23,
+          "env_max_mm": 118.15
+        },
+        {
+          "h": 24,
+          "env_max_mm": 179.39
+        },
+        {
+          "h": 25,
+          "env_max_mm": 242.45
+        },
+        {
+          "h": 26,
+          "env_max_mm": 307.01
+        },
+        {
+          "h": 27,
+          "env_max_mm": 266.81
+        },
+        {
+          "h": 28,
+          "env_max_mm": 316.42
+        },
+        {
+          "h": 29,
+          "env_max_mm": 325.55
+        },
+        {
+          "h": 30,
+          "env_max_mm": 200.96
+        },
+        {
+          "h": 31,
+          "env_max_mm": 145.14
+        },
+        {
+          "h": 32,
+          "env_max_mm": 52.75
+        },
+        {
+          "h": 33,
+          "env_max_mm": 108.39
+        },
+        {
+          "h": 34,
+          "env_max_mm": 156.38
+        },
+        {
+          "h": 35,
+          "env_max_mm": 123.72
+        },
+        {
+          "h": 36,
+          "env_max_mm": 145.79
+        },
+        {
+          "h": 37,
+          "env_max_mm": 292.14
+        },
+        {
+          "h": 38,
+          "env_max_mm": 261.9
+        },
+        {
+          "h": 39,
+          "env_max_mm": 309.66
+        },
+        {
+          "h": 40,
+          "env_max_mm": 375.08
+        },
+        {
+          "h": 41,
+          "env_max_mm": 432.72
+        },
+        {
+          "h": 42,
+          "env_max_mm": 527.31
+        },
+        {
+          "h": 43,
+          "env_max_mm": 454.91
+        },
+        {
+          "h": 44,
+          "env_max_mm": 382.61
+        },
+        {
+          "h": 45,
+          "env_max_mm": 176.6
+        },
+        {
+          "h": 46,
+          "env_max_mm": 84.89
+        },
+        {
+          "h": 47,
+          "env_max_mm": 74.89
+        },
+        {
+          "h": 48,
+          "env_max_mm": 182.06
+        }
+      ],
+      "peak_48h_mm": 527.31,
+      "t_peak_48h_h": 41.18,
+      "peak_at_4h_over_48h": 0.297,
+      "peak_at_12h_over_48h": 0.8927,
+      "peak_at_24h_over_48h": 0.8927,
+      "converged_by_12h_1pct": false
+    }
+  },
+  "wall_s": 64.2
+}

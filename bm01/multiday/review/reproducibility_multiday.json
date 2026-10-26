@@ -1,0 +1,7 @@
+{
+  "check": "deterministic_rerun_multiday",
+  "pairs": "3/3",
+  "identical_metrics": true,
+  "mismatches": [],
+  "note": "同一输入下 7 天序列复跑指标逐字段一致，用于证明多日包可复跑；不增加分值。"
+}

@@ -1,0 +1,96 @@
+{
+  "experiment": "E4 saturation cause-vs-effect",
+  "ncell": 480,
+  "win_m": 1500,
+  "rows": [
+    {
+      "peak_mm": 1374.0,
+      "tail_mm": 1374.0,
+      "tail_slope_mm_per_min": 35.528,
+      "sat_frac": 0.2297,
+      "a_min": 0.0,
+      "a_max": 1.0,
+      "arm": "amp",
+      "step_dq": 45.0,
+      "verdict": "增长/失稳"
+    },
+    {
+      "peak_mm": 1104.8,
+      "tail_mm": 944.5,
+      "tail_slope_mm_per_min": -32.828,
+      "sat_frac": 0.0847,
+      "a_min": 0.0,
+      "a_max": 1.0,
+      "arm": "amp",
+      "step_dq": 20.0,
+      "verdict": "衰减/有界"
+    },
+    {
+      "peak_mm": 1435.5,
+      "tail_mm": 1435.5,
+      "tail_slope_mm_per_min": 21.361,
+      "sat_frac": 0.2054,
+      "a_min": 0.0,
+      "a_max": 1.0,
+      "arm": "amp",
+      "step_dq": 8.0,
+      "verdict": "增长/失稳"
+    },
+    {
+      "peak_mm": 1053.2,
+      "tail_mm": 1018.6,
+      "tail_slope_mm_per_min": -29.672,
+      "sat_frac": 0.1305,
+      "a_min": 0.0,
+      "a_max": 1.0,
+      "arm": "amp",
+      "step_dq": 3.0,
+      "verdict": "衰减/有界"
+    },
+    {
+      "peak_mm": 1374.0,
+      "tail_mm": 1374.0,
+      "tail_slope_mm_per_min": 35.528,
+      "sat_frac": 0.2297,
+      "a_min": 0.0,
+      "a_max": 1.0,
+      "arm": "antiwindup",
+      "mode": "base",
+      "verdict": "增长/失稳"
+    },
+    {
+      "peak_mm": 417.5,
+      "tail_mm": 250.0,
+      "tail_slope_mm_per_min": -3.739,
+      "sat_frac": 0.0,
+      "a_min": 0.15,
+      "a_max": 0.95,
+      "arm": "antiwindup",
+      "mode": "tightclip",
+      "verdict": "衰减/有界"
+    },
+    {
+      "peak_mm": 253.1,
+      "tail_mm": 180.5,
+      "tail_slope_mm_per_min": -3.944,
+      "sat_frac": 0.0,
+      "a_min": 0.343,
+      "a_max": 0.855,
+      "arm": "antiwindup",
+      "mode": "backcalc",
+      "verdict": "衰减/有界"
+    },
+    {
+      "peak_mm": 2309.0,
+      "tail_mm": 2038.9,
+      "tail_slope_mm_per_min": 12.074,
+      "sat_frac": 0.3019,
+      "a_min": -0.2,
+      "a_max": 1.2,
+      "arm": "antiwindup",
+      "mode": "noclip",
+      "verdict": "增长/失稳"
+    }
+  ],
+  "note": "小信号仍增长→线性不稳定（饱和=果）；小信号衰减仅大幅值增长→饱和=因。noclip稳定而base失稳→限幅是必要条件（饱和=因）。"
+}

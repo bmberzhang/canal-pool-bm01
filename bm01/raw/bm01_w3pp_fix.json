@@ -1,0 +1,187 @@
+{
+  "purpose": "W3''-fix：在起爆点之上重做周期对照（修正取值 bug）",
+  "config": {
+    "L_m": 6000.0,
+    "ncell": 240,
+    "dqs": [
+      76.0,
+      80.0
+    ],
+    "periods_s": [
+      60.0,
+      150.0,
+      300.0
+    ]
+  },
+  "rows": [
+    {
+      "dq": 76.0,
+      "ctrl_period_s": 60.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 230.29,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 230.29,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 97.58,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 76.0,
+      "ctrl_period_s": 150.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 256.61,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 256.61,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 119.45,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 76.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 292.76,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 292.76,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 155.21,
+          "judgement": "A3"
+        }
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true
+    },
+    {
+      "dq": 80.0,
+      "ctrl_period_s": 60.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 246.36,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 246.36,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 106.83,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 80.0,
+      "ctrl_period_s": 150.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 274.12,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 274.12,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 129.72,
+          "judgement": "A1"
+        }
+      },
+      "n_A3_arms": 2,
+      "ALL_A3": false
+    },
+    {
+      "dq": 80.0,
+      "ctrl_period_s": 300.0,
+      "arms": {
+        "point": {
+          "peak_mean_mm": 325.04,
+          "judgement": "A3"
+        },
+        "avg100": {
+          "peak_mean_mm": 312.18,
+          "judgement": "A3"
+        },
+        "mean": {
+          "peak_mean_mm": 167.34,
+          "judgement": "A3"
+        }
+      },
+      "n_A3_arms": 3,
+      "ALL_A3": true
+    }
+  ],
+  "wall_total_s": 148.8,
+  "rescued": [
+    {
+      "dq": 76.0,
+      "p300_all_A3": true,
+      "p60_all_A3": false,
+      "p150_all_A3": false,
+      "mean_p300_mm": 155.21,
+      "mean_p60_mm": 97.58,
+      "mean_p150_mm": 119.45
+    },
+    {
+      "dq": 80.0,
+      "p300_all_A3": true,
+      "p60_all_A3": false,
+      "p150_all_A3": false,
+      "mean_p300_mm": 167.34,
+      "mean_p60_mm": 106.83,
+      "mean_p150_mm": 129.72
+    }
+  ],
+  "verdict": "W3'' **第 2 段通过（修正后）**：在 L=6000 的起爆区内（ΔQ=%s），控制周期 300 s→60 s 使『三档全 A3』被救回：ΔQ=76：全池平均 155.2 → 97.6 mm；ΔQ=80：全池平均 167.3 → 106.8 mm。150 s 的效果：ΔQ=76 也已救回、ΔQ=80 也已救回。⇒ T_ctrl 机制在**两个池长上复现**，可写成可证伪通则。",
+  "onset_signature_contrast": {
+    "L2000_bifurcation": {
+      "dq_prev": 14,
+      "mean_prev_mm": 49.1,
+      "dq_next": 15,
+      "mean_next_mm": 3820.7,
+      "ratio": 77.8,
+      "type": "失稳型（准则性分岔）",
+      "onset_m3s": [
+        14,
+        15
+      ]
+    },
+    "L6000_marginal": {
+      "dq_prev": 70,
+      "mean_prev_mm": 137.7,
+      "dq_next": 75,
+      "mean_next_mm": 152.2,
+      "ratio": 1.1,
+      "type": "边际型（池均稳态响应越带）",
+      "onset_m3s": [
+        70,
+        75
+      ]
+    },
+    "note": "两者形态相差 71 倍（77.8 / 1.10）⇒ 是**两个不同机制**，不可混为一谈：短池是控制采样过慢导致的分岔，长池是池均响应平稳越带。C3 的闭式阈值（ΔQ*=73.5）在长池上吻合到 2%（实测 72~75），在短池上高估 2.9 倍（实测 14.5）——**C3 只适用于边际型，不适用于失稳型**。"
+  }
+}

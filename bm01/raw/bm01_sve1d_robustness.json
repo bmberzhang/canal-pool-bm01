@@ -1,0 +1,132 @@
+{
+  "purpose": "robustness: is the gate oscillation physical (control loop) or numerical?",
+  "units_note": "内部 dev_* 为米，本文件统计输出为毫米；残差已去线性趋势",
+  "wave_celevity_mps": 8.28673639015988,
+  "travel_time_min": 12.067476904266607,
+  "ctrl_period_s": 300.0,
+  "tail_window_s": 3600.0,
+  "results": {
+    "openloop_120_gate": {
+      "resid_half_range_mm": 12.3,
+      "resid_rms_mm": 7.0,
+      "drift_mm_per_h": 339.8,
+      "abs_half_range_mm": 172.5,
+      "period_s": 1360.1
+    },
+    "openloop_120_mean": {
+      "resid_half_range_mm": 3.0,
+      "resid_rms_mm": 1.7,
+      "drift_mm_per_h": 334.5,
+      "abs_half_range_mm": 165.9,
+      "period_s": null
+    },
+    "openloop_240_gate": {
+      "resid_half_range_mm": 15.3,
+      "resid_rms_mm": 8.8,
+      "drift_mm_per_h": 341.0,
+      "abs_half_range_mm": 173.3,
+      "period_s": 1366.9
+    },
+    "openloop_240_mean": {
+      "resid_half_range_mm": 3.0,
+      "resid_rms_mm": 1.8,
+      "drift_mm_per_h": 334.5,
+      "abs_half_range_mm": 166.6,
+      "period_s": null
+    },
+    "cfl0.4": {
+      "resid_half_range_mm": 260.6,
+      "resid_rms_mm": 146.9,
+      "drift_mm_per_h": -54.7,
+      "abs_half_range_mm": 246.4,
+      "period_s": null
+    },
+    "cfl0.1": {
+      "resid_half_range_mm": 181.6,
+      "resid_rms_mm": 105.5,
+      "drift_mm_per_h": -176.5,
+      "abs_half_range_mm": 220.5,
+      "period_s": 1260.0
+    },
+    "cfl_peak_shift_mm": 5.895324422161792,
+    "closed_120_gate": {
+      "resid_half_range_mm": 260.6,
+      "resid_rms_mm": 146.9,
+      "drift_mm_per_h": -54.7,
+      "abs_half_range_mm": 246.4,
+      "period_s": null
+    },
+    "closed_120_mean": {
+      "resid_half_range_mm": 67.9,
+      "resid_rms_mm": 37.3,
+      "drift_mm_per_h": -28.7,
+      "abs_half_range_mm": 62.5,
+      "period_s": null
+    },
+    "closed_120_head": {
+      "resid_half_range_mm": 266.5,
+      "resid_rms_mm": 156.2,
+      "drift_mm_per_h": 43.0,
+      "abs_half_range_mm": 277.8,
+      "period_s": 1374.8
+    },
+    "closed_120_peak_mean_mm": 142.88143604489179,
+    "closed_240_gate": {
+      "resid_half_range_mm": 223.0,
+      "resid_rms_mm": 120.4,
+      "drift_mm_per_h": 12.4,
+      "abs_half_range_mm": 221.8,
+      "period_s": 1351.7
+    },
+    "closed_240_mean": {
+      "resid_half_range_mm": 36.5,
+      "resid_rms_mm": 17.8,
+      "drift_mm_per_h": -13.6,
+      "abs_half_range_mm": 39.3,
+      "period_s": null
+    },
+    "closed_240_head": {
+      "resid_half_range_mm": 218.0,
+      "resid_rms_mm": 127.7,
+      "drift_mm_per_h": -64.7,
+      "abs_half_range_mm": 225.1,
+      "period_s": null
+    },
+    "closed_240_peak_mean_mm": 156.6079038724011,
+    "closed_480_gate": {
+      "resid_half_range_mm": 361.5,
+      "resid_rms_mm": 212.6,
+      "drift_mm_per_h": -236.4,
+      "abs_half_range_mm": 373.3,
+      "period_s": null
+    },
+    "closed_480_mean": {
+      "resid_half_range_mm": 55.6,
+      "resid_rms_mm": 30.7,
+      "drift_mm_per_h": -250.9,
+      "abs_half_range_mm": 115.6,
+      "period_s": null
+    },
+    "closed_480_head": {
+      "resid_half_range_mm": 315.4,
+      "resid_rms_mm": 194.1,
+      "drift_mm_per_h": -286.8,
+      "abs_half_range_mm": 377.1,
+      "period_s": 1410.0
+    },
+    "closed_480_peak_mean_mm": 158.69431351482444
+  },
+  "verdict": {
+    "openloop_resid_rms_mm": 8.8,
+    "closedloop_resid_rms_mm": 212.6,
+    "cfl_peak_shift_mm": 5.895324422161792,
+    "period_240_s": 1351.7,
+    "period_480_s": null,
+    "checks_pass": {
+      "numerics_clean": true,
+      "dt_insensitive": false,
+      "grid_independent_period": false
+    }
+  },
+  "note": "证据等级 synthetic-1d-sve；不改变 BM-01 判定码与证据等级。"
+}

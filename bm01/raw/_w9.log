@@ -1,0 +1,21 @@
+[W9] A_短池_原周期         L= 2000 ΔQ=45.0 period=  300s dx= 50.0 ncell=  40 | point=  4206.9 A3 | mean=  4263.2 A3
+[W9] A_短池_原周期         L= 2000 ΔQ=45.0 period=  300s dx= 25.0 ncell=  80 | point=  4214.0 A3 | mean=  4202.8 A3
+[W9] A_短池_原周期         L= 2000 ΔQ=45.0 period=  300s dx= 12.5 ncell= 160 | point=  4116.7 A3 | mean=  4192.3 A3
+
+>>> A_短池_原周期：最大相对偏差 1.69%，判定码 ['A3'] → 通过
+
+[W9] B_短池_快周期         L= 2000 ΔQ=45.0 period=   60s dx= 50.0 ncell=  40 | point=   164.8 A3 | mean=   102.5 A1
+[W9] B_短池_快周期         L= 2000 ΔQ=45.0 period=   60s dx= 25.0 ncell=  80 | point=   175.0 A3 | mean=   102.3 A1
+[W9] B_短池_快周期         L= 2000 ΔQ=45.0 period=   60s dx= 12.5 ncell= 160 | point=   184.1 A3 | mean=   108.2 A1
+
+>>> B_短池_快周期：最大相对偏差 5.48%，判定码 ['A1'] → 通过
+
+[W9] C_主案例            L= 6000 ΔQ=45.0 period=  300s dx= 50.0 ncell= 120 | point=   813.8 A3 | mean=    74.7 A1
+[W9] C_主案例            L= 6000 ΔQ=45.0 period=  300s dx= 25.0 ncell= 240 | point=   470.8 A3 | mean=    75.0 A1
+[W9] C_主案例            L= 6000 ΔQ=45.0 period=  300s dx= 12.5 ncell= 480 | point=  1057.6 A3 | mean=    74.8 A1
+
+>>> C_主案例：最大相对偏差 0.32%，判定码 ['A1'] → 通过
+
+
+W9 **通过**：三个关键算例在三档网格（dx=50/25/12.5 m）上最大相对偏差 5.48%（阈值 15%）、判定码三档一致 ⇒ W0-c 的『救回』结论与 W3'' 的设计前提成立，可继续。
+已写入 raw\bm01_w9_grid_check.json（150s）

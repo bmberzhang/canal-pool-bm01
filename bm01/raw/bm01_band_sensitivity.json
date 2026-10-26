@@ -1,0 +1,385 @@
+{
+  "case_id": "BM-01",
+  "purpose": "band_sensitivity",
+  "question": "±0.15 m 正常调节条带是 assume；判定码对它有多敏感？",
+  "method": "读已记录时序重算 R1；R2/R3 与条带无关，沿用记录值。未重跑水力模型。",
+  "evidence_grade": "synthetic-reduced-model",
+  "note": "本扫描只回答'条带取值敏感性'，不改变 BM-01 的 A1 判定与证据等级；参数仍为量级示例。",
+  "bands_mm": [
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    75.0,
+    100.0,
+    125.0,
+    150.0,
+    200.0,
+    250.0,
+    300.0
+  ],
+  "scenarios": [
+    {
+      "key": "bm01_main",
+      "label": "主案例 单池",
+      "recorded_code": "A1",
+      "recorded_band_m": 0.15,
+      "channels": [
+        "pool1"
+      ],
+      "sweep": [
+        {
+          "band_m": 0.02,
+          "band_mm": 20.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.03,
+          "band_mm": 30.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.04,
+          "band_mm": 40.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.05,
+          "band_mm": 50.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.075,
+          "band_mm": 75.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.1,
+          "band_mm": 100.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.125,
+          "band_mm": 125.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.15,
+          "band_mm": 150.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.2,
+          "band_mm": 200.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.25,
+          "band_mm": 250.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 72.72
+        },
+        {
+          "band_m": 0.3,
+          "band_mm": 300.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 72.72
+        }
+      ],
+      "min_band_mm_for_A1": 75.0,
+      "recorded_worst_peak_mm": 72.72
+    },
+    {
+      "key": "bm01_chain_local_only",
+      "label": "对照一 串联+本地反馈",
+      "recorded_code": "A3",
+      "recorded_band_m": 0.15,
+      "channels": [
+        "pool1",
+        "pool2"
+      ],
+      "sweep": [
+        {
+          "band_m": 0.02,
+          "band_mm": 20.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.03,
+          "band_mm": 30.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.04,
+          "band_mm": 40.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.05,
+          "band_mm": 50.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.075,
+          "band_mm": 75.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.1,
+          "band_mm": 100.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.125,
+          "band_mm": 125.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.15,
+          "band_mm": 150.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.2,
+          "band_mm": 200.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.25,
+          "band_mm": 250.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        },
+        {
+          "band_m": 0.3,
+          "band_mm": 300.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 169.65
+        }
+      ],
+      "min_band_mm_for_A1": null,
+      "recorded_worst_peak_mm": 169.65
+    },
+    {
+      "key": "bm01_chain_feedforward",
+      "label": "对照二 串联+前馈",
+      "recorded_code": "A1",
+      "recorded_band_m": 0.15,
+      "channels": [
+        "pool1",
+        "pool2"
+      ],
+      "sweep": [
+        {
+          "band_m": 0.02,
+          "band_mm": 20.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.03,
+          "band_mm": 30.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.04,
+          "band_mm": 40.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.05,
+          "band_mm": 50.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.075,
+          "band_mm": 75.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.1,
+          "band_mm": 100.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.125,
+          "band_mm": 125.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.15,
+          "band_mm": 150.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.2,
+          "band_mm": 200.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.25,
+          "band_mm": 250.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 140.53
+        },
+        {
+          "band_m": 0.3,
+          "band_mm": 300.0,
+          "code": "A1",
+          "r1_pass": true,
+          "worst_peak_mm": 140.53
+        }
+      ],
+      "min_band_mm_for_A1": 150.0,
+      "recorded_worst_peak_mm": 140.53
+    },
+    {
+      "key": "bm01_overload",
+      "label": "对照三 超能力",
+      "recorded_code": "A3",
+      "recorded_band_m": 0.15,
+      "channels": [
+        "pool1"
+      ],
+      "sweep": [
+        {
+          "band_m": 0.02,
+          "band_mm": 20.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.03,
+          "band_mm": 30.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.04,
+          "band_mm": 40.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.05,
+          "band_mm": 50.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.075,
+          "band_mm": 75.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.1,
+          "band_mm": 100.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.125,
+          "band_mm": 125.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.15,
+          "band_mm": 150.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.2,
+          "band_mm": 200.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.25,
+          "band_mm": 250.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        },
+        {
+          "band_m": 0.3,
+          "band_mm": 300.0,
+          "code": "A3",
+          "r1_pass": false,
+          "worst_peak_mm": 760.17
+        }
+      ],
+      "min_band_mm_for_A1": null,
+      "recorded_worst_peak_mm": 760.17
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "campaign_id": "local-bm01r-literature-r1",
+  "case_id": "BM-01R",
+  "official_activity": null,
+  "evidence_grade": "literature-parameterized",
+  "note": "BM-01 的文献参数化重跑：对象参数取自公开文献/公告，不等于官方活动 R12-standard-benchmarks-r1 的冻结题单值。本包为平行案例，未改动 BM-01 的任何文件。",
+  "registered_at": "2026-09-30T16:24:17",
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "commands": [
+    {
+      "cmd": "python bm01r_lit.py",
+      "exit_code": 0,
+      "duration_s": 25.0,
+      "note": "复跑两次，6/6 物理指标逐字段一致（B4 加入后为 7 工况），仅 meta/generated_at 与 2 个 wall_s 不同"
+    },
+    {
+      "cmd": "python bm01r_converge.py --days 10 --ncell 128",
+      "exit_code": 0,
+      "duration_s": 22.0
+    },
+    {
+      "cmd": "python bm01r_independent_check.py",
+      "exit_code": 0,
+      "duration_s": 1.0,
+      "note": "标准步法 M2 水面线独立复算，5/5 项在 10% 容差内 PASS"
+    },
+    {
+      "cmd": "python bm01r_plot.py",
+      "exit_code": 0,
+      "duration_s": 6.0
+    },
+    {
+      "cmd": "python bm01_sve1d_v2.py --selftest",
+      "exit_code": 0,
+      "duration_s": 3.0,
+      "note": "确认 s0/section_normal_slope 改动在矩形下与 v1 逐行等价（差 0.000 mm）"
+    },
+    {
+      "cmd": "python bm01r_gate_check.py",
+      "exit_code": 0,
+      "duration_s": 1.0,
+      "note": "用查到的真实闸孔 3 孔×5.5m 校核闸门过流能力：384~756 m³/s，为工况流量的 2.1~4.2 倍 ⇒ 闸门不是瓶颈"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "bm01r_lit.py",
+      "sha256": "515908c6da62d5a3de0e53ece0866e6cc9d97ef7a7323505377bac8eac8f6e7d",
+      "size_bytes": 18006
+    },
+    {
+      "path": "bm01r_converge.py",
+      "sha256": "60c10d0e3b9656bca4830c319de96f6762c984ab5018d88c839faa090d5be3d2",
+      "size_bytes": 5872
+    },
+    {
+      "path": "bm01r_independent_check.py",
+      "sha256": "74c144a2d64ea6b2f76011eaa98f336a66a63c007bc90c8e35b4b111c3037b32",
+      "size_bytes": 8760
+    },
+    {
+      "path": "bm01r_plot.py",
+      "sha256": "8f8b91f6e4b37212207d01361ef22a4fbef4f14e73bb1fd19b35685ce06b8874",
+      "size_bytes": 8111
+    },
+    {
+      "path": "README.md",
+      "sha256": "a2915aa86d4fde094b3dccadb02344dae64213953780a250fbc9593fa5816d17",
+      "size_bytes": 14070
+    },
+    {
+      "path": "PARAMETERS.md",
+      "sha256": "c9663d27cf42db336b35d62a7c66639e51483c887cc47a03d2623b3c6484e300",
+      "size_bytes": 18948
+    },
+    {
+      "path": "summary.md",
+      "sha256": "f626a1f5f25aeb0b71caeef9c1506a6a86234001e5510270948745e9a0a75424",
+      "size_bytes": 22729
+    },
+    {
+      "path": "raw/bm01r_literature.json",
+      "sha256": "e89ba650a7988f21baf3665a27f954d43692148b59bf7d26f6bbaaa5f2b5810c",
+      "size_bytes": 133547
+    },
+    {
+      "path": "raw/bm01r_convergence.json",
+      "sha256": "8b5c3657b0d00052a0fef6ac1254ecadb5b95ffd280f6a259e78022dda72264e",
+      "size_bytes": 2684
+    },
+    {
+      "path": "raw/bm01r_independent_check.json",
+      "sha256": "fed06cefc7360db47f55aa282915a3b8cc451e7406de5b69c5d5416778840ea4",
+      "size_bytes": 1980
+    },
+    {
+      "path": "normalized/records.jsonl",
+      "sha256": "dfd677715ceba5528effaa19cbc7f4d6451834e8b8962e67bf24d3279d6e18ce",
+      "size_bytes": 10978
+    },
+    {
+      "path": "review/reproducibility.json",
+      "sha256": "21adbf4fe1c60d830a1a4caf8f8a1fa1ee8a1bef1dcaa8d6d54778e66fb2c9bd",
+      "size_bytes": 1289
+    },
+    {
+      "path": "figures/bm01r_literature_result.png",
+      "sha256": "a7ad995b36d9299fee5f01cbf910cf46210942c206d76ac39740a8ebff8bbc1b",
+      "size_bytes": 242116
+    },
+    {
+      "path": "../BM-01_中线渠池_上游阶跃可吸收/bm01_sve1d_v2.py",
+      "sha256": "ac21e0e6b09e2a06ca150a08ef0371f18bd0f9f03d92b79f8ec6df75b6e45a1f",
+      "size_bytes": 16097
+    },
+    {
+      "path": "../BM-01_中线渠池_上游阶跃可吸收/bm01_pool_step.py",
+      "sha256": "b19a5e4ad40e99a723d9178b3d2b7c603024479f2afe5e32579dedc244daf461",
+      "size_bytes": 34756
+    },
+    {
+      "path": "bm01r_gate_check.py",
+      "sha256": "65ce765b3b7d5e18d6f785f8245356d8f4fd43d184407cf9d834eb6b559376c2",
+      "size_bytes": 9798
+    },
+    {
+      "path": "raw/bm01r_gate_check.json",
+      "sha256": "4e4a137c9d8e8e8243088c6fe8fb01ee1a4cffd822fb88e42222d7549b03b721",
+      "size_bytes": 2385
+    }
+  ],
+  "sealed": false,
+  "seal_note": "本地可复跑案例，未走官方封存流程；不得与官方活动拼接或替代官方结论，不得声称通过官方测试",
+  "revision_note": "2026-09-30 复核修订（第二次）。修正四处、补齐三件：（1）水面线类型 M1 → **M2**（下游端水深低于该流量正常水深，缓流区 2），并补充量化冲突：池均退回 ±150 mm 条带需闸前低于目标 298 mm，与控制器设定点不相容；（2）±0.15 m 条带引用口径收准——是文献转述的工程运行允许水位变幅（渠池/目标水位、冰期语境），非该文推荐值、非闸前专用指标、非官方阈值；（3）首段'闸前守在 +50 mm 以内'与表格'峰值 118.5 mm'矛盾，改为稳态 +50 mm / 瞬时峰值 118.5 mm；（4）'12 h 内停住'改为可证表述（采样间隔即 12 h）。新增 bm01r_independent_check.py + raw/bm01r_independent_check.json（独立方法互证，池均壅高 128 格 +330 / 256 格 +338 / 标准步法 +322 mm，极差 5%）、normalized/records.jsonl（六工况，awn-bm-record/v1）、review/reproducibility.json（6/6 逐字段一致）。**核心结论未变**：A1 → A3 的翻转成立，且三个独立途径互相印证。",
+  "reviewed_at": "2026-09-30T16:29:39",
+  "revision_note_v3": "2026-09-30 第三轮复核（本次）。未动任何物理结论，只修表述/命名/遗漏：（1）澄清 peak_mean_mm 与 final_mean_mm 都是 max 语义（前者全程、后者末段 30min 窗口），mean 指'池均'非'取均值'，避免 333.76/333.40 并列被误读；（2）independent_check 的 upstream_depth_m 精度 round(,3)→round(,4)，4.986 不再被吞成 5.0；（3）summary §3.1 补 B0 闸前 263mm 的反向对照（短池矩形闸前冲高/池均偏低，与 B2 闸前守住/池均壅高方向相反，证几何决定'闸前≠池均'程度）；（4）summary §3.2 补更强证据：闸门完美做到'闸前=目标'时池均已 +296mm。核心数字（+330/+338/+322/+742/4.9 倍，三路互证极差 5%）不变。",
+  "reviewed_at_v3": "2026-09-30T17:52:00",
+  "revision_note_v4": "2026-09-30 第四轮（自行检索补参数）。（1）新查到：唐河节制闸=唐河渠道倒虹吸出口节制闸（建筑物桩号K1044+713~K1046+255，本渠段起点1046+216在其内）；闸门形式=露顶式弧形闸门+液压启闭机、一门一机；该渠段设计流量135、**加大流量160 m³/s**；倒虹吸管身3孔一联、单孔5.5×5.7m。仍未查到闸孔孔数×单孔净宽。（2）**发现口径问题**：本案例工况Q=180 m³/s超加大流量160达12.5%（B3的168.75亦超5.5%），会被质疑'结论只因超限才成立'。（3）**应对：新增B4工况**（同几何同控制器，仅将阶跃降到+25使Q=160=工程允许上限）→ 池均外推193.5mm，仍超±150mm条带29%，**判定仍A3 ⇒ 翻转不依赖超限工况**。改动：bm01r_lit.py(+B4)、PARAMETERS.md(+§1第5b、§4闸门表、§5两源、+§7)、summary.md(+§1提醒、§2表、+§3.5、§6、+§10)、README.md(+§10)、normalized/records.jsonl(+B4条，共7条)。**核心物理结论未变。**",
+  "reviewed_at_v4": "2026-09-30T18:45:00",
+  "revision_note_v5": "2026-10-01 第五轮：**查到唐河闸真实孔数×净宽（3孔×5.5m）**，此前最大未真实化缺口闭合。新增 bm01r_gate_check.py 校核闸门过流能力=384~756 m³/s（工况180的2.1~4.2倍）⇒ **闸门不是瓶颈，渠道输水能力才是**，与 Manning 硬约束结论互为独立印证。主重跑物理数字未动。",
+  "reviewed_at_v5": "2026-10-01T12:05:00",
+  "revision_note_v6": "第五轮修正：撤回\"总净宽16.5m\"推断（无来源直接支持且违背倒虹吸工作原理），改用管身断面 3x5.5x5.7 m 作主控断面重算能力校核；结论不变（瓶颈在渠道）。同步更正 PARAMETERS.md 4/5、summary.md 3.6/6/11、README.md 11/12、bm01r_gate_check.py 与 raw/bm01r_gate_check.json。",
+  "reviewed_at_v6": "2026-10-01"
+}

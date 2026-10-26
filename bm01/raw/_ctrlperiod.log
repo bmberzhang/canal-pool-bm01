@@ -1,0 +1,19 @@
+[CTRL] period=   60s ΔQ=14.0 | point=    41.0 avg100=    40.2 mean=    20.7 | A3=0      
+[CTRL] period=   60s ΔQ=16.0 | point=    48.2 avg100=    47.3 mean=    23.3 | A3=0      
+[CTRL] period=   60s ΔQ=20.0 | point=    62.3 avg100=    61.3 mean=    30.0 | A3=0      
+[CTRL] period=   60s ΔQ=30.0 | point=   102.2 avg100=   100.8 mean=    53.9 | A3=0      
+[CTRL] period=   60s ΔQ=45.0 | point=   175.0 avg100=   171.1 mean=   102.3 | A3=2      
+
+>>> ctrl_period=60 s：全 A3 的 ΔQ=[]；未全 A3 的 ΔQ=[14.0, 16.0, 20.0, 30.0, 45.0]；全池平均档最大峰值 102.3 mm
+
+[CTRL] period=  300s ΔQ=14.0 | point=  3849.1 avg100=  3444.2 mean=    49.1 | A3=2      
+[CTRL] period=  300s ΔQ=16.0 | point=  4264.0 avg100=  4025.1 mean=  4288.6 | A3=3 ALL_A3
+[CTRL] period=  300s ΔQ=20.0 | point=  3962.8 avg100=  4083.8 mean=  4450.2 | A3=3 ALL_A3
+[CTRL] period=  300s ΔQ=30.0 | point=  3617.8 avg100=  3691.9 mean=  3933.2 | A3=3 ALL_A3
+[CTRL] period=  300s ΔQ=45.0 | point=  4214.0 avg100=  4198.6 mean=  4202.8 | A3=3 ALL_A3
+
+>>> ctrl_period=300 s：全 A3 的 ΔQ=[16.0, 20.0, 30.0, 45.0]；未全 A3 的 ΔQ=[14.0]；全池平均档最大峰值 4450.2 mm
+
+
+**因一存在第二个子机制：控制采样周期 vs 池体波行时间。**L=2000、ctrl_period=300 s（池体波行时间 L/c≈227 s < 周期）时，ΔQ≥16.0 三档全失败；把周期缩到 60 s 后，ΔQ=[16.0, 20.0, 30.0, 45.0] 被救回（不再全 A3），全池平均档最大峰值由 4450.2 mm 降到 102.3 mm。⇒ 短池的失效**不是执行器能力（k_g·r）问题**（执行器参数一字未改），而是「控制器采样比池体动力学还慢」。因此因一应写成两项：① 执行器能力；② 控制采样周期相对池体波行时间。
+已写入 raw\bm01_pred_ctrlperiod.json（110s）

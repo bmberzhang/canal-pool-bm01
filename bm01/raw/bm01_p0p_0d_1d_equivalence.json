@@ -1,0 +1,109 @@
+{
+  "purpose": "P0-1' 0D vs 1D全池平均 等价性对照",
+  "setup": {
+    "duration_h": 12.0,
+    "step_dq": 45.0,
+    "band_mm": 150.0,
+    "ncell": 480,
+    "dt_0d": 5.0,
+    "kp": 1.6,
+    "ki": 0.0016,
+    "prereg_criteria": "H0: |peak1D-peak0D|/peak0D<=15% AND 判定码一致 AND RMSE<=20mm"
+  },
+  "arms": {
+    "0D": {
+      "peak_mm": 72.74,
+      "final_mm": 1.65,
+      "judgement": "A1(带内)",
+      "wall_s": 0.0,
+      "series_n": 1441
+    },
+    "mean(全池)": {
+      "label": "mean(全池)",
+      "peak_mean_mm": 74.81,
+      "final_mean_mm": 3.83,
+      "peak_gate_mm": 90.7,
+      "over_band_s": 0.0,
+      "mass_balance_rel_err": 5.705030634717117e-13,
+      "dt_s": 0.5,
+      "judgement": "A1(带内)",
+      "wall_s": 45.6
+    },
+    "gate_avg(100m)": {
+      "label": "gate_avg(100m)",
+      "peak_mean_mm": 579.52,
+      "final_mean_mm": 503.05,
+      "peak_gate_mm": 787.22,
+      "over_band_s": 15025.0,
+      "mass_balance_rel_err": 6.543824087841248e-15,
+      "dt_s": 0.5,
+      "judgement": "A3(越带)",
+      "wall_s": 46.4
+    },
+    "gate(单点)": {
+      "label": "gate(单点)",
+      "peak_mean_mm": 1057.61,
+      "final_mean_mm": 969.86,
+      "peak_gate_mm": 1002.87,
+      "over_band_s": 21459.0,
+      "mass_balance_rel_err": 1.019932752895218e-13,
+      "dt_s": 0.5,
+      "judgement": "A3(越带)",
+      "wall_s": 46.2
+    }
+  },
+  "trajectory_0d_vs_1d_mean": {
+    "level_dev": {
+      "rms_mm": 2.101,
+      "max_abs_mm": 2.754,
+      "corr": 0.998016,
+      "n": 1441
+    },
+    "gate_cmd": {
+      "rms_mm": 0.001,
+      "max_abs_mm": 0.007,
+      "corr": 0.998512,
+      "n": 1441
+    },
+    "peak_0d_mm": 72.74,
+    "peak_1d_mm": 74.81,
+    "peak_rel_diff_pct": 2.85,
+    "final_0d_mm": 1.65,
+    "final_1d_mm": 3.83,
+    "verdict_0d": "A1(带内)",
+    "verdict_1d": "A1(带内)",
+    "verdict_match": true
+  },
+  "closure_check_1d_mean": {
+    "note": "d(全池平均水位)/dt 与 0D 蓄量方程 (Q_up-Q_gate)/(B*L) 之差；矩形棱柱池应为机器精度",
+    "rms_mm_per_min": 0.014446,
+    "max_abs_mm_per_min": 0.15,
+    "top5_residuals_mm_per_min": [
+      0.15,
+      0.09111,
+      -0.081092,
+      0.077982,
+      -0.066703
+    ],
+    "mass_balance_rel_err": 5.705030634717117e-13
+  },
+  "nonuniformity_1d": {
+    "note": "Q_gate 用 h[-1]，0D 用 h̄；两者之差即 0D 闸门率定的闭合误差来源",
+    "peak_single_minus_mean_mm": 42.04,
+    "min_single_minus_mean_mm": -164.24,
+    "peak_mean_mm": 74.81,
+    "peak_gate_mm": 90.7,
+    "gate_over_mean_ratio": 1.2124
+  },
+  "counterfactual": {
+    "question": "0D 与 1D 判定码差异是否完全来自「闸门率定取样位置」(h[-1] vs h̄)？",
+    "peak_1D_feedback_mean_gate_local_mm": 74.81,
+    "peak_1D_feedback_mean_gate_local_verdict": "A1(带内)",
+    "peak_0D_mm": 72.74,
+    "peak_0D_verdict": "A1(带内)",
+    "peak_1D_point_mm": 1057.61,
+    "peak_1D_point_verdict": "A3(越带)",
+    "peak_1D_100m_mm": 579.52,
+    "peak_1D_100m_verdict": "A3(越带)"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "campaign_id": "local-bm01-synthetic-md7-r1",
+  "case_id": "BM-01-MD7",
+  "parent_case": "BM-01",
+  "official_activity": null,
+  "note": "本包为本地可复跑最小案例的多日序列扩展，非官方登记活动；官方 R12-standard-benchmarks-r1 仅完成题单结构契约检查（structure_checked）。",
+  "registered_at": "2026-09-14T14:44:24",
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.14"
+  },
+  "commands": [
+    {
+      "cmd": "python bm01_multiday.py --scenario all --out . --verify",
+      "exit_code": 0,
+      "started_epoch": 1789368263.006,
+      "finished_epoch": 1789368264.902,
+      "duration_s": 1.896
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "raw/bm01md_md_main.json",
+      "sha256": "c2f48745a77665ce1f5df8e829c94e96c621d4f21757a07561742f99ac3ad7b2",
+      "size_bytes": 193665
+    },
+    {
+      "path": "raw/bm01md_md_chain_local.json",
+      "sha256": "af00934dcfb3dca225d3482057b4d83c9b484e227e58a078f73dbf9f81454eeb",
+      "size_bytes": 210313
+    },
+    {
+      "path": "raw/bm01md_md_chain_ff.json",
+      "sha256": "5788abca858e5603fe949efab159fbd324922f0e76a764ee2930b09b0bce19f6",
+      "size_bytes": 209755
+    },
+    {
+      "path": "bm01_multiday_timeseries_1min.csv",
+      "sha256": "5a3e3de2624e10ea5ef0f5eb9578a3af5e9dc093d6859a1b191b1289a4012ffd",
+      "size_bytes": 2895060
+    },
+    {
+      "path": "figures/bm01_multiday_7d.png",
+      "sha256": "daeb77a896e8325475d3e8c634624db73ae50077a5911d0bb4b9b79eee88a71d",
+      "size_bytes": 295828
+    },
+    {
+      "path": "SUMMARY_multiday.md",
+      "sha256": "99a4e2c30dada90684d0a3b721257436484c4ef91e79aaffc0ce6071e1f41257",
+      "size_bytes": 8762
+    },
+    {
+      "path": "review/reproducibility_multiday.json",
+      "sha256": "8341867e4be011f1e6d3a562cc8dab3c5438b97779fa95b2953bc1d77c2427a5",
+      "size_bytes": 240
+    }
+  ],
+  "sealed": false,
+  "seal_note": "本地多日序列扩展，未走官方封存流程；不得与官方活动拼接或替代官方结论"
+}

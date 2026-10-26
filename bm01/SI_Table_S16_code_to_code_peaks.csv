@@ -1,0 +1,11 @@
+﻿feedback,dx_m,sve_ncell,sve_peak_mm,swmm_ncell,swmm_peak_mm,diff_pct_inhouse_denom,verdict_sve,verdict_swmm
+pool_mean,300.0,,,20,71.55,,,A1
+pool_mean,150.0,,,40,72.55,,,A1
+pool_mean,100.0,60,74.87,60,72.18,3.6,A1,A1
+pool_mean,50.0,120,74.69,120,72.4,3.06,A1,A1
+pool_mean,25.0,240,75.05,240,67.37,10.24,A1,A1
+gate_single_point,300.0,,,20,202.4,,,A3
+gate_single_point,150.0,,,40,396.05,,,A3
+gate_single_point,100.0,60,314.79,60,326.82,-3.82,A3,A3
+gate_single_point,50.0,120,813.76,120,467.15,42.59,A3,A3
+gate_single_point,25.0,240,470.78,240,354.38,24.72,A3,A3

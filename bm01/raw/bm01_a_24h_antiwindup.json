@@ -1,0 +1,744 @@
+{
+  "task": "A: anti-windup 四臂 12h→24h 延伸 + 五关判决",
+  "setup": {
+    "ncell": 480,
+    "win_m": 1500.0,
+    "step_dq": 45.0,
+    "duration_h": 24.0,
+    "m_slope": 0.0,
+    "e4_12h_peaks_mm": {
+      "base": 1374.0,
+      "tightclip": 417.5,
+      "backcalc": 253.1,
+      "noclip": 2309.0
+    }
+  },
+  "arms": {
+    "base": {
+      "precheck_overlap_pct_0_12h_vs_E4": 100.0,
+      "precheck_pass": true,
+      "win_0_12h": {
+        "window": "0-12h",
+        "peak_mm": 1374.0,
+        "tail_mm": 1374.0,
+        "tail_slope_mm_per_min": 35.759,
+        "n_cycle": 11,
+        "midline_slope_mm_per_min": 2.454,
+        "midline_slope_ci95": [
+          2.0642,
+          2.8438
+        ],
+        "midline_slope_ci_width": 0.7796,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          93.3,
+          231.3,
+          111.4,
+          333.7,
+          37.8,
+          418.2,
+          216.6
+        ],
+        "mu_p2p_mm": {
+          "n": 10,
+          "mean": 154.4652,
+          "sd": 139.7444,
+          "ci95": [
+            54.505,
+            254.4254
+          ],
+          "ci_halfwidth": 99.9602
+        },
+        "k_p2p_mm": {
+          "n": 10,
+          "mean": 485.8162,
+          "sd": 413.0842,
+          "ci95": [
+            190.3341,
+            781.2984
+          ],
+          "ci_halfwidth": 295.4821
+        },
+        "cv_p2p": 0.905,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 1241.8
+      },
+      "win_12_24h": {
+        "window": "12-24h",
+        "peak_mm": 1558.1,
+        "tail_mm": 605.6,
+        "tail_slope_mm_per_min": 19.885,
+        "n_cycle": 7,
+        "midline_slope_mm_per_min": -0.0996,
+        "midline_slope_ci95": [
+          -0.4062,
+          0.2069
+        ],
+        "midline_slope_ci_width": 0.6132,
+        "p2p_amps_mm": [
+          238.8,
+          365.6,
+          338.5,
+          313.9,
+          398.0,
+          257.3
+        ],
+        "mu_p2p_mm": {
+          "n": 6,
+          "mean": 318.6809,
+          "sd": 61.7346,
+          "ci95": [
+            253.8838,
+            383.4779
+          ],
+          "ci_halfwidth": 64.7971
+        },
+        "k_p2p_mm": {
+          "n": 6,
+          "mean": 1341.9098,
+          "sd": 47.9885,
+          "ci95": [
+            1291.5408,
+            1392.2788
+          ],
+          "ci_halfwidth": 50.369
+        },
+        "cv_p2p": 0.194,
+        "amp_min_mm": 1135.6,
+        "amp_max_mm": 1558.1
+      },
+      "win_0_24h": {
+        "window": "0-24h",
+        "peak_mm": 1558.1,
+        "tail_mm": 605.6,
+        "tail_slope_mm_per_min": 19.885,
+        "n_cycle": 18,
+        "midline_slope_mm_per_min": 1.1787,
+        "midline_slope_ci95": [
+          0.8588,
+          1.4986
+        ],
+        "midline_slope_ci_width": 0.6398,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          93.3,
+          231.3,
+          111.4,
+          333.7,
+          37.8,
+          418.2,
+          216.6,
+          406.1,
+          238.8,
+          365.6,
+          338.5,
+          313.9,
+          398.0,
+          257.3
+        ],
+        "mu_p2p_mm": {
+          "n": 17,
+          "mean": 227.2282,
+          "sd": 143.6029,
+          "ci95": [
+            154.5753,
+            299.8811
+          ],
+          "ci_halfwidth": 72.6529
+        },
+        "k_p2p_mm": {
+          "n": 17,
+          "mean": 831.6392,
+          "sd": 528.1305,
+          "ci95": [
+            564.4425,
+            1098.8359
+          ],
+          "ci_halfwidth": 267.1967
+        },
+        "cv_p2p": 0.632,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 1558.1
+      },
+      "sat_frac_24h": 0.386,
+      "a_min": 0.0,
+      "a_max": 1.0,
+      "verdict_24h": "弱通过",
+      "verdict_reasons": [
+        "②零趋势不达标(CI=[-0.4062, 0.2069],宽度=0.6132)"
+      ],
+      "wall_s": 99.0
+    },
+    "tightclip": {
+      "precheck_overlap_pct_0_12h_vs_E4": 100.0,
+      "precheck_pass": true,
+      "win_0_12h": {
+        "window": "0-12h",
+        "peak_mm": 417.5,
+        "tail_mm": 251.7,
+        "tail_slope_mm_per_min": -3.928,
+        "n_cycle": 15,
+        "midline_slope_mm_per_min": 0.4775,
+        "midline_slope_ci95": [
+          0.1577,
+          0.7973
+        ],
+        "midline_slope_ci_width": 0.6396,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          93.3,
+          231.3,
+          1.9,
+          16.7,
+          57.9,
+          35.7,
+          17.6,
+          24.2,
+          62.8,
+          45.7,
+          53.6
+        ],
+        "mu_p2p_mm": {
+          "n": 14,
+          "mean": 53.0909,
+          "sd": 57.2878,
+          "ci95": [
+            20.4636,
+            85.7183
+          ],
+          "ci_halfwidth": 32.6273
+        },
+        "k_p2p_mm": {
+          "n": 14,
+          "mean": 287.1971,
+          "sd": 132.2115,
+          "ci95": [
+            211.8982,
+            362.496
+          ],
+          "ci_halfwidth": 75.2989
+        },
+        "cv_p2p": 1.079,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 417.5
+      },
+      "win_12_24h": {
+        "window": "12-24h",
+        "peak_mm": 474.9,
+        "tail_mm": 396.9,
+        "tail_slope_mm_per_min": 13.86,
+        "n_cycle": 17,
+        "midline_slope_mm_per_min": 0.2366,
+        "midline_slope_ci95": [
+          0.0466,
+          0.4266
+        ],
+        "midline_slope_ci_width": 0.38,
+        "p2p_amps_mm": [
+          45.2,
+          113.8,
+          25.8,
+          91.1,
+          65.6,
+          15.1,
+          6.1,
+          179.9,
+          36.3,
+          68.7,
+          33.6,
+          84.7,
+          28.2,
+          75.6,
+          19.7,
+          61.2
+        ],
+        "mu_p2p_mm": {
+          "n": 16,
+          "mean": 59.4088,
+          "sd": 44.2631,
+          "ci95": [
+            35.8276,
+            82.9899
+          ],
+          "ci_halfwidth": 23.5812
+        },
+        "k_p2p_mm": {
+          "n": 16,
+          "mean": 298.4163,
+          "sd": 87.7375,
+          "ci95": [
+            251.6742,
+            345.1584
+          ],
+          "ci_halfwidth": 46.7421
+        },
+        "cv_p2p": 0.745,
+        "amp_min_mm": 117.2,
+        "amp_max_mm": 474.9
+      },
+      "win_0_24h": {
+        "window": "0-24h",
+        "peak_mm": 474.9,
+        "tail_mm": 396.9,
+        "tail_slope_mm_per_min": 13.86,
+        "n_cycle": 32,
+        "midline_slope_mm_per_min": 0.0917,
+        "midline_slope_ci95": [
+          -0.0029,
+          0.1864
+        ],
+        "midline_slope_ci_width": 0.1893,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          93.3,
+          231.3,
+          1.9,
+          16.7,
+          57.9,
+          35.7,
+          17.6,
+          24.2,
+          62.8,
+          45.7,
+          53.6,
+          46.7,
+          45.2,
+          113.8,
+          25.8,
+          91.1,
+          65.6,
+          15.1,
+          6.1,
+          179.9,
+          36.3,
+          68.7,
+          33.6,
+          84.7,
+          28.2,
+          75.6,
+          19.7,
+          61.2
+        ],
+        "mu_p2p_mm": {
+          "n": 31,
+          "mean": 56.145,
+          "sd": 49.1405,
+          "ci95": [
+            38.1225,
+            74.1674
+          ],
+          "ci_halfwidth": 18.0225
+        },
+        "k_p2p_mm": {
+          "n": 31,
+          "mean": 292.7107,
+          "sd": 107.0594,
+          "ci95": [
+            253.4462,
+            331.9751
+          ],
+          "ci_halfwidth": 39.2645
+        },
+        "cv_p2p": 0.875,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 474.9
+      },
+      "sat_frac_24h": 0.0,
+      "a_min": 0.15,
+      "a_max": 0.95,
+      "verdict_24h": "真失败",
+      "verdict_reasons": [
+        "②零趋势不达标(CI=[0.0466, 0.4266],宽度=0.38)",
+        "④CV_p2p>0.745>0.4"
+      ],
+      "wall_s": 104.3
+    },
+    "backcalc": {
+      "precheck_overlap_pct_0_12h_vs_E4": 100.0,
+      "precheck_pass": true,
+      "win_0_12h": {
+        "window": "0-12h",
+        "peak_mm": 253.1,
+        "tail_mm": 182.5,
+        "tail_slope_mm_per_min": -3.978,
+        "n_cycle": 23,
+        "midline_slope_mm_per_min": 0.0669,
+        "midline_slope_ci95": [
+          -0.0272,
+          0.161
+        ],
+        "midline_slope_ci_width": 0.1882,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          58.0,
+          35.2,
+          67.5,
+          17.5,
+          90.9,
+          26.9,
+          58.2,
+          71.4,
+          6.6,
+          109.6,
+          21.9,
+          166.6,
+          115.3,
+          54.7,
+          83.5,
+          58.4,
+          11.0,
+          69.1,
+          71.6
+        ],
+        "mu_p2p_mm": {
+          "n": 22,
+          "mean": 58.9189,
+          "sd": 39.4779,
+          "ci95": [
+            41.732,
+            76.1058
+          ],
+          "ci_halfwidth": 17.1869
+        },
+        "k_p2p_mm": {
+          "n": 22,
+          "mean": 136.5833,
+          "sd": 38.8812,
+          "ci95": [
+            119.6561,
+            153.5104
+          ],
+          "ci_halfwidth": 16.9272
+        },
+        "cv_p2p": 0.67,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 253.1
+      },
+      "win_12_24h": {
+        "window": "12-24h",
+        "peak_mm": 378.4,
+        "tail_mm": 180.4,
+        "tail_slope_mm_per_min": -4.762,
+        "n_cycle": 21,
+        "midline_slope_mm_per_min": 0.1344,
+        "midline_slope_ci95": [
+          0.0028,
+          0.266
+        ],
+        "midline_slope_ci_width": 0.2632,
+        "p2p_amps_mm": [
+          25.6,
+          105.6,
+          37.0,
+          20.8,
+          42.2,
+          37.2,
+          9.6,
+          215.3,
+          50.2,
+          269.3,
+          188.2,
+          48.4,
+          93.2,
+          13.3,
+          18.6,
+          31.1,
+          172.1,
+          130.0,
+          187.3,
+          195.2
+        ],
+        "mu_p2p_mm": {
+          "n": 20,
+          "mean": 94.5175,
+          "sd": 81.8417,
+          "ci95": [
+            56.3429,
+            132.692
+          ],
+          "ci_halfwidth": 38.1745
+        },
+        "k_p2p_mm": {
+          "n": 20,
+          "mean": 201.1735,
+          "sd": 60.5039,
+          "ci95": [
+            172.9519,
+            229.3952
+          ],
+          "ci_halfwidth": 28.2217
+        },
+        "cv_p2p": 0.866,
+        "amp_min_mm": 58.8,
+        "amp_max_mm": 378.4
+      },
+      "win_0_24h": {
+        "window": "0-24h",
+        "peak_mm": 378.4,
+        "tail_mm": 180.4,
+        "tail_slope_mm_per_min": -4.762,
+        "n_cycle": 44,
+        "midline_slope_mm_per_min": 0.1002,
+        "midline_slope_ci95": [
+          0.0621,
+          0.1383
+        ],
+        "midline_slope_ci_width": 0.0762,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          58.0,
+          35.2,
+          67.5,
+          17.5,
+          90.9,
+          26.9,
+          58.2,
+          71.4,
+          6.6,
+          109.6,
+          21.9,
+          166.6,
+          115.3,
+          54.7,
+          83.5,
+          58.4,
+          11.0,
+          69.1,
+          71.6,
+          46.5,
+          25.6,
+          105.6,
+          37.0,
+          20.8,
+          42.2,
+          37.2,
+          9.6,
+          215.3,
+          50.2,
+          269.3,
+          188.2,
+          48.4,
+          93.2,
+          13.3,
+          18.6,
+          31.1,
+          172.1,
+          130.0,
+          187.3,
+          195.2
+        ],
+        "mu_p2p_mm": {
+          "n": 43,
+          "mean": 75.1885,
+          "sd": 64.385,
+          "ci95": [
+            55.944,
+            94.433
+          ],
+          "ci_halfwidth": 19.2445
+        },
+        "k_p2p_mm": {
+          "n": 43,
+          "mean": 165.6222,
+          "sd": 59.8288,
+          "ci95": [
+            147.7395,
+            183.5049
+          ],
+          "ci_halfwidth": 17.8827
+        },
+        "cv_p2p": 0.856,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 378.4
+      },
+      "sat_frac_24h": 0.001,
+      "a_min": 0.28,
+      "a_max": 1.0,
+      "verdict_24h": "真失败",
+      "verdict_reasons": [
+        "②零趋势不达标(CI=[0.0028, 0.266],宽度=0.2632)",
+        "④CV_p2p>0.866>0.4"
+      ],
+      "wall_s": 100.8
+    },
+    "noclip": {
+      "precheck_overlap_pct_0_12h_vs_E4": 100.0,
+      "precheck_pass": true,
+      "win_0_12h": {
+        "window": "0-12h",
+        "peak_mm": 2309.0,
+        "tail_mm": 2038.9,
+        "tail_slope_mm_per_min": 12.365,
+        "n_cycle": 11,
+        "midline_slope_mm_per_min": 4.1976,
+        "midline_slope_ci95": [
+          3.5287,
+          4.8665
+        ],
+        "midline_slope_ci_width": 1.3378,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          93.3,
+          231.3,
+          159.9,
+          547.4,
+          199.7,
+          985.7,
+          270.1
+        ],
+        "mu_p2p_mm": {
+          "n": 10,
+          "mean": 258.9765,
+          "sd": 299.3086,
+          "ci95": [
+            44.8789,
+            473.0741
+          ],
+          "ci_halfwidth": 214.0976
+        },
+        "k_p2p_mm": {
+          "n": 10,
+          "mean": 724.2927,
+          "sd": 772.7578,
+          "ci95": [
+            171.5335,
+            1277.0519
+          ],
+          "ci_halfwidth": 552.7592
+        },
+        "cv_p2p": 1.156,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 2309.0
+      },
+      "win_12_24h": {
+        "window": "12-24h",
+        "peak_mm": 3286.4,
+        "tail_mm": 3192.1,
+        "tail_slope_mm_per_min": 44.574,
+        "n_cycle": 4,
+        "midline_slope_mm_per_min": 0.7703,
+        "midline_slope_ci95": [
+          -0.7075,
+          2.2482
+        ],
+        "midline_slope_ci_width": 2.9558,
+        "p2p_amps_mm": [
+          684.3,
+          974.1,
+          796.7
+        ],
+        "mu_p2p_mm": {
+          "n": 3,
+          "mean": 818.3648,
+          "sd": 146.124,
+          "ci95": [
+            455.3434,
+            1181.3863
+          ],
+          "ci_halfwidth": 363.0214
+        },
+        "k_p2p_mm": {
+          "n": 3,
+          "mean": 2780.6175,
+          "sd": 117.9416,
+          "ci95": [
+            2487.6107,
+            3073.6243
+          ],
+          "ci_halfwidth": 293.0068
+        },
+        "cv_p2p": 0.179,
+        "amp_min_mm": 2312.3,
+        "amp_max_mm": 3286.4
+      },
+      "win_0_24h": {
+        "window": "0-24h",
+        "peak_mm": 3286.4,
+        "tail_mm": 3192.1,
+        "tail_slope_mm_per_min": 44.574,
+        "n_cycle": 15,
+        "midline_slope_mm_per_min": 2.9718,
+        "midline_slope_ci95": [
+          2.4641,
+          3.4796
+        ],
+        "midline_slope_ci_width": 1.0156,
+        "p2p_amps_mm": [
+          63.5,
+          33.9,
+          5.0,
+          93.3,
+          231.3,
+          159.9,
+          547.4,
+          199.7,
+          985.7,
+          270.1,
+          957.6,
+          684.3,
+          974.1,
+          796.7
+        ],
+        "mu_p2p_mm": {
+          "n": 14,
+          "mean": 428.7498,
+          "sd": 379.5064,
+          "ci95": [
+            212.6081,
+            644.8915
+          ],
+          "ci_halfwidth": 216.1417
+        },
+        "k_p2p_mm": {
+          "n": 14,
+          "mean": 1293.0391,
+          "sd": 1135.9701,
+          "ci95": [
+            646.0658,
+            1940.0124
+          ],
+          "ci_halfwidth": 646.9733
+        },
+        "cv_p2p": 0.885,
+        "amp_min_mm": 52.8,
+        "amp_max_mm": 3286.4
+      },
+      "sat_frac_24h": 0.479,
+      "a_min": -0.2,
+      "a_max": 1.2,
+      "verdict_24h": "弱通过",
+      "verdict_reasons": [
+        "②零趋势不达标(CI=[-0.7075, 2.2482],宽度=2.9558)"
+      ],
+      "wall_s": 95.9
+    }
+  },
+  "global_verdict": {
+    "base_still_oscillating": true,
+    "tightclip_bounded": true,
+    "backcalc_bounded": true,
+    "noclip_worse": true,
+    "peaks_12_24h_mm": {
+      "base": 1558.1,
+      "tightclip": 474.9,
+      "backcalc": 378.4,
+      "noclip": 3286.4
+    },
+    "note": "若四项仍成立 → E4「限幅=因(必要条件)」在 24h 尺度稳健 → §3.x.4 可写「12h/24h 一致」"
+  },
+  "wall_total_s": 400.1
+}
